@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "siteName": "OZ Tymián – horses below the castle",
+    "shortName": "horses below the castle",
+    "title": "Horses below the castle | Krásnohorské Podhradie",
+    "description": "Time with horses and forest pedagogy in Krásnohorské Podhradie, Slovakia. Led rides for children, creative workshops from natural materials, and the eco-centre being built beside the horses."
+  },
+  "common": {
+    "pending": "to come",
+    "comingSoon": "In preparation"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Experiences",
+    "ekovan": "Ekovan",
+    "gallery": "Gallery",
+    "booking": "Booking",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "skipToContent": "Skip to content"
+  },
+  "actions": {
+    "call": "Call us",
+    "callShort": "Call",
+    "callPending": "Number to come",
+    "seeOffer": "See what we offer",
+    "contactUs": "Contact",
+    "learnMore": "Find out more",
+    "backHome": "Back to home"
+  },
+  "home": {
+    "heroEyebrow": "Krásnohorské Podhradie",
+    "heroTitle": "Horses below the castle",
+    "heroPhotoAlt": "Two black horses standing in a snowy paddock, with Krásna Hôrka Castle on the ridge above them.",
+    "thesis": "“Horses — our friends and our teachers.”",
+    "heroSubtitle": "We are the Tymián association. Children here meet the horses and the forest alike — calmly, safely, and at their own pace.",
+    "workshopSchedule": "Creative workshop: Tuesdays 14:00 – 15:00",
+    "outdoors": "Outdoors, in the fresh air",
+    "callNote": "The fastest way to settle a date and your child's age is a phone call.",
+    "introTitle": "A place where children meet horses and the forest",
+    "introBody": "On our grounds in Krásnohorské Podhradie we offer real contact with horses and nature – from the first stroke, through caring for the animals, to led rides and creative workshops in the spirit of forest pedagogy. We believe direct contact with an animal teaches children patience, respect and responsibility better than any textbook.",
+    "ekovanLabel": "Project under construction",
+    "ekovanTitle": "We are building an eco-centre beside the horses",
+    "ekovanBody": "Through the Ekovan project we are creating a space that joins contact with horses, environmental education and rest in nature.",
+    "visitTitle": "Come and see us",
+    "visitBody": "You will find us in Krásnohorské Podhradie, within sight of Krásna Hôrka Castle. Please arrange your visit in advance — tell us how old your child is and we will suggest what suits them.",
+    "orFollow": "Or follow us",
+    "servicesTitle": "What you can do here",
+    "servicesSubtitle": "Programmes for families with children, school groups and travellers."
+  },
+  "about": {
+    "title": "About us",
+    "lead": "OZ Tymián – horses below the castle",
+    "body1": "Our work centres on experiences with horses, nature and environmental education. We believe direct contact with an animal teaches children patience, respect and responsibility better than any textbook.",
+    "body2": "Our grounds are open to visitors all year round – whether you come simply to stroke the horses, to give the children a ride, or to join a creative workshop.",
+    "valuesTitle": "What matters to us",
+    "value1Title": "Respect for the horses",
+    "value1Body": "We work with the horses considerately and at their pace. We teach visitors to read their body language.",
+    "value2Title": "Learning by doing",
+    "value2Body": "We do environmental education with our hands – in the garden, on the sensory trail, beside the horses.",
+    "value3Title": "Open to everyone",
+    "value3Body": "Families with children, school groups and travellers are all welcome here."
+  },
+  "services": {
+    "title": "Experiences",
+    "lead": "Time with horses and the forest, all year round",
+    "intro": "We adapt each programme to the age and experience of the group. Dates are arranged in advance — call us and we will suggest what will suit your child.",
+    "items": {
+      "vozenie-deti": {
+        "title": "Led rides for children",
+        "description": "Calm, safe rides in nature – a small child's first contact with a horse, always led on foot."
+      },
+      "lesna-pedagogika": {
+        "title": "Forest pedagogy",
+        "description": "Discovering the forest with every sense. Experiences that build a relationship with nature and self-confidence."
+      },
+      "workshopy": {
+        "title": "Creative workshops",
+        "description": "Making things from the natural materials we find around us. We make, we discover, we experience nature."
+      },
+      "jazdenie": {
+        "title": "Horse riding",
+        "description": "Led riding on the grounds for beginners and the more experienced, always supervised."
+      },
+      "zoznamenie-s-konmi": {
+        "title": "Getting to know the horses",
+        "description": "Meeting the horses and helping care for them on our grounds: grooming, feeding, getting them ready."
+      },
+      "ekocentrum-programy": {
+        "title": "Eco-centre programmes",
+        "description": "Environmental education programmes at the eco-centre being built beside the horses."
+      }
+    },
+    "ageLabel": "Age",
+    "ageValue": "{min}–{max} yrs",
+    "agePending": "Age agreed by phone",
+    "durationLabel": "Duration",
+    "durationValue": "{minutes} min",
+    "capacityLabel": "Group size",
+    "capacityValue": "up to {count} people",
+    "termsPending": "Duration, group size and price are agreed by phone.",
+    "photoPending": "Photograph to come",
+    "priceOnRequest": "Price on request"
+  },
+  "ekovan": {
+    "title": "Ekovan – the eco-centre beside the horses",
+    "lead": "A space joining contact with horses, environmental education and rest in nature.",
+    "body": "The project aims to create a place for families with children, schools and travellers to have authentic contact with nature and animals.",
+    "partsTitle": "What Ekovan will contain",
+    "parts": {
+      "maringotka": {
+        "title": "Teaching space in a shepherd hut",
+        "description": "Shelter for educational programmes in any weather."
+      },
+      "tvoriva-zona": {
+        "title": "Creative and educational zone",
+        "description": "A place for workshops and for working with school groups."
+      },
+      "bylinkova-zahrada": {
+        "title": "Herb garden",
+        "description": "A living textbook – herbs visitors can smell and taste."
+      },
+      "zmyslovy-chodnik": {
+        "title": "Sensory trail",
+        "description": "Natural surfaces, discovered barefoot."
+      },
+      "jazdiaren": {
+        "title": "Riding arena",
+        "description": "A safe space for riding and for working with the horses."
+      },
+      "zazemie": {
+        "title": "Visitor facilities",
+        "description": "Seating, shade and somewhere to rest in the middle of nature."
+      }
+    },
+    "statusTitle": "Project status",
+    "statusBody": "The project is under construction. We post about each phase on our social channels."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "lead": "Horses, children and the place below the castle",
+    "empty": "More photographs are on the way. For now you will find us on Facebook and Instagram.",
+    "photos": {
+      "zima-pod-hradom": "Two black horses in a snowy paddock, with Krásna Hôrka Castle above them.",
+      "deti-v-prirode": "Children on a blanket in the grass, one holding a beetle on their palm."
+    }
+  },
+  "booking": {
+    "title": "Booking",
+    "lead": "Online booking is in preparation",
+    "body": "A booking system for led rides, riding and creative workshops is coming soon. Until then please arrange a date by phone — it is the fastest way anyway.",
+    "cta": "Go to contact"
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "Get in touch",
+    "body": "Please arrange your visit in advance. Calling is fastest — tell us how old your child is and how many of you are coming, and we will suggest what suits.",
+    "emailLabel": "E-mail",
+    "emailPending": "E-mail to come",
+    "phoneLabel": "Phone",
+    "phonePending": "Phone number to come",
+    "addressLabel": "Address",
+    "addressValue": "Krásnohorské Podhradie, Slovakia",
+    "socialLabel": "Social channels",
+    "orgTitle": "Operated by",
+    "orgName": "OZ Tymián – horses below the castle"
+  },
+  "footer": {
+    "tagline": "Time with horses and forest pedagogy in Krásnohorské Podhradie.",
+    "closingTitle": "We look forward to seeing you",
+    "closingBody": "Call us and we will find a time that suits you and the horses alike.",
+    "navTitle": "Pages",
+    "contactTitle": "Contact",
+    "followTitle": "Follow us",
+    "fundingTitle": "Supported by the <tiLink>Terra Incognita</tiLink> programme",
+    "fundingNote": "The exact publicity wording will be added per the Publicity Manual.",
+    "kskSupport": "Supported with €35,000 by Košický samosprávny kraj",
+    "rights": "© {year} OZ Tymián – horses below the castle"
+  },
+  "language": {
+    "label": "Language",
+    "switching": "Switching language…",
+    "sk": "Slovensky",
+    "hu": "Magyarul",
+    "en": "English"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "This page does not exist or has been moved."
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "siteName": "OZ Tymián – lovak a vár alatt",
+    "shortName": "lovak a vár alatt",
+    "title": "Lovak a vár alatt | Krasznahorkaváralja",
+    "description": "Élmények lovakkal és erdőpedagógia Krasznahorkaváralján. Gyerekek lovagoltatása, kézműves foglalkozások természetes anyagokból és a készülő Ökocentrum a lovaknál."
+  },
+  "common": {
+    "pending": "pótoljuk",
+    "comingSoon": "Készülőben"
+  },
+  "nav": {
+    "home": "Kezdőlap",
+    "about": "Rólunk",
+    "services": "Kínálat",
+    "ekovan": "Ekovan",
+    "gallery": "Galéria",
+    "booking": "Foglalás",
+    "contact": "Kapcsolat",
+    "menu": "Menü",
+    "close": "Bezárás",
+    "skipToContent": "Ugrás a tartalomra"
+  },
+  "actions": {
+    "call": "Hívjon minket",
+    "callShort": "Hívás",
+    "callPending": "A számot pótoljuk",
+    "seeOffer": "Kínálat megtekintése",
+    "contactUs": "Kapcsolat",
+    "learnMore": "Tudjon meg többet",
+    "backHome": "Vissza a kezdőlapra"
+  },
+  "home": {
+    "heroEyebrow": "Krasznahorkaváralja",
+    "heroTitle": "Lovak a vár alatt",
+    "heroPhotoAlt": "Két fekete ló áll a havas karámban, fölöttük a krasznahorkai vár.",
+    "thesis": "„A lovak — barátaink és tanítóink.”",
+    "heroSubtitle": "A Tymián polgári társulás vagyunk. Nálunk a gyerekek a lovakkal és az erdővel is találkoznak — nyugodtan, biztonságosan, a saját tempójukban.",
+    "workshopSchedule": "Kézműves foglalkozás: kedd 14:00 – 15:00",
+    "outdoors": "A szabadban, friss levegőn",
+    "callNote": "Az időpontot és a gyermek korát telefonon egyeztetjük a leggyorsabban.",
+    "introTitle": "Hely, ahol a gyerekek lovakkal és erdővel találkoznak",
+    "introBody": "Krasznahorkaváraljai területünkön valódi kapcsolatot kínálunk a lovakkal és a természettel – az első simogatástól az állatok gondozásán át a lovagoltatásig és az erdőpedagógia szellemében tartott kézműves foglalkozásokig. Hisszük, hogy az állattal való közvetlen kapcsolat türelemre, tiszteletre és felelősségre tanítja a gyerekeket, jobban, mint bármelyik tankönyv.",
+    "ekovanLabel": "Épülő projekt",
+    "ekovanTitle": "Ökocentrumot építünk a lovaknál",
+    "ekovanBody": "Az Ekovan projekt keretében olyan teret hozunk létre, amely összeköti a lovakkal való kapcsolatot, a környezeti nevelést és a természetben való pihenést.",
+    "visitTitle": "Jöjjenek el hozzánk",
+    "visitBody": "Krasznahorkaváralján találnak minket, a krasznahorkai vár tövében. Az időpontot kérjük, előre egyeztessék — mondják meg, hány éves a gyermekük, és tanácsot adunk, mi illik hozzá.",
+    "orFollow": "Vagy kövessen minket",
+    "servicesTitle": "Mit élhetnek át nálunk",
+    "servicesSubtitle": "Programok gyerekes családoknak, iskolai csoportoknak és turistáknak."
+  },
+  "about": {
+    "title": "Rólunk",
+    "lead": "OZ Tymián – lovak a vár alatt",
+    "body1": "Tevékenységünk a lovakkal, a természettel és a környezeti neveléssel kapcsolatos élményekre összpontosít. Hisszük, hogy az állattal való közvetlen kapcsolat türelemre, tiszteletre és felelősségre tanítja a gyerekeket, jobban, mint bármelyik tankönyv.",
+    "body2": "Területünk egész évben nyitva áll a látogatók előtt – akár csak megsimogatni jönnek a lovakat, lovagoltatni a gyerekeket, vagy bekapcsolódni egy kézműves foglalkozásba.",
+    "valuesTitle": "Ami fontos nekünk",
+    "value1Title": "Tisztelet a lovak iránt",
+    "value1Body": "A lovakkal figyelmesen és az ő tempójukban dolgozunk. A látogatókat megtanítjuk érteni a testbeszédüket.",
+    "value2Title": "Tanulás élményen keresztül",
+    "value2Body": "A környezeti nevelést kézzel végezzük – a kertben, az érzékelőösvényen, a lovaknál.",
+    "value3Title": "Mindenki előtt nyitva",
+    "value3Body": "Gyerekes családokat, iskolai csoportokat és turistákat egyaránt szívesen látunk."
+  },
+  "services": {
+    "title": "Kínálat",
+    "lead": "Élmények lovakkal és erdővel egész évben",
+    "intro": "A programokat a csoport korához és tapasztalatához igazítjuk. Az időpontot előre egyeztetjük — hívjon minket, és tanácsot adunk, mi illik a gyermekéhez.",
+    "items": {
+      "vozenie-deti": {
+        "title": "Lovagoltatás",
+        "description": "Nyugodt és biztonságos lovagoltatás a természetben – az első találkozás a lóval a legkisebbeknek, mindig vezetve."
+      },
+      "lesna-pedagogika": {
+        "title": "Erdőpedagógia",
+        "description": "Minden érzékünkkel felfedezzük az erdőt. Élmények, amelyek fejlesztik a természethez fűződő viszonyt és az önbizalmat."
+      },
+      "workshopy": {
+        "title": "Kézműves foglalkozások",
+        "description": "Természetes anyagokból alkotunk, amelyeket magunk körül találunk. Alkotunk, felfedezünk, átéljük a természetet."
+      },
+      "jazdenie": {
+        "title": "Lovaglás",
+        "description": "Vezetett lovaglás a területen kezdőknek és haladóknak, mindig felügyelet mellett."
+      },
+      "zoznamenie-s-konmi": {
+        "title": "Ismerkedés a lovakkal",
+        "description": "A lovak megismerése és gondozása a területünkön: kefélés, etetés, felkészítés."
+      },
+      "ekocentrum-programy": {
+        "title": "Programok az Ökocentrumban",
+        "description": "Környezeti nevelési programok a készülő Ökocentrumban a lovaknál."
+      }
+    },
+    "ageLabel": "Kor",
+    "ageValue": "{min}–{max} év",
+    "agePending": "A kort telefonon egyeztetjük",
+    "durationLabel": "Időtartam",
+    "durationValue": "{minutes} perc",
+    "capacityLabel": "Létszám",
+    "capacityValue": "legfeljebb {count} fő",
+    "termsPending": "Az időtartamot, a létszámot és az árat telefonon egyeztetjük.",
+    "photoPending": "A fényképet pótoljuk",
+    "priceOnRequest": "Ár egyeztetés szerint"
+  },
+  "ekovan": {
+    "title": "Ekovan – Ökocentrum a lovaknál",
+    "lead": "Tér, amely összeköti a lovakkal való kapcsolatot, a környezeti nevelést és a természetben való pihenést.",
+    "body": "A projekt célja olyan hely létrehozása gyerekes családok, iskolák és turisták számára, ahol valódi kapcsolatba kerülhetnek a természettel és az állatokkal.",
+    "partsTitle": "Mi épül az Ekovanban",
+    "parts": {
+      "maringotka": {
+        "title": "Oktatótér a lakókocsiban",
+        "description": "Háttér az oktatási programokhoz bármilyen időjárás esetén."
+      },
+      "tvoriva-zona": {
+        "title": "Alkotó és oktatási zóna",
+        "description": "Hely a műhelyekhez, foglalkozásokhoz és az iskolai csoportokkal való munkához."
+      },
+      "bylinkova-zahrada": {
+        "title": "Gyógynövénykert",
+        "description": "Élő tankönyv – gyógynövények, amelyeket a látogatók meg is szagolhatnak és kóstolhatnak."
+      },
+      "zmyslovy-chodnik": {
+        "title": "Érzékelőösvény",
+        "description": "Természetes felületek, amelyeket mezítláb fedezünk fel."
+      },
+      "jazdiaren": {
+        "title": "Lovarda",
+        "description": "Biztonságos tér a lovagláshoz és a lovakkal való munkához."
+      },
+      "zazemie": {
+        "title": "Látogatói háttér",
+        "description": "Ülőhely, árnyék és pihenőhely a természet közepén."
+      }
+    },
+    "statusTitle": "A projekt állása",
+    "statusBody": "A projekt épül. Az egyes szakaszokról a közösségi oldalainkon tájékoztatunk."
+  },
+  "gallery": {
+    "title": "Galéria",
+    "lead": "Lovak, gyerekek és a hely a vár alatt",
+    "empty": "További fényképeket készítünk. Addig a Facebookon és az Instagramon találnak minket.",
+    "photos": {
+      "zima-pod-hradom": "Két fekete ló a havas karámban, fölöttük a krasznahorkai vár.",
+      "deti-v-prirode": "Gyerekek a fűben egy takarón, egyikük egy bogarat tart a tenyerén."
+    }
+  },
+  "booking": {
+    "title": "Foglalás",
+    "lead": "Az online foglalás készülőben",
+    "body": "A lovagoltatás, a lovaglás és a kézműves foglalkozások foglalási rendszerét hamarosan indítjuk. Addig kérjük, telefonon egyeztessék az időpontot — így a leggyorsabb.",
+    "cta": "Tovább a kapcsolathoz"
+  },
+  "contact": {
+    "title": "Kapcsolat",
+    "lead": "Keressenek minket",
+    "body": "A látogatás időpontját kérjük, előre egyeztessék. A leggyorsabb telefonon — mondják meg, hány éves a gyermekük és hányan jönnek, és tanácsot adunk, mi illik hozzájuk.",
+    "emailLabel": "E-mail",
+    "emailPending": "Az e-mailt pótoljuk",
+    "phoneLabel": "Telefon",
+    "phonePending": "A telefonszámot pótoljuk",
+    "addressLabel": "Cím",
+    "addressValue": "Krasznahorkaváralja, Szlovákia",
+    "socialLabel": "Közösségi oldalak",
+    "orgTitle": "Üzemeltető",
+    "orgName": "OZ Tymián – lovak a vár alatt"
+  },
+  "footer": {
+    "tagline": "Élmények lovakkal és erdőpedagógia Krasznahorkaváralján.",
+    "closingTitle": "Várunk téged!",
+    "closingBody": "Hívjon minket, és olyan időpontot egyeztetünk, ami Önöknek és a lovaknak is megfelel.",
+    "navTitle": "Oldalak",
+    "contactTitle": "Kapcsolat",
+    "followTitle": "Kövessen minket",
+    "fundingTitle": "A projektet a <tiLink>Terra Incognita</tiLink> program támogatta",
+    "fundingNote": "A publicitási szöveg pontos megfogalmazását a Publicitási kézikönyv szerint pótoljuk.",
+    "kskSupport": "35 000 €-val támogatta a Košický samosprávny kraj",
+    "rights": "© {year} OZ Tymián – lovak a vár alatt"
+  },
+  "language": {
+    "label": "Nyelv",
+    "switching": "Nyelvváltás…",
+    "sk": "Slovensky",
+    "hu": "Magyarul",
+    "en": "English"
+  },
+  "notFound": {
+    "title": "Az oldal nem található",
+    "body": "Ez az oldal nem létezik, vagy át lett helyezve."
+  }
+}

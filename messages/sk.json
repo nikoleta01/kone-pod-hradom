@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "siteName": "OZ Tymián – kone pod hradom",
+    "shortName": "kone pod hradom",
+    "title": "Kone pod hradom | Krásnohorské Podhradie",
+    "description": "Zážitky s koňmi a lesná pedagogika v Krásnohorskom Podhradí. Vozenie detí, tvorivé dielne z prírodných materiálov a pripravované Ekocentrum pri koňoch."
+  },
+  "common": {
+    "pending": "doplníme",
+    "comingSoon": "Pripravujeme"
+  },
+  "nav": {
+    "home": "Úvod",
+    "about": "O nás",
+    "services": "Ponuka",
+    "ekovan": "Ekovan",
+    "gallery": "Galéria",
+    "booking": "Rezervácia",
+    "contact": "Kontakt",
+    "menu": "Menu",
+    "close": "Zavrieť",
+    "skipToContent": "Preskočiť na obsah"
+  },
+  "actions": {
+    "call": "Zavolajte nám",
+    "callShort": "Zavolať",
+    "callPending": "Číslo doplníme",
+    "seeOffer": "Pozrieť ponuku",
+    "contactUs": "Kontakt",
+    "learnMore": "Zistiť viac",
+    "backHome": "Späť na úvod"
+  },
+  "home": {
+    "heroEyebrow": "Krásnohorské Podhradie",
+    "heroTitle": "Kone pod hradom",
+    "heroPhotoAlt": "Dva vraníky stoja v zasneženom výbehu, nad nimi Krásnohorský hrad.",
+    "thesis": "„Kone — naši kamaráti a učitelia.“",
+    "heroSubtitle": "Sme občianske združenie Tymián. Deti sa u nás stretnú s koňmi aj s lesom — pokojne, bezpečne a vlastným tempom.",
+    "workshopSchedule": "Tvorivé dielne: utorok 14:00 – 15:00",
+    "outdoors": "V prírode, na čerstvom vzduchu",
+    "callNote": "Termín a vek dieťaťa najrýchlejšie doladíme telefonicky.",
+    "introTitle": "Miesto, kde sa deti stretnú s koňmi aj s lesom",
+    "introBody": "V našom areáli v Krásnohorskom Podhradí ponúkame autentický kontakt s koňmi a prírodou – od prvého pohladenia cez starostlivosť o zvieratá až po vozenie a tvorivé dielne v duchu lesnej pedagogiky. Veríme, že priamy kontakt so zvieraťom učí deti trpezlivosti, rešpektu a zodpovednosti lepšie než akákoľvek učebnica.",
+    "ekovanLabel": "Projekt vo výstavbe",
+    "ekovanTitle": "Budujeme Ekocentrum pri koňoch",
+    "ekovanBody": "V rámci projektu Ekovan vytvárame priestor, ktorý spojí kontakt s koňmi, environmentálnu výchovu a oddych v prírode.",
+    "visitTitle": "Príďte za nami",
+    "visitBody": "Nájdete nás v Krásnohorskom Podhradí, na dohľad od Krásnohorského hradu. Termín návštevy si s nami dohodnite vopred — povedzte nám, koľko má vaše dieťa rokov, a poradíme, čo mu bude sedieť.",
+    "orFollow": "Alebo nás sledujte",
+    "servicesTitle": "Čo u nás zažijete",
+    "servicesSubtitle": "Programy pre rodiny s deťmi, školské skupiny aj turistov."
+  },
+  "about": {
+    "title": "O nás",
+    "lead": "OZ Tymián – kone pod hradom",
+    "body1": "Naša činnosť je zameraná na zážitky s koňmi, prírodou a environmentálnym vzdelávaním. Veríme, že priamy kontakt so zvieraťom učí deti trpezlivosti, rešpektu a zodpovednosti lepšie než akákoľvek učebnica.",
+    "body2": "Návštevníkom otvárame náš areál po celý rok – či už si k nám prídete len pohladiť kone, zviezť deti, alebo sa zapojiť do tvorivej dielne.",
+    "valuesTitle": "Na čom nám záleží",
+    "value1Title": "Rešpekt ku koňom",
+    "value1Body": "Pracujeme s koňmi ohľaduplne a v ich tempe. Návštevníkov učíme rozumieť reči ich tela.",
+    "value2Title": "Učenie zážitkom",
+    "value2Body": "Environmentálnu výchovu robíme rukami – v záhrade, na zmyslovom chodníku, pri koňoch.",
+    "value3Title": "Otvorené pre všetkých",
+    "value3Body": "Rodiny s deťmi, školské skupiny aj turisti sú u nás vítaní."
+  },
+  "services": {
+    "title": "Ponuka",
+    "lead": "Zážitky s koňmi a lesom počas celého roka",
+    "intro": "Programy prispôsobujeme veku a skúsenostiam skupiny. Termín si dohodneme vopred — zavolajte nám a poradíme, čo bude vášmu dieťaťu sedieť.",
+    "items": {
+      "vozenie-deti": {
+        "title": "Vozenie sa na koni",
+        "description": "Pokojné a bezpečné vozenie v prírode – prvý kontakt s koňom pre najmenších, vždy vedené."
+      },
+      "lesna-pedagogika": {
+        "title": "Lesná pedagogika",
+        "description": "Objavujeme les všetkými zmyslami. Zážitky, ktoré rozvíjajú vzťah k prírode a sebadôveru."
+      },
+      "workshopy": {
+        "title": "Tvorivé dielne",
+        "description": "Tvoríme z prírodných materiálov, ktoré nájdeme okolo nás. Tvoríme, objavujeme, zažívame prírodu."
+      },
+      "jazdenie": {
+        "title": "Jazdenie na koňoch",
+        "description": "Vedené jazdenie v areáli pre začiatočníkov aj pokročilejších, vždy pod dohľadom."
+      },
+      "zoznamenie-s-konmi": {
+        "title": "Zoznamovanie sa s koňmi",
+        "description": "Spoznávanie koní a starostlivosť o ne v našom areáli: česanie, kŕmenie, príprava."
+      },
+      "ekocentrum-programy": {
+        "title": "Programy v Ekocentre",
+        "description": "Environmentálne vzdelávacie programy v pripravovanom Ekocentre pri koňoch."
+      }
+    },
+    "ageLabel": "Vek",
+    "ageValue": "{min}–{max} r.",
+    "agePending": "Vek doladíme telefonicky",
+    "durationLabel": "Trvanie",
+    "durationValue": "{minutes} min",
+    "capacityLabel": "Kapacita",
+    "capacityValue": "do {count} osôb",
+    "termsPending": "Trvanie, kapacitu aj cenu dohodneme telefonicky.",
+    "photoPending": "Fotografiu doplníme",
+    "priceOnRequest": "Cena na vyžiadanie"
+  },
+  "ekovan": {
+    "title": "Ekovan – Ekocentrum pri koňoch",
+    "lead": "Priestor, ktorý spojí kontakt s koňmi, environmentálnu výchovu a oddych v prírode.",
+    "body": "Cieľom projektu je vytvoriť miesto pre rodiny s deťmi, školy aj turistov, kde si budú môcť užiť autentický kontakt s prírodou a zvieratami.",
+    "partsTitle": "Čo v Ekovane vznikne",
+    "parts": {
+      "maringotka": {
+        "title": "Edukačný priestor v maringotke",
+        "description": "Zázemie pre vzdelávacie programy za každého počasia."
+      },
+      "tvoriva-zona": {
+        "title": "Zóna na tvorivé a vzdelávacie aktivity",
+        "description": "Miesto pre workshopy, dielne a prácu so školskými skupinami."
+      },
+      "bylinkova-zahrada": {
+        "title": "Bylinková záhrada",
+        "description": "Živá učebnica – bylinky, ktoré si návštevníci môžu ovoňať aj ochutnať."
+      },
+      "zmyslovy-chodnik": {
+        "title": "Zmyslový chodník",
+        "description": "Prírodné povrchy, ktoré sa objavujú bosými nohami."
+      },
+      "jazdiaren": {
+        "title": "Jazdiareň",
+        "description": "Bezpečný priestor na jazdenie a prácu s koňmi."
+      },
+      "zazemie": {
+        "title": "Zázemie pre návštevníkov",
+        "description": "Posedenie, tieň a miesto na oddych uprostred prírody."
+      }
+    },
+    "statusTitle": "Stav projektu",
+    "statusBody": "Projekt je vo výstavbe. O jednotlivých fázach informujeme na našich sociálnych sieťach."
+  },
+  "gallery": {
+    "title": "Galéria",
+    "lead": "Kone, deti a miesto pod hradom",
+    "empty": "Ďalšie fotografie pripravujeme. Zatiaľ nás nájdete na Facebooku a Instagrame.",
+    "photos": {
+      "zima-pod-hradom": "Dva vraníky v zasneženom výbehu, nad nimi Krásnohorský hrad.",
+      "deti-v-prirode": "Deti na deke v tráve, jedno z nich drží na dlani chrobáka."
+    }
+  },
+  "booking": {
+    "title": "Rezervácia",
+    "lead": "Online rezervácie pripravujeme",
+    "body": "Rezervačný systém pre vozenie detí, jazdenie a tvorivé dielne spúšťame čoskoro. Dovtedy si termín, prosím, dohodnite telefonicky — je to aj najrýchlejšie.",
+    "cta": "Prejsť na kontakt"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "lead": "Ozvite sa nám",
+    "body": "Termín návštevy si dohodnite vopred. Najrýchlejšie je zavolať — povedzte nám, koľko má vaše dieťa rokov a koľko vás príde, a poradíme, čo bude sedieť.",
+    "emailLabel": "E-mail",
+    "emailPending": "E-mail doplníme",
+    "phoneLabel": "Telefón",
+    "phonePending": "Telefónne číslo doplníme",
+    "addressLabel": "Adresa",
+    "addressValue": "Krásnohorské Podhradie, Slovensko",
+    "socialLabel": "Sociálne siete",
+    "orgTitle": "Prevádzkovateľ",
+    "orgName": "OZ Tymián – kone pod hradom"
+  },
+  "footer": {
+    "tagline": "Zážitky s koňmi a lesná pedagogika v Krásnohorskom Podhradí.",
+    "closingTitle": "Tešíme sa na teba!",
+    "closingBody": "Zavolajte nám a dohodneme termín, ktorý bude sedieť vám aj koňom.",
+    "navTitle": "Stránky",
+    "contactTitle": "Kontakt",
+    "followTitle": "Sledujte nás",
+    "fundingTitle": "Projekt podporený z programu <tiLink>Terra Incognita</tiLink>",
+    "fundingNote": "Presné znenie textu publicity doplníme podľa Manuálu publicity.",
+    "kskSupport": "Podporené sumou 35 000 € od Košického samosprávneho kraja",
+    "rights": "© {year} OZ Tymián – kone pod hradom"
+  },
+  "language": {
+    "label": "Jazyk",
+    "switching": "Prepínam jazyk…",
+    "sk": "Slovensky",
+    "hu": "Magyarul",
+    "en": "English"
+  },
+  "notFound": {
+    "title": "Stránka sa nenašla",
+    "body": "Táto stránka neexistuje alebo bola presunutá."
+  }
+}

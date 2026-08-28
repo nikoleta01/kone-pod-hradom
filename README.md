@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kone pod hradom
 
-## Getting Started
+Website for **OZ Tymián – kone pod hradom** (Krásnohorské Podhradie) and the
+**Ekovan – Ekocentrum pri koňoch** project, supported by the Terra Incognita
+programme.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 (App Router, Turbopack) + React 19
+- Tailwind CSS v4 — design tokens in `src/app/globals.css`
+- `next-intl` v4 — Slovak (default), Hungarian, English with localized URLs
+- Fully static: every page is prerendered at build time
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev     # http://localhost:3000 -> redirects to /sk
+npm run build
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Layout
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+messages/                 sk.json | hu.json | en.json — all copy lives here
+src/
+  app/[locale]/           one folder per route, named with the Slovak pathname
+  components/             header, footer, publicity block, page header
+  content/site.ts         contact details + social links
+  content/services.ts     the bookable catalogue (see below)
+  i18n/routing.ts         locales + the localized pathname map
+  i18n/navigation.ts      locale-aware Link / router — always import from here
+  lib/metadata.ts         canonical + hreflang per page
+  proxy.ts                next-intl middleware (Next 16 calls it "proxy")
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Adding or changing content
 
-## Learn More
+Copy is never hardcoded in components. Edit `messages/sk.json` and mirror the
+same keys in `hu.json` and `en.json` — the three files must stay in sync.
 
-To learn more about Next.js, take a look at the following resources:
+Adding a page means: a folder under `src/app/[locale]/`, an entry in
+`pathnames` in `src/i18n/routing.ts`, and nav entries in `site-header.tsx` /
+`site-footer.tsx`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Room left for the reservation system
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The booking flow is planned but not built. The seams are already in place:
 
-## Deploy on Vercel
+- **`/rezervacia`** (`/foglalas`, `/booking`) exists as a "coming soon" page,
+  already in the nav and already indexed. The booking UI replaces its body.
+- **`src/content/services.ts`** holds the catalogue as typed records with
+  `durationMinutes`, `capacity`, `priceEur` and `bookable`. These become the
+  rows the booking flow reads; no page or translation needs to change.
+- Marketing copy lives in JSON, so adding a database touches reservations only.
+- When it lands: Neon Postgres for the data, an auth-gated `/admin` for the
+  organisers (a real login, not a hidden URL), Resend for confirmation e-mails.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Before going live
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [ ] Real e-mail and phone in `src/content/site.ts`
+- [ ] Three Terra Incognita logos in `public/publicity/` (see the README there)
+- [ ] The prescribed funding sentence per the publicity manual
+- [ ] Photographs in `public/galeria/`, listed in the gallery page
+- [ ] `NEXT_PUBLIC_SITE_URL` set to the real domain
+- [ ] Native review of the Hungarian and English copy
