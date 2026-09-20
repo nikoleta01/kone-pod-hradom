@@ -27,22 +27,22 @@ export async function SiteFooter() {
 
   return (
     <footer className="mt-24">
-      <div className="border-t border-line bg-cream">
+      <div className="border-t-2 border-emerald bg-cream">
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:px-6 md:grid-cols-3 md:gap-10 md:py-12">
           <div>
-            <p className="font-serif text-lg text-bark">{site.name}</p>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-bark-soft">
+            <p className="font-stencil text-lg text-charcoal">{site.name}</p>
+            <p className="mt-3 max-w-xs text-sm leading-relaxed text-charcoal-soft">
               {t("tagline")}
             </p>
 
-            <p className="mt-6 text-sm font-medium text-bark">
+            <p className="mt-6 text-sm font-medium text-charcoal">
               {t.rich("fundingTitle", {
                 tiLink: (chunks) => (
                   <a
                     href={site.funding.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="underline underline-offset-4 hover:text-moss"
+                    className="underline underline-offset-4 hover:text-emerald"
                   >
                     {chunks}
                   </a>
@@ -81,17 +81,17 @@ export async function SiteFooter() {
                 />
               </a>
             </div>
-            <p className="mt-2 text-xs text-bark-soft">{t("kskSupport")}</p>
+            <p className="mt-2 text-xs text-charcoal-soft">{t("kskSupport")}</p>
           </div>
 
           <nav aria-label={t("navTitle")}>
-            <h2 className="text-sm font-semibold text-bark">{t("navTitle")}</h2>
+            <h2 className="text-sm font-semibold text-charcoal">{t("navTitle")}</h2>
             <ul className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2 md:block md:space-y-2">
               {footerNav.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-bark-soft transition hover:text-bark"
+                    className="text-sm text-charcoal-soft transition hover:text-charcoal"
                   >
                     {tNav(item.key)}
                   </Link>
@@ -101,17 +101,17 @@ export async function SiteFooter() {
           </nav>
 
           <div>
-            <h2 className="text-sm font-semibold text-bark">
+            <h2 className="text-sm font-semibold text-charcoal">
               {t("contactTitle")}
             </h2>
-            <ul className="mt-3 space-y-2 text-sm text-bark-soft">
+            <ul className="mt-3 space-y-2 text-sm text-charcoal-soft">
               {tel ? (
                 <li className="flex items-center gap-2">
                   <TbPhone
-                    className="h-4 w-4 shrink-0 text-moss"
+                    className="h-4 w-4 shrink-0 text-emerald"
                     aria-hidden="true"
                   />
-                  <a href={tel} className="transition hover:text-bark">
+                  <a href={tel} className="transition hover:text-charcoal">
                     {site.phone}
                   </a>
                 </li>
@@ -120,7 +120,7 @@ export async function SiteFooter() {
                 <li>
                   <a
                     href={`mailto:${site.email}`}
-                    className="transition hover:text-bark"
+                    className="transition hover:text-charcoal"
                   >
                     {site.email}
                   </a>
@@ -128,14 +128,14 @@ export async function SiteFooter() {
               ) : null}
               <li className="flex items-center gap-2">
                 <TbMapPin
-                  className="h-4 w-4 shrink-0 text-moss"
+                  className="h-4 w-4 shrink-0 text-emerald"
                   aria-hidden="true"
                 />
                 {addressLine()}
               </li>
             </ul>
 
-            <h2 className="mt-6 text-sm font-semibold text-bark">
+            <h2 className="mt-6 text-sm font-semibold text-charcoal">
               {t("followTitle")}
             </h2>
             <ul className="mt-3 flex gap-4 text-sm">
@@ -145,7 +145,7 @@ export async function SiteFooter() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Facebook"
-                  className="text-moss transition hover:opacity-80"
+                  className="text-emerald transition hover:opacity-80"
                 >
                   <TbBrandFacebook className="h-5 w-5" aria-hidden="true" />
                 </a>
@@ -156,7 +156,7 @@ export async function SiteFooter() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Instagram"
-                  className="text-moss transition hover:opacity-80"
+                  className="text-emerald transition hover:opacity-80"
                 >
                   <TbBrandInstagram className="h-5 w-5" aria-hidden="true" />
                 </a>
@@ -165,7 +165,7 @@ export async function SiteFooter() {
           </div>
         </div>
 
-        <p className="mx-auto max-w-6xl px-5 py-4 text-xs text-bark-soft sm:px-6">
+        <p className="mx-auto max-w-6xl px-5 py-4 text-xs text-charcoal-soft sm:px-6">
           <FooterRights buildYear={new Date().getFullYear()} />
         </p>
       </div>

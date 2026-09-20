@@ -25,7 +25,7 @@ export default async function ServicesPage({params}: Props) {
       <PageHeader title={t('title')} lead={t('lead')} />
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-20">
-        <p className="max-w-2xl text-lg leading-relaxed text-bark-soft">
+        <p className="max-w-2xl text-lg leading-relaxed text-charcoal-soft">
           {t('intro')}
         </p>
 
@@ -33,12 +33,12 @@ export default async function ServicesPage({params}: Props) {
           {services.map((service) => (
             <li
               key={service.id}
-              className="flex flex-col rounded-2xl border border-line bg-sand/25 p-7"
+              className="flex flex-col rounded-2xl border border-brown bg-card/25 p-7"
             >
-              <h2 className="font-serif text-2xl text-bark">
+              <h2 className="font-serif text-2xl text-charcoal">
                 {t(`items.${service.id}.title`)}
               </h2>
-              <p className="mt-3 leading-relaxed text-bark-soft">
+              <p className="mt-3 leading-relaxed text-charcoal-soft">
                 {t(`items.${service.id}.description`)}
               </p>
 
@@ -46,10 +46,10 @@ export default async function ServicesPage({params}: Props) {
                 Duration and capacity render only when the association has
                 actually supplied them. They are not invented.
               */}
-              <dl className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-sm text-bark-soft">
+              <dl className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-sm text-charcoal-soft">
                 {service.ageRange ? (
                   <div>
-                    <dt className="inline font-medium text-bark">
+                    <dt className="inline font-medium text-charcoal">
                       {t('ageLabel')}:{' '}
                     </dt>
                     <dd className="inline">
@@ -62,7 +62,7 @@ export default async function ServicesPage({params}: Props) {
                 ) : null}
                 {service.durationMinutes ? (
                   <div>
-                    <dt className="inline font-medium text-bark">
+                    <dt className="inline font-medium text-charcoal">
                       {t('durationLabel')}:{' '}
                     </dt>
                     <dd className="inline">
@@ -72,7 +72,7 @@ export default async function ServicesPage({params}: Props) {
                 ) : null}
                 {service.capacity ? (
                   <div>
-                    <dt className="inline font-medium text-bark">
+                    <dt className="inline font-medium text-charcoal">
                       {t('capacityLabel')}:{' '}
                     </dt>
                     <dd className="inline">
@@ -82,14 +82,14 @@ export default async function ServicesPage({params}: Props) {
                 ) : null}
               </dl>
 
-              <p className="mt-4 text-sm text-bark-soft">
+              <p className="mt-4 text-sm text-charcoal-soft">
                 {t('priceOnRequest')}
               </p>
 
               {/* Swap this for a real booking button once `bookable` flips. */}
               <Link
                 href="/kontakt"
-                className="mt-6 inline-block self-start rounded-full border border-line px-5 py-2.5 text-sm font-semibold text-bark transition hover:bg-sand"
+                className="mt-6 inline-block self-start rounded-full border border-brown px-5 py-2.5 text-sm font-semibold text-charcoal transition hover:bg-card"
               >
                 {tActions('contactUs')}
               </Link>

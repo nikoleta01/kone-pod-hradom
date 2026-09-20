@@ -8,7 +8,14 @@ import {defineRouting} from 'next-intl/routing';
 export const routing = defineRouting({
   locales: ['sk', 'hu', 'en'],
   defaultLocale: 'sk',
-  localePrefix: 'always',
+  localePrefix: 'as-needed',
+  // next-intl gates both the Accept-Language header AND the locale cookie
+  // behind this one flag — there's no way to disable just the header. A
+  // fresh visit to the bare `/` always serves Slovak, full stop, even for a
+  // visitor who picked hu/en on a previous visit. Site-internal navigation
+  // (the `Link` from ./navigation) isn't affected: it already renders an
+  // explicit locale-prefixed href, so it never needs detection to begin with.
+  localeDetection: false,
   pathnames: {
     '/': '/',
     '/o-nas': {

@@ -24,13 +24,13 @@ export default async function BookingPage({params}: Props) {
       <PageHeader title={t('title')} lead={t('lead')} />
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-20">
-        <p className="max-w-2xl text-lg leading-relaxed text-bark-soft">
+        <p className="max-w-2xl text-lg leading-relaxed text-charcoal-soft">
           {t('body')}
         </p>
 
         <Link
           href="/kontakt"
-          className="mt-8 inline-block rounded-full bg-moss px-6 py-3 text-sm font-semibold text-cream transition hover:bg-moss-dark"
+          className="mt-8 inline-block rounded-full bg-emerald px-6 py-3 text-sm font-semibold text-cream transition hover:bg-emerald-deep"
         >
           {t('cta')}
         </Link>

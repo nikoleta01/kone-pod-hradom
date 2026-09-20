@@ -29,6 +29,12 @@ export const photos: Photo[] = [
     src: '/galeria/deti-v-prirode.jpg',
     width: 1440,
     height: 1440
+  },
+  {
+    id: 'child',
+    src: '/galeria/child.jpg',
+    width: 1440,
+    height: 1440
   }
 ];
 

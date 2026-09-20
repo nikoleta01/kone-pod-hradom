@@ -1,27 +1,36 @@
 @import "tailwindcss";
 
 /*
- * Placeholder palette — warm, earthy, deliberately quiet so photographs of the
- * horses carry the page. Swap these values once the visual direction is set;
- * every component reads the tokens, so nothing else needs to change.
+ * Forest Trail Log — the site as a family's shared forest-school field
+ * journal. Emerald is the dominant page-scale ink (headings, borders, the
+ * primary phone card), not an accent; cream is the card/page ground; brown
+ * is structural only — binding rules and hole-punch marks, never a fill.
+ * See DESIGN.md for the full direction contract.
  */
 @theme {
-  --color-cream: #faf6ef;
-  --color-sand: #efe6d7;
-  --color-bark: #2f2a24;
-  --color-bark-soft: #5c5348;
-  --color-moss: #4a6b4a;
-  --color-moss-dark: #35503a;
-  --color-clay: #b4633c;
+  --color-cream: #fbf8f1;
+  --color-card: #f3eee1;
+  --color-charcoal: #262b26;
+  --color-charcoal-soft: #4a534c;
+  --color-emerald: #0e6b4a;
+  --color-emerald-deep: #0a4f37;
+  --color-emerald-soft: #e3eee8;
   /*
-   * Borders and separators. Dark brown rather than a tint of the ground, so
-   * every card, band and rule reads as a drawn edge. Opacity variants
-   * (border-line/60) give the softer separators without a second token.
+   * Structural rule/binding color — hole-punch dots and card borders. Dark
+   * brown rather than a tint of the ground, so every mark reads as drawn.
+   * Opacity variants (border-brown/60) give softer separators.
    */
-  --color-line: #54402e;
+  --color-brown: #6b4a31;
 
   --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-display), ui-serif, Georgia, serif;
+  /*
+   * `font-serif` is kept as the utility name so pages not yet rebuilt in the
+   * new direction keep working unchanged; the family behind it is now the
+   * stencil display face, not a literal serif. New work should reach for
+   * `font-stencil` (same font) so the name says what it actually is.
+   */
+  --font-serif: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  --font-stencil: var(--font-display), ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -34,19 +43,37 @@ html {
 
 body {
   background-color: var(--color-cream);
-  color: var(--color-bark);
+  color: var(--color-charcoal);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
 
 /* Visible focus ring for keyboard users — required for accessibility. */
 :focus-visible {
-  outline: 2px solid var(--color-moss);
+  outline: 2px solid var(--color-emerald);
   outline-offset: 2px;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+}
+
+/*
+ * Lets a real photograph bleed into the card ground instead of sitting in a
+ * hard-edged box — "going do stratena". Fades from its top on narrow
+ * screens (where it stacks below the text) and from its left on wide ones
+ * (where it sits beside the text), so the edge nearest the copy dissolves.
+ */
+.hero-photo-fade {
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 18%);
+  mask-image: linear-gradient(to bottom, transparent, black 18%);
+}
+
+@media (min-width: 768px) {
+  .hero-photo-fade {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%);
+    mask-image: linear-gradient(to right, transparent, black 15%);
   }
 }

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Inter, Source_Serif_4 } from "next/font/google";
+import { Inter, Big_Shoulders_Stencil } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
@@ -16,10 +16,14 @@ const body = Inter({
   display: "swap",
 });
 
-const display = Source_Serif_4({
+// The stencil face carries card headers and dated field-entry labels — the
+// world's own "stamped" lettering, never body copy. See DESIGN.md.
+const display = Big_Shoulders_Stencil({
   subsets: ["latin", "latin-ext"],
+  weight: ["600", "700", "800"],
   variable: "--font-display",
   display: "swap",
+  fallback: ["Arial Narrow", "Arial", "sans-serif"],
 });
 
 export function generateStaticParams() {

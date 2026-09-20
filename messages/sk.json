@@ -1,6 +1,6 @@
 {
   "meta": {
-    "siteName": "OZ Tymián – kone pod hradom",
+    "siteName": "Kone pod hradom",
     "shortName": "kone pod hradom",
     "title": "Kone pod hradom | Krásnohorské Podhradie",
     "description": "Zážitky s koňmi a lesná pedagogika v Krásnohorskom Podhradí. Vozenie detí, tvorivé dielne z prírodných materiálov a pripravované Ekocentrum pri koňoch."
@@ -144,7 +144,8 @@
     "empty": "Ďalšie fotografie pripravujeme. Zatiaľ nás nájdete na Facebooku a Instagrame.",
     "photos": {
       "zima-pod-hradom": "Dva vraníky v zasneženom výbehu, nad nimi Krásnohorský hrad.",
-      "deti-v-prirode": "Deti na deke v tráve, jedno z nich drží na dlani chrobáka."
+      "deti-v-prirode": "Deti na deke v tráve, jedno z nich drží na dlani chrobáka.",
+      "child": "Dievčatko sa s úsmevom túli k hrive gaštanového koňa, nad nimi jasná modrá obloha."
     }
   },
   "booking": {

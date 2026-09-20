@@ -30,7 +30,7 @@ export default async function GalleryPage({params}: Props) {
             {photos.map((photo) => (
               <li
                 key={photo.id}
-                className="overflow-hidden rounded-2xl border border-line bg-sand/40"
+                className="overflow-hidden rounded-2xl border border-brown bg-card/40"
               >
                 <Image
                   src={photo.src}
@@ -45,7 +45,7 @@ export default async function GalleryPage({params}: Props) {
           </ul>
         ) : null}
 
-        <p className="mt-8 max-w-xl text-lg leading-relaxed text-bark-soft">
+        <p className="mt-8 max-w-xl text-lg leading-relaxed text-charcoal-soft">
           {t('empty')}
         </p>
         <div className="mt-4 flex gap-4">
@@ -53,7 +53,7 @@ export default async function GalleryPage({params}: Props) {
             href={site.social.facebook}
             target="_blank"
             rel="noreferrer"
-            className="text-sm font-semibold text-moss underline underline-offset-4"
+            className="text-sm font-semibold text-emerald underline underline-offset-4"
           >
             Facebook
           </a>
@@ -61,7 +61,7 @@ export default async function GalleryPage({params}: Props) {
             href={site.social.instagram}
             target="_blank"
             rel="noreferrer"
-            className="text-sm font-semibold text-moss underline underline-offset-4"
+            className="text-sm font-semibold text-emerald underline underline-offset-4"
           >
             Instagram
           </a>

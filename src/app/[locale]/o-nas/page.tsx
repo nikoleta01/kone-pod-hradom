@@ -29,24 +29,24 @@ export default async function AboutPage({params}: Props) {
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-20">
         <div className="grid gap-6 md:grid-cols-2 md:gap-16">
-          <p className="text-lg leading-relaxed text-bark-soft">{t('body1')}</p>
-          <p className="text-lg leading-relaxed text-bark-soft">{t('body2')}</p>
+          <p className="text-lg leading-relaxed text-charcoal-soft">{t('body1')}</p>
+          <p className="text-lg leading-relaxed text-charcoal-soft">{t('body2')}</p>
         </div>
       </section>
 
-      <section className="border-y border-line bg-sand/30">
+      <section className="border-y border-brown bg-card/30">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-24">
-          <h2 className="font-serif text-3xl text-bark md:text-4xl">
+          <h2 className="font-serif text-3xl text-charcoal md:text-4xl">
             {t('valuesTitle')}
           </h2>
           <ul className="mt-10 grid gap-6 md:grid-cols-3">
             {values.map((value) => (
               <li
                 key={value.title}
-                className="rounded-2xl border border-line bg-cream p-6"
+                className="rounded-2xl border border-brown bg-cream p-6"
               >
-                <h3 className="font-serif text-xl text-bark">{value.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-bark-soft">
+                <h3 className="font-serif text-xl text-charcoal">{value.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-charcoal-soft">
                   {value.body}
                 </p>
               </li>
