@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/footer";
+import { StructuredData } from "@/components/structured-data";
 import { siteUrl } from "@/lib/metadata";
 import "../globals.css";
 
@@ -67,6 +68,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${body.variable} ${display.variable}`}>
       <body className="flex min-h-screen flex-col">
+        <StructuredData locale={locale as Locale} />
         <NextIntlClientProvider>
           <SiteHeader locale={locale as Locale} />
           <main id="obsah" className="flex-1">

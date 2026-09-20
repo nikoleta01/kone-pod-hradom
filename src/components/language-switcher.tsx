@@ -59,20 +59,18 @@ export function LanguageSwitcher({locale}: {locale: Locale}) {
           <div
             key={code}
             style={{transitionDelay: `${index * 60}ms`}}
-            className="grid grid-cols-[0fr] opacity-0 transition-[grid-template-columns,opacity] duration-300 ease-out group-hover/lang:grid-cols-[1fr] group-hover/lang:opacity-100 group-data-[expanded=true]/lang:grid-cols-[1fr] group-data-[expanded=true]/lang:opacity-100"
+            className="max-w-0 overflow-hidden opacity-0 transition-[max-width,opacity] duration-300 ease-out group-hover/lang:max-w-12 group-hover/lang:opacity-100 group-data-[expanded=true]/lang:max-w-12 group-data-[expanded=true]/lang:opacity-100"
           >
-            <div className="min-w-0 overflow-hidden">
-              <button
-                type="button"
-                lang={code}
-                disabled={isPending}
-                onClick={() => select(code)}
-                className="rounded-full px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-charcoal-soft transition hover:bg-emerald-soft hover:text-emerald-deep disabled:opacity-50"
-              >
-                {code}
-                <span className="sr-only"> – {t(code)}</span>
-              </button>
-            </div>
+            <button
+              type="button"
+              lang={code}
+              disabled={isPending}
+              onClick={() => select(code)}
+              className="rounded-full px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-charcoal-soft transition hover:bg-emerald-soft hover:text-emerald-deep disabled:opacity-50"
+            >
+              {code}
+              <span className="sr-only"> – {t(code)}</span>
+            </button>
           </div>
         ))}
 
