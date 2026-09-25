@@ -46,6 +46,13 @@ export async function generateMetadata({
       template: `%s | ${t("siteName")}`,
     },
     description: t("description"),
+    // Served straight from `public/` rather than through the app-dir icon
+    // convention: the .ico carries a greyscale+alpha 256px entry that Next's
+    // icon processing rejects ("PNG is not in RGBA format").
+    icons: {
+      icon: "/favicon.ico",
+      apple: "/apple-touch-icon.png",
+    },
   };
 }
 

@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type {Metadata, ResolvingMetadata} from 'next';
 import Image from 'next/image';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import type {Locale} from '@/i18n/routing';
@@ -9,9 +9,12 @@ import {buildMetadata} from '@/lib/metadata';
 
 type Props = {params: Promise<{locale: Locale}>};
 
-export async function generateMetadata({params}: Props): Promise<Metadata> {
+export async function generateMetadata(
+  {params}: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
   const {locale} = await params;
-  return buildMetadata({locale, namespace: 'gallery', href: '/galeria'});
+  return buildMetadata({locale, namespace: 'gallery', href: '/galeria', parent});
 }
 
 export default async function GalleryPage({params}: Props) {

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { photoById } from "@/content/photos";
-import { Entry, EntryDot } from "./entry";
+import { Entry } from "./entry";
 
 type HorseshoeColor = "brown" | "emerald" | "emerald-deep" | "charcoal-soft";
 
@@ -67,7 +67,6 @@ export async function IntroEntry() {
 
   return (
     <Entry>
-      <EntryDot />
       <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center md:gap-12">
         <div>
           <h2 className="font-stencil text-3xl text-charcoal md:text-4xl">

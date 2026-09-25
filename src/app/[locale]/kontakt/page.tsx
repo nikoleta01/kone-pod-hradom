@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type {Metadata, ResolvingMetadata} from 'next';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import type {Locale} from '@/i18n/routing';
 import {PageHeader} from '@/components/page-header';
@@ -7,9 +7,12 @@ import {buildMetadata} from '@/lib/metadata';
 
 type Props = {params: Promise<{locale: Locale}>};
 
-export async function generateMetadata({params}: Props): Promise<Metadata> {
+export async function generateMetadata(
+  {params}: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
   const {locale} = await params;
-  return buildMetadata({locale, namespace: 'contact', href: '/kontakt'});
+  return buildMetadata({locale, namespace: 'contact', href: '/kontakt', parent});
 }
 
 export default async function ContactPage({params}: Props) {

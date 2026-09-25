@@ -15,7 +15,6 @@ const footerNav: Array<{ href: AppPathname; key: string }> = [
   { href: "/ponuka", key: "services" },
   { href: "/ekovan", key: "ekovan" },
   { href: "/galeria", key: "gallery" },
-  { href: "/rezervacia", key: "booking" },
   { href: "/kontakt", key: "contact" },
 ];
 
@@ -26,8 +25,8 @@ export async function SiteFooter() {
   const tel = telHref();
 
   return (
-    <footer className="mt-24">
-      <div className="border-t-2 border-emerald bg-cream">
+    <footer>
+      <div className="border-t-2 border-emerald-deep bg-cream">
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:px-6 md:grid-cols-3 md:gap-10 md:py-12">
           <div>
             <p className="font-stencil text-lg text-charcoal">{site.name}</p>

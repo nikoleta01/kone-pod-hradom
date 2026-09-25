@@ -16,7 +16,6 @@
     "services": "Experiences",
     "ekovan": "Ekovan",
     "gallery": "Gallery",
-    "booking": "Booking",
     "contact": "Contact",
     "menu": "Menu",
     "close": "Close",
@@ -39,7 +38,7 @@
     "heroSubtitle": "We are the Tymián association. Children here meet the horses and the forest alike — calmly, safely, and at their own pace.",
     "workshopSchedule": "Creative workshop: Tuesdays 14:00 – 15:00",
     "outdoors": "Outdoors, in the fresh air",
-    "callNote": "The fastest way to settle a date and your child's age is a phone call.",
+    "callNote": "We arrange dates by phone.",
     "introTitle": "A place where children meet horses and the forest",
     "introBody": "On our grounds in Krásnohorské Podhradie we offer real contact with horses and nature – from the first stroke, through caring for the animals, to led rides and creative workshops in the spirit of forest pedagogy. We believe direct contact with an animal teaches children patience, respect and responsibility better than any textbook.",
     "ekovanLabel": "Project under construction",
@@ -49,7 +48,66 @@
     "visitBody": "You will find us in Krásnohorské Podhradie, within sight of Krásna Hôrka Castle. Please arrange your visit in advance — tell us how old your child is and we will suggest what suits them.",
     "orFollow": "Or follow us",
     "servicesTitle": "What you can do here",
-    "servicesSubtitle": "Programmes for families with children, school groups and travellers."
+    "servicesSubtitle": "Programmes for families with children, school groups and travellers.",
+    "visitAddressLabel": "Address",
+    "visitMapLink": "Open in maps",
+    "visitMapTitle": "Map: OZ Tymián – kone pod hradom, Krásnohorské Podhradie",
+    "visitRouteLabel": "Getting here",
+    "visitRouteBody": "Krásnohorské Podhradie sits right below Krásna Hôrka Castle, just past Rožňava on the road towards Košice. Detailed directions to the grounds are coming soon.",
+    "visitParkingLabel": "Where to park",
+    "visitParkingBody": "The exact parking spot is coming soon. Until then, ask us when you call."
+  },
+  "faq": {
+    "title": "Common questions",
+    "lead": "These are the questions parents ask us most. If yours isn’t here, give us a call.",
+    "items": {
+      "age": {
+        "q": "From what age can a child come?",
+        "a": "We adapt our programmes to age. The youngest get led rides, and older children can help care for the horses and ride. Tell us your child’s age and we’ll suggest what suits them."
+      },
+      "parents": {
+        "q": "Do parents stay with the children?",
+        "a": "Yes. Our programmes are for whole families. Parents stay with their children the whole time and can join in."
+      },
+      "clothes": {
+        "q": "What should we wear and bring?",
+        "a": "Comfortable clothes that can get dirty, and sturdy closed shoes. We’re outdoors, so dress for the weather, in layers in winter."
+      },
+      "weather": {
+        "q": "What if it rains or it’s cold?",
+        "a": "We run creative workshops all year round, winter included. If the weather is really bad, we’ll agree on another date."
+      },
+      "price": {
+        "q": "How much does it cost?",
+        "a": "The price depends on the programme and the size of the group. We’ll tell you the exact amount when you call."
+      },
+      "groups": {
+        "q": "Can schools and kindergartens come?",
+        "a": "Yes, we’re happy to welcome school and kindergarten groups. We agree the date, length and programme in advance, based on the children’s age and number."
+      }
+    }
+  },
+  "support": {
+    "eyebrow": "Civic association",
+    "title": "Support us",
+    "body": "We’re a civic association, and we run thanks to people who care about horses, nature and children. Your gift helps us look after the horses and build the Eco-centre.",
+    "taxTitle": "Give us 2 % (3 %) of your tax",
+    "taxBody": "If you pay income tax in Slovakia, you can assign part of it to us. It costs you nothing extra.",
+    "taxIco": "IČO",
+    "taxPending": "Details for the tax form are coming soon",
+    "amountLabel": "Choose an amount",
+    "customLabel": "Other amount",
+    "amountSummaryLabel": "Amount",
+    "anyAmount": "your choice",
+    "qrAlt": "Payment QR code, amount {amount}",
+    "scanHint": "Scan it in your banking app. On your phone? Copy the IBAN instead.",
+    "ibanLabel": "IBAN",
+    "copy": "Copy",
+    "copied": "Copied",
+    "recipientLabel": "Recipient",
+    "noteLabel": "Payment note",
+    "ibanPending": "Account number coming soon. Until then, give us a call.",
+    "demoWarning": "Demo IBAN, shown only in development. We’ll replace it with the real one before launch."
   },
   "about": {
     "title": "About us",
@@ -113,7 +171,7 @@
     "parts": {
       "maringotka": {
         "title": "Teaching space in a shepherd hut",
-        "description": "Shelter for educational programmes in any weather."
+        "description": "A 6.5 × 3 m shepherd hut with wooden cladding. Shelter for educational programmes in any weather."
       },
       "tvoriva-zona": {
         "title": "Creative and educational zone",
@@ -129,11 +187,19 @@
       },
       "jazdiaren": {
         "title": "Riding arena",
-        "description": "A safe space for riding and for working with the horses."
+        "description": "A 20 × 40 m sand arena with wooden fencing. A safe space for riding and for showing work with the horses."
       },
       "zazemie": {
         "title": "Visitor facilities",
-        "description": "Seating, shade and somewhere to rest in the middle of nature."
+        "description": "A wooden terrace with seating, shade and somewhere to rest in the middle of nature."
+      },
+      "mini-kaviaren": {
+        "title": "Mini café",
+        "description": "A 6 × 3 m container café. Simple refreshments, drinks and souvenirs, with an emphasis on local produce."
+      },
+      "eko-infrastruktura": {
+        "title": "Solar power and rainwater harvesting",
+        "description": "The grounds run on a low-cost, low-impact setup. Electricity comes from the sun, utility water from a rainwater system."
       }
     },
     "statusTitle": "Project status",
@@ -148,12 +214,6 @@
       "deti-v-prirode": "Children on a blanket in the grass, one holding a beetle on their palm.",
       "child": "A girl smiles as she rests against a chestnut horse's mane, under a clear blue sky."
     }
-  },
-  "booking": {
-    "title": "Booking",
-    "lead": "Online booking is in preparation",
-    "body": "A booking system for led rides, riding and creative workshops is coming soon. Until then please arrange a date by phone — it is the fastest way anyway.",
-    "cta": "Go to contact"
   },
   "contact": {
     "title": "Contact",

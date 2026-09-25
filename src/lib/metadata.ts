@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type {Metadata, ResolvingMetadata} from 'next';
 import {getTranslations} from 'next-intl/server';
 import {getPathname} from '@/i18n/navigation';
 import {routing, type AppPathname, type Locale} from '@/i18n/routing';
@@ -41,17 +41,27 @@ function alternates(href: AppPathname, locale: Locale) {
 export async function buildMetadata({
   locale,
   namespace,
-  href
+  href,
+  parent
 }: {
   locale: Locale;
   namespace: string;
   href: AppPathname;
+  /**
+   * The second argument Next passes to `generateMetadata`. Required, because a
+   * page that declares its own `openGraph` replaces the layout's wholesale —
+   * including the share card from `opengraph-image.tsx`. Reading the parent's
+   * images back out is what carries the card down to every page; drop this and
+   * only the home page keeps a picture when it is shared.
+   */
+  parent: ResolvingMetadata;
 }): Promise<Metadata> {
   const t = await getTranslations({locale, namespace});
   const tMeta = await getTranslations({locale, namespace: 'meta'});
 
   const title = t('title');
   const description = t.has('lead') ? t('lead') : tMeta('description');
+  const images = (await parent).openGraph?.images ?? undefined;
 
   return {
     title,
@@ -64,14 +74,15 @@ export async function buildMetadata({
       url: new URL(getPathname({href, locale}), siteUrl).toString(),
       locale,
       type: 'website',
-      siteName: tMeta('siteName')
+      siteName: tMeta('siteName'),
+      images
     },
-    // The card image itself comes from `app/[locale]/opengraph-image.tsx`;
-    // this only asks for the wide layout rather than the small square one.
     twitter: {
+      // Ask for the wide layout rather than the small square thumbnail.
       card: 'summary_large_image',
       title: `${title} | ${tMeta('siteName')}`,
-      description
+      description,
+      images
     }
   };
 }

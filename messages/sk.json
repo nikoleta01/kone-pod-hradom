@@ -16,7 +16,6 @@
     "services": "Ponuka",
     "ekovan": "Ekovan",
     "gallery": "Galéria",
-    "booking": "Rezervácia",
     "contact": "Kontakt",
     "menu": "Menu",
     "close": "Zavrieť",
@@ -39,7 +38,7 @@
     "heroSubtitle": "Sme občianske združenie Tymián. Deti sa u nás stretnú s koňmi aj s lesom — pokojne, bezpečne a vlastným tempom.",
     "workshopSchedule": "Tvorivé dielne: utorok 14:00 – 15:00",
     "outdoors": "V prírode, na čerstvom vzduchu",
-    "callNote": "Termín a vek dieťaťa najrýchlejšie doladíme telefonicky.",
+    "callNote": "Termín dohodneme telefonicky.",
     "introTitle": "Miesto, kde sa deti stretnú s koňmi aj s lesom",
     "introBody": "V našom areáli v Krásnohorskom Podhradí ponúkame autentický kontakt s koňmi a prírodou – od prvého pohladenia cez starostlivosť o zvieratá až po vozenie a tvorivé dielne v duchu lesnej pedagogiky. Veríme, že priamy kontakt so zvieraťom učí deti trpezlivosti, rešpektu a zodpovednosti lepšie než akákoľvek učebnica.",
     "ekovanLabel": "Projekt vo výstavbe",
@@ -49,7 +48,66 @@
     "visitBody": "Nájdete nás v Krásnohorskom Podhradí, na dohľad od Krásnohorského hradu. Termín návštevy si s nami dohodnite vopred — povedzte nám, koľko má vaše dieťa rokov, a poradíme, čo mu bude sedieť.",
     "orFollow": "Alebo nás sledujte",
     "servicesTitle": "Čo u nás zažijete",
-    "servicesSubtitle": "Programy pre rodiny s deťmi, školské skupiny aj turistov."
+    "servicesSubtitle": "Programy pre rodiny s deťmi, školské skupiny aj turistov.",
+    "visitAddressLabel": "Adresa",
+    "visitMapLink": "Otvoriť v mapách",
+    "visitMapTitle": "Mapa: OZ Tymián – kone pod hradom, Krásnohorské Podhradie",
+    "visitRouteLabel": "Ako sa k nám dostanete",
+    "visitRouteBody": "Krásnohorské Podhradie leží priamo pod hradom Krásna Hôrka, kúsok za Rožňavou po ceste smerom na Košice. Presný popis cesty k areálu doplníme.",
+    "visitParkingLabel": "Kde zaparkovať",
+    "visitParkingBody": "Presné miesto na parkovanie doplníme. Dovtedy sa nás spýtajte pri telefonáte a poradíme."
+  },
+  "faq": {
+    "title": "Časté otázky",
+    "lead": "Na toto sa nás rodičia pýtajú najčastejšie. Ak tu odpoveď nenájdete, zavolajte nám.",
+    "items": {
+      "age": {
+        "q": "Od koľkých rokov môže dieťa prísť?",
+        "a": "Programy prispôsobujeme veku. Pre najmenších máme vedené vozenie, staršie deti sa môžu zapojiť do starostlivosti o kone aj do jazdenia. Povedzte nám vek dieťaťa a poradíme, čo mu bude sedieť."
+      },
+      "parents": {
+        "q": "Zostávajú rodičia s deťmi?",
+        "a": "Áno. Naše programy sú pre celé rodiny, rodičia sú s deťmi po celý čas a môžu sa zapojiť."
+      },
+      "clothes": {
+        "q": "Čo si obliecť a čo si priniesť?",
+        "a": "Pohodlné oblečenie, ktoré sa môže zašpiniť, a pevnú uzavretú obuv. Sme vonku, preto sa oblečte podľa počasia, v zime vo vrstvách."
+      },
+      "weather": {
+        "q": "Čo keď prší alebo je zima?",
+        "a": "Tvorivé dielne robíme počas celého roka, aj v zime. Ak je počasie naozaj nepriaznivé, dohodneme sa na inom termíne."
+      },
+      "price": {
+        "q": "Koľko to stojí?",
+        "a": "Cena závisí od programu a veľkosti skupiny. Presnú sumu vám povieme pri telefonáte."
+      },
+      "groups": {
+        "q": "Môžu prísť aj školy a škôlky?",
+        "a": "Áno, radi privítame školské aj škôlkarske skupiny. Termín, trvanie a program dohodneme vopred podľa veku a počtu detí."
+      }
+    }
+  },
+  "support": {
+    "eyebrow": "Občianske združenie",
+    "title": "Podporte nás",
+    "body": "Sme občianske združenie a fungujeme vďaka ľuďom, ktorým záleží na koňoch, prírode a deťoch. Váš dar nám pomáha starať sa o kone a budovať Ekocentrum.",
+    "taxTitle": "Venujte nám 2 % (3 %) z dane",
+    "taxBody": "Časť dane z príjmu, ktorú aj tak zaplatíte, môžete poukázať nám. Vás to nestojí nič navyše.",
+    "taxIco": "IČO",
+    "taxPending": "Údaje pre daňové priznanie doplníme",
+    "amountLabel": "Vyberte sumu",
+    "customLabel": "Iná suma",
+    "amountSummaryLabel": "Suma",
+    "anyAmount": "podľa vás",
+    "qrAlt": "QR kód na platbu, suma {amount}",
+    "scanHint": "Naskenujte v aplikácii svojej banky. Na mobile skopírujte IBAN.",
+    "ibanLabel": "IBAN",
+    "copy": "Kopírovať",
+    "copied": "Skopírované",
+    "recipientLabel": "Príjemca",
+    "noteLabel": "Správa pre príjemcu",
+    "ibanPending": "Číslo účtu doplníme. Zatiaľ nám zavolajte.",
+    "demoWarning": "Ukážkový IBAN, zobrazuje sa len pri vývoji. Pred spustením ho nahradíme skutočným."
   },
   "about": {
     "title": "O nás",
@@ -113,7 +171,7 @@
     "parts": {
       "maringotka": {
         "title": "Edukačný priestor v maringotke",
-        "description": "Zázemie pre vzdelávacie programy za každého počasia."
+        "description": "Maringotka 6,5 × 3 m s dreveným obkladom. Zázemie pre vzdelávacie programy za každého počasia."
       },
       "tvoriva-zona": {
         "title": "Zóna na tvorivé a vzdelávacie aktivity",
@@ -129,11 +187,19 @@
       },
       "jazdiaren": {
         "title": "Jazdiareň",
-        "description": "Bezpečný priestor na jazdenie a prácu s koňmi."
+        "description": "Piesková jazdiareň 20 × 40 m s dreveným oplotením. Bezpečný priestor na jazdenie a ukážky práce s koňmi."
       },
       "zazemie": {
         "title": "Zázemie pre návštevníkov",
-        "description": "Posedenie, tieň a miesto na oddych uprostred prírody."
+        "description": "Drevená terasa so sedením, tieň a miesto na oddych uprostred prírody."
+      },
+      "mini-kaviaren": {
+        "title": "Mini-kaviareň",
+        "description": "Kontajnerová kaviareň 6 × 3 m. Jednoduché občerstvenie, nápoje a suveníry s dôrazom na lokálne produkty."
+      },
+      "eko-infrastruktura": {
+        "title": "Solárny systém a zber dažďovej vody",
+        "description": "Areál funguje v nízkonákladovom a ekologickom režime. Elektrinu dodáva slnko, úžitkovú vodu zachytáva dažďový systém."
       }
     },
     "statusTitle": "Stav projektu",
@@ -148,12 +214,6 @@
       "deti-v-prirode": "Deti na deke v tráve, jedno z nich drží na dlani chrobáka.",
       "child": "Dievčatko sa s úsmevom túli k hrive gaštanového koňa, nad nimi jasná modrá obloha."
     }
-  },
-  "booking": {
-    "title": "Rezervácia",
-    "lead": "Online rezervácie pripravujeme",
-    "body": "Rezervačný systém pre vozenie detí, jazdenie a tvorivé dielne spúšťame čoskoro. Dovtedy si termín, prosím, dohodnite telefonicky — je to aj najrýchlejšie.",
-    "cta": "Prejsť na kontakt"
   },
   "contact": {
     "title": "Kontakt",

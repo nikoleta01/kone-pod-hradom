@@ -16,7 +16,6 @@
     "services": "Kínálat",
     "ekovan": "Ekovan",
     "gallery": "Galéria",
-    "booking": "Foglalás",
     "contact": "Kapcsolat",
     "menu": "Menü",
     "close": "Bezárás",
@@ -39,7 +38,7 @@
     "heroSubtitle": "A Tymián polgári társulás vagyunk. Nálunk a gyerekek a lovakkal és az erdővel is találkoznak — nyugodtan, biztonságosan, a saját tempójukban.",
     "workshopSchedule": "Kézműves foglalkozás: kedd 14:00 – 15:00",
     "outdoors": "A szabadban, friss levegőn",
-    "callNote": "Az időpontot és a gyermek korát telefonon egyeztetjük a leggyorsabban.",
+    "callNote": "Az időpontot telefonon egyeztetjük.",
     "introTitle": "Hely, ahol a gyerekek lovakkal és erdővel találkoznak",
     "introBody": "Krasznahorkaváraljai területünkön valódi kapcsolatot kínálunk a lovakkal és a természettel – az első simogatástól az állatok gondozásán át a lovagoltatásig és az erdőpedagógia szellemében tartott kézműves foglalkozásokig. Hisszük, hogy az állattal való közvetlen kapcsolat türelemre, tiszteletre és felelősségre tanítja a gyerekeket, jobban, mint bármelyik tankönyv.",
     "ekovanLabel": "Épülő projekt",
@@ -49,7 +48,66 @@
     "visitBody": "Krasznahorkaváralján találnak minket, a krasznahorkai vár tövében. Az időpontot kérjük, előre egyeztessék — mondják meg, hány éves a gyermekük, és tanácsot adunk, mi illik hozzá.",
     "orFollow": "Vagy kövessen minket",
     "servicesTitle": "Mit élhetnek át nálunk",
-    "servicesSubtitle": "Programok gyerekes családoknak, iskolai csoportoknak és turistáknak."
+    "servicesSubtitle": "Programok gyerekes családoknak, iskolai csoportoknak és turistáknak.",
+    "visitAddressLabel": "Cím",
+    "visitMapLink": "Megnyitás térképen",
+    "visitMapTitle": "Térkép: OZ Tymián – kone pod hradom, Krasznahorkaváralja",
+    "visitRouteLabel": "Hogyan jut el hozzánk",
+    "visitRouteBody": "Krasznahorkaváralja közvetlenül Krasznahorka vára alatt fekszik, Rozsnyó után a Kassa felé vezető úton. A pontos útleírást hamarosan kiegészítjük.",
+    "visitParkingLabel": "Hol lehet parkolni",
+    "visitParkingBody": "A pontos parkolóhelyet hamarosan kiegészítjük. Addig kérdezzen meg minket telefonon."
+  },
+  "faq": {
+    "title": "Gyakori kérdések",
+    "lead": "Ezeket kérdezik tőlünk a szülők a leggyakrabban. Ha nem találja a választ, hívjon minket.",
+    "items": {
+      "age": {
+        "q": "Hány éves kortól jöhet a gyermek?",
+        "a": "A programokat az életkorhoz igazítjuk. A legkisebbeknek vezetett lovaglást kínálunk, a nagyobbak a lovak gondozásába és a lovaglásba is bekapcsolódhatnak. Mondja meg a gyermek korát, és tanácsot adunk."
+      },
+      "parents": {
+        "q": "A szülők a gyerekekkel maradnak?",
+        "a": "Igen. Programjaink egész családoknak szólnak, a szülők végig a gyerekekkel vannak, és be is kapcsolódhatnak."
+      },
+      "clothes": {
+        "q": "Mit vegyünk fel és mit hozzunk?",
+        "a": "Kényelmes ruhát, amely bepiszkolódhat, és zárt, strapabíró cipőt. A szabadban vagyunk, ezért öltözzön az időjárásnak megfelelően, télen rétegesen."
+      },
+      "weather": {
+        "q": "Mi van, ha esik vagy hideg van?",
+        "a": "A kreatív foglalkozásokat egész évben, télen is tartjuk. Ha az időjárás tényleg kedvezőtlen, másik időpontban állapodunk meg."
+      },
+      "price": {
+        "q": "Mennyibe kerül?",
+        "a": "Az ár a programtól és a csoport méretétől függ. A pontos összeget telefonon mondjuk meg."
+      },
+      "groups": {
+        "q": "Jöhetnek iskolák és óvodák is?",
+        "a": "Igen, szívesen fogadunk iskolai és óvodai csoportokat. Az időpontot, az időtartamot és a programot előre egyeztetjük a gyerekek kora és létszáma szerint."
+      }
+    }
+  },
+  "support": {
+    "eyebrow": "Polgári társulás",
+    "title": "Támogasson minket",
+    "body": "Polgári társulás vagyunk, és olyan emberek segítségével működünk, akiknek fontosak a lovak, a természet és a gyerekek. Adománya segít a lovak gondozásában és az Ökocentrum építésében.",
+    "taxTitle": "Ajánlja fel nekünk adója 2 %-át (3 %-át)",
+    "taxBody": "Ha Szlovákiában fizet jövedelemadót, annak egy részét nekünk juttathatja. Ez Önnek semmibe sem kerül.",
+    "taxIco": "IČO",
+    "taxPending": "Az adóbevalláshoz szükséges adatokat hamarosan kiegészítjük",
+    "amountLabel": "Válasszon összeget",
+    "customLabel": "Más összeg",
+    "amountSummaryLabel": "Összeg",
+    "anyAmount": "tetszés szerint",
+    "qrAlt": "Fizetési QR-kód, összeg: {amount}",
+    "scanHint": "Olvassa be a bankja alkalmazásával. Telefonon másolja ki az IBAN-t.",
+    "ibanLabel": "IBAN",
+    "copy": "Másolás",
+    "copied": "Kimásolva",
+    "recipientLabel": "Kedvezményezett",
+    "noteLabel": "Közlemény",
+    "ibanPending": "A számlaszámot hamarosan kiegészítjük. Addig hívjon minket.",
+    "demoWarning": "Minta IBAN, csak fejlesztés közben látható. Indulás előtt a valódira cseréljük."
   },
   "about": {
     "title": "Rólunk",
@@ -113,7 +171,7 @@
     "parts": {
       "maringotka": {
         "title": "Oktatótér a lakókocsiban",
-        "description": "Háttér az oktatási programokhoz bármilyen időjárás esetén."
+        "description": "Lakókocsi 6,5 × 3 m faburkolattal. Háttér az oktatási programokhoz bármilyen időjárás esetén."
       },
       "tvoriva-zona": {
         "title": "Alkotó és oktatási zóna",
@@ -129,11 +187,19 @@
       },
       "jazdiaren": {
         "title": "Lovarda",
-        "description": "Biztonságos tér a lovagláshoz és a lovakkal való munkához."
+        "description": "Homokos lovarda 20 × 40 m fakerítéssel. Biztonságos tér a lovagláshoz és a lovakkal való munka bemutatásához."
       },
       "zazemie": {
         "title": "Látogatói háttér",
-        "description": "Ülőhely, árnyék és pihenőhely a természet közepén."
+        "description": "Faterasz ülőhelyekkel, árnyék és pihenőhely a természet közepén."
+      },
+      "mini-kaviaren": {
+        "title": "Mini kávézó",
+        "description": "Konténerkávézó 6 × 3 m. Egyszerű frissítők, italok és ajándéktárgyak, hangsúlyosan helyi termékekből."
+      },
+      "eko-infrastruktura": {
+        "title": "Napelemes rendszer és esővízgyűjtés",
+        "description": "A terület alacsony költségű, környezetbarát üzemmódban működik. Az áramot a nap adja, a használati vizet esővízgyűjtő rendszer fogja fel."
       }
     },
     "statusTitle": "A projekt állása",
@@ -148,12 +214,6 @@
       "deti-v-prirode": "Gyerekek a fűben egy takarón, egyikük egy bogarat tart a tenyerén.",
       "child": "Egy kislány mosolyogva a pej ló sörényéhez bújik, fölöttük tiszta kék ég."
     }
-  },
-  "booking": {
-    "title": "Foglalás",
-    "lead": "Az online foglalás készülőben",
-    "body": "A lovagoltatás, a lovaglás és a kézműves foglalkozások foglalási rendszerét hamarosan indítjuk. Addig kérjük, telefonon egyeztessék az időpontot — így a leggyorsabb.",
-    "cta": "Tovább a kapcsolathoz"
   },
   "contact": {
     "title": "Kapcsolat",

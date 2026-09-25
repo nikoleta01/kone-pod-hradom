@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type {Metadata, ResolvingMetadata} from 'next';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
 import type {Locale} from '@/i18n/routing';
 import {PageHeader} from '@/components/page-header';
@@ -6,9 +6,12 @@ import {buildMetadata} from '@/lib/metadata';
 
 type Props = {params: Promise<{locale: Locale}>};
 
-export async function generateMetadata({params}: Props): Promise<Metadata> {
+export async function generateMetadata(
+  {params}: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
   const {locale} = await params;
-  return buildMetadata({locale, namespace: 'about', href: '/o-nas'});
+  return buildMetadata({locale, namespace: 'about', href: '/o-nas', parent});
 }
 
 export default async function AboutPage({params}: Props) {
@@ -34,7 +37,7 @@ export default async function AboutPage({params}: Props) {
         </div>
       </section>
 
-      <section className="border-y border-brown bg-card/30">
+      <section className="border-t border-brown bg-card/30">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-24">
           <h2 className="font-serif text-3xl text-charcoal md:text-4xl">
             {t('valuesTitle')}

@@ -99,7 +99,11 @@ Restrained strategy: emerald carries structure and headings; cream is the restin
 
 ## Layout
 
-The homepage is one continuous logbook: a cover entry (full-width card), then a bound spine of dated entries stacked top to bottom inside a `max-w-6xl` column with a 2px brown/30 rule down the left edge. Each entry positions a small brown dot on that rule (`EntryDot`) to mark its place, chaining it visually to its neighbours. The Ekovan entry breaks from the spine deliberately — no dot, a dashed border, indented further right, rotated -1°, reading as an unbound loose page. No scroll-triggered reveal, parallax, or sweep device: the product's constraint is weak rural signal and an anxious parent who needs the point fast, and the redesign named those staging devices and rejected them on that ground.
+The homepage is one continuous logbook: a cover entry (full-width card), then the entries stacked top to bottom inside a `max-w-6xl` column. There is no rule line or dot down the left edge: it was tried and removed in Sep 2026 as visual noise, so entries separate by spacing and their own borders. The Ekovan entry breaks from the column deliberately with a dashed border, indented further right, rotated -1°, reading as an unbound loose page. After it comes the one full-bleed band on the site, "Support us": emerald ground, cream ink, the same rounded cards and a dashed border for what is not ready yet (the 2 % tax share), so the colors invert but the structure does not.
+
+Homepage order: cover, then the spine (meet the horses, programmes, come visit, questions), then the Ekovan loose page, then the Support band. The order follows a parent's decision (what is it, what can we do, how do we get there, what else do I need to know), and asks for money only after that.
+
+**The One Green Band Rule.** Exactly one section on the site sits on a full-width emerald ground: Support us. A second band would turn the separator into a pattern and stop marking anything. Other sections separate by rule lines, borders and the Field Card Cream ground. No scroll-triggered reveal, parallax, or sweep device: the product's constraint is weak rural signal and an anxious parent who needs the point fast, and the redesign named those staging devices and rejected them on that ground.
 
 ## Elevation & Depth
 
@@ -117,11 +121,11 @@ Gently rounded corners (`rounded-xl`/`rounded-2xl`, ~12px), like a laminated car
 
 ### Phone card
 
-The site's one conversion, styled as the log's own "who to call" line rather than a generic button. Solid emerald fill, cream text, a phone icon plus the number as a live `tel:` link, with a short supporting note beside it. Appears exactly twice: the cover entry and the closing "come visit" entry, in the same shape both times.
+The site's one conversion, styled as the log's own "who to call" line rather than a generic button. Solid emerald fill, cream text, a phone icon plus the number as a live `tel:` link, with one short supporting line under it. Appears exactly twice: the cover entry and the closing "come visit" entry, in the same shape both times.
 
-### Spine entry (`Entry` / `EntryDot`)
+### Entry (`Entry`)
 
-A section on the bound spine: a small brown dot sits on the rule line at the entry's top-left, a heading in the display face, then body content. Used for every homepage section except the cover (which is the spine's origin, not an entry on it) and Ekovan (which is deliberately off the spine).
+A homepage section in the shared column: a heading in the display face, then body content. Used for every homepage section except the cover (which is the spine's origin, not an entry on it) and Ekovan (which is deliberately off the spine).
 
 ### Service row
 

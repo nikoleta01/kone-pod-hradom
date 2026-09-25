@@ -38,11 +38,6 @@ export const routing = defineRouting({
       hu: '/galeria',
       en: '/gallery'
     },
-    '/rezervacia': {
-      sk: '/rezervacia',
-      hu: '/foglalas',
-      en: '/booking'
-    },
     '/kontakt': {
       sk: '/kontakt',
       hu: '/kapcsolat',

@@ -12,7 +12,6 @@ const navItems: Array<{ href: AppPathname; key: string }> = [
   { href: "/ponuka", key: "services" },
   { href: "/ekovan", key: "ekovan" },
   { href: "/galeria", key: "gallery" },
-  { href: "/rezervacia", key: "booking" },
   { href: "/kontakt", key: "contact" },
 ];
 

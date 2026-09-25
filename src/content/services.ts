@@ -121,5 +121,7 @@ export const ekovanParts = [
   'bylinkova-zahrada',
   'zmyslovy-chodnik',
   'jazdiaren',
-  'zazemie'
+  'zazemie',
+  'mini-kaviaren',
+  'eko-infrastruktura'
 ] as const;

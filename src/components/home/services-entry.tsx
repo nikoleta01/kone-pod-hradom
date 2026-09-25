@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { featuredServiceIds, services } from "@/content/services";
 import { photoById } from "@/content/photos";
-import { Entry, EntryDot } from "./entry";
+import { Entry } from "./entry";
 
 /** "Programmes" — the ruled service checklist entry on the spine. */
 export async function ServicesEntry() {
@@ -22,7 +22,6 @@ export async function ServicesEntry() {
 
   return (
     <Entry>
-      <EntryDot />
       <h2 className="font-stencil text-3xl text-charcoal md:text-4xl">
         {t("servicesTitle")}
       </h2>

@@ -5,7 +5,7 @@ import {siteUrl} from '@/lib/metadata';
 
 /**
  * Relative importance within this site only — it is not a ranking signal
- * against other sites. Booking and the offer sit at the top because they are
+ * against other sites. The offer sits at the top because it is
  * what a parent is actually searching for; the gallery is supporting material.
  *
  * Keyed by canonical (Slovak) pathname, so adding a route to `routing` without
@@ -14,7 +14,6 @@ import {siteUrl} from '@/lib/metadata';
 const priority: Record<AppPathname, number> = {
   '/': 1,
   '/ponuka': 0.9,
-  '/rezervacia': 0.8,
   '/ekovan': 0.7,
   '/o-nas': 0.7,
   '/kontakt': 0.7,
