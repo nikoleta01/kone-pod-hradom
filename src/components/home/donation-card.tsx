@@ -6,13 +6,6 @@ import { CurrencyCode, PaymentOptions, encode } from "bysquare/pay";
 import { renderSVG } from "uqr";
 import { TbCheck, TbCopy } from "react-icons/tb";
 
-/**
- * The example account from the bysquare docs. It only ever renders in
- * `next dev`, under a visible "demo" label, so the QR flow can be judged
- * before the real IBAN arrives. Production renders a pending slot instead.
- */
-const DEMO_IBAN = "SK9611000000002918599669";
-
 type Props = {
   iban: string | null;
   beneficiary: string;
@@ -31,16 +24,13 @@ function formatIban(iban: string): string {
  * visitor on the same phone and banks that don't read the standard.
  */
 export function DonationCard({
-  iban: realIban,
+  iban,
   beneficiary,
   paymentNote: note,
   amounts,
 }: Props) {
   const t = useTranslations("support");
   const inputId = useId();
-
-  const isDemo = !realIban && process.env.NODE_ENV === "development";
-  const iban = realIban ?? (isDemo ? DEMO_IBAN : null);
 
   const [preset, setPreset] = useState<number | null>(amounts[1] ?? null);
   const [custom, setCustom] = useState("");
@@ -208,11 +198,6 @@ export function DonationCard({
                 <dd className="mt-0.5 font-semibold">{note}</dd>
               </div>
             </dl>
-            {isDemo ? (
-              <p className="rounded-lg bg-emerald-soft px-3 py-2 text-xs font-medium text-emerald-deep sm:col-span-2">
-                {t("demoWarning")}
-              </p>
-            ) : null}
           </div>
         ) : (
           <p className="text-sm text-charcoal-soft">{t("ibanPending")}</p>

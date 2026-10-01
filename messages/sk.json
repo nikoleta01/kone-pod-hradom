@@ -44,21 +44,21 @@
     "ekovanLabel": "Projekt vo výstavbe",
     "ekovanTitle": "Budujeme Ekocentrum pri koňoch",
     "ekovanBody": "V rámci projektu Ekovan vytvárame priestor, ktorý spojí kontakt s koňmi, environmentálnu výchovu a oddych v prírode.",
-    "visitTitle": "Príďte za nami",
+    "visitTitle": "Ako nás nájdete?",
     "visitBody": "Nájdete nás v Krásnohorskom Podhradí, na dohľad od Krásnohorského hradu. Termín návštevy si s nami dohodnite vopred — povedzte nám, koľko má vaše dieťa rokov, a poradíme, čo mu bude sedieť.",
     "orFollow": "Alebo nás sledujte",
     "servicesTitle": "Čo u nás zažijete",
     "servicesSubtitle": "Programy pre rodiny s deťmi, školské skupiny aj turistov.",
     "visitAddressLabel": "Adresa",
-    "visitMapLink": "Otvoriť v mapách",
+    "visitMapLink": "Otvoriť v Google mapách",
     "visitMapTitle": "Mapa: OZ Tymián – kone pod hradom, Krásnohorské Podhradie",
     "visitRouteLabel": "Ako sa k nám dostanete",
-    "visitRouteBody": "Krásnohorské Podhradie leží priamo pod hradom Krásna Hôrka, kúsok za Rožňavou po ceste smerom na Košice. Presný popis cesty k areálu doplníme.",
+    "visitRouteBody": "Ak idete od Rožňavy, po vjazde do obce Krásnohorské Podhradie odbočte na prvej odbočke doprava.",
     "visitParkingLabel": "Kde zaparkovať",
-    "visitParkingBody": "Presné miesto na parkovanie doplníme. Dovtedy sa nás spýtajte pri telefonáte a poradíme."
+    "visitParkingBody": "Zaparkovať môžete priamo v našom areáli."
   },
   "faq": {
-    "title": "Časté otázky",
+    "title": "Často kladené otázky",
     "lead": "Na toto sa nás rodičia pýtajú najčastejšie. Ak tu odpoveď nenájdete, zavolajte nám.",
     "items": {
       "age": {
@@ -106,8 +106,7 @@
     "copied": "Skopírované",
     "recipientLabel": "Príjemca",
     "noteLabel": "Správa pre príjemcu",
-    "ibanPending": "Číslo účtu doplníme. Zatiaľ nám zavolajte.",
-    "demoWarning": "Ukážkový IBAN, zobrazuje sa len pri vývoji. Pred spustením ho nahradíme skutočným."
+    "ibanPending": "Číslo účtu doplníme. Zatiaľ nám zavolajte."
   },
   "about": {
     "title": "O nás",

@@ -1,16 +1,8 @@
 import type { ReactNode } from "react";
 import { getTranslations } from "next-intl/server";
-import {
-  TbBrandFacebook,
-  TbBrandInstagram,
-  TbCar,
-  TbExternalLink,
-  TbMapPin,
-  TbRoute,
-} from "react-icons/tb";
-import { site, addressLine, mapEmbedSrc, mapHref } from "@/content/site";
+import { TbCar, TbExternalLink, TbMapPin, TbRoute } from "react-icons/tb";
+import { addressLine, mapEmbedSrc, mapHref } from "@/content/site";
 import { Entry } from "./entry";
-import { PhoneCard } from "./phone-card";
 
 /** One ruled cell of the "how to find us" card. */
 function VisitCell({
@@ -36,14 +28,12 @@ function VisitCell({
 }
 
 /**
- * "Come visit" — address, the way there and where to park. Visitors arrive
- * by car, often straight from the castle, on weak signal, so this is a plain
- * link out to the phone's own maps app rather than an embedded map.
+ * "Come visit" — the map, address, the way there and where to park.
+ * Visitors arrive by car, often straight from the castle, so the address
+ * also links out to the phone's own maps app for directions.
  */
 export async function VisitEntry() {
   const t = await getTranslations("home");
-  const tActions = await getTranslations("actions");
-
   const iconClass = "h-5 w-5 shrink-0 text-emerald";
 
   return (
@@ -55,13 +45,13 @@ export async function VisitEntry() {
         {t("visitBody")}
       </p>
 
-      <div className="mt-8 overflow-hidden rounded-xl border-2 border-brown bg-card">
+      <div className="mt-8 isolate overflow-hidden rounded-xl border-2 border-brown bg-card">
         <iframe
           src={mapEmbedSrc()}
           title={t("visitMapTitle")}
           loading="lazy"
           referrerPolicy="no-referrer"
-          className="block h-72 w-full border-b-2 border-brown md:h-96"
+          className="block h-72 w-full rounded-t-[10px] border-b-2 border-brown md:h-96"
         />
         <div className="grid divide-y-2 divide-brown/25 md:grid-cols-3 md:divide-x-2 md:divide-y-0">
           <VisitCell
@@ -91,35 +81,6 @@ export async function VisitEntry() {
           >
             <p>{t("visitParkingBody")}</p>
           </VisitCell>
-        </div>
-      </div>
-
-      <div className="mt-8 flex flex-wrap items-start justify-between gap-8">
-        <PhoneCard label={tActions("call")} note={t("callNote")} />
-        <div>
-          <p className="text-sm font-medium text-charcoal-soft">
-            {t("orFollow")}
-          </p>
-          <div className="mt-2 flex gap-4">
-            <a
-              href={site.social.facebook}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Facebook"
-              className="text-emerald transition hover:text-emerald-deep"
-            >
-              <TbBrandFacebook className="h-5 w-5" aria-hidden="true" />
-            </a>
-            <a
-              href={site.social.instagram}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram"
-              className="text-emerald transition hover:text-emerald-deep"
-            >
-              <TbBrandInstagram className="h-5 w-5" aria-hidden="true" />
-            </a>
-          </div>
         </div>
       </div>
     </Entry>

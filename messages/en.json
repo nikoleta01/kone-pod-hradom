@@ -44,21 +44,21 @@
     "ekovanLabel": "Project under construction",
     "ekovanTitle": "We are building an eco-centre beside the horses",
     "ekovanBody": "Through the Ekovan project we are creating a space that joins contact with horses, environmental education and rest in nature.",
-    "visitTitle": "Come and see us",
+    "visitTitle": "How to find us",
     "visitBody": "You will find us in Krásnohorské Podhradie, within sight of Krásna Hôrka Castle. Please arrange your visit in advance — tell us how old your child is and we will suggest what suits them.",
     "orFollow": "Or follow us",
     "servicesTitle": "What you can do here",
     "servicesSubtitle": "Programmes for families with children, school groups and travellers.",
     "visitAddressLabel": "Address",
-    "visitMapLink": "Open in maps",
+    "visitMapLink": "Open in Google Maps",
     "visitMapTitle": "Map: OZ Tymián – kone pod hradom, Krásnohorské Podhradie",
     "visitRouteLabel": "Getting here",
-    "visitRouteBody": "Krásnohorské Podhradie sits right below Krásna Hôrka Castle, just past Rožňava on the road towards Košice. Detailed directions to the grounds are coming soon.",
+    "visitRouteBody": "Coming from Rožňava, take the first right after you enter the village of Krásnohorské Podhradie.",
     "visitParkingLabel": "Where to park",
-    "visitParkingBody": "The exact parking spot is coming soon. Until then, ask us when you call."
+    "visitParkingBody": "You can park right on our grounds."
   },
   "faq": {
-    "title": "Common questions",
+    "title": "Frequently asked questions",
     "lead": "These are the questions parents ask us most. If yours isn’t here, give us a call.",
     "items": {
       "age": {
@@ -106,8 +106,7 @@
     "copied": "Copied",
     "recipientLabel": "Recipient",
     "noteLabel": "Payment note",
-    "ibanPending": "Account number coming soon. Until then, give us a call.",
-    "demoWarning": "Demo IBAN, shown only in development. We’ll replace it with the real one before launch."
+    "ibanPending": "Account number coming soon. Until then, give us a call."
   },
   "about": {
     "title": "About us",

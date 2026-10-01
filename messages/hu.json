@@ -44,21 +44,21 @@
     "ekovanLabel": "Épülő projekt",
     "ekovanTitle": "Ökocentrumot építünk a lovaknál",
     "ekovanBody": "Az Ekovan projekt keretében olyan teret hozunk létre, amely összeköti a lovakkal való kapcsolatot, a környezeti nevelést és a természetben való pihenést.",
-    "visitTitle": "Jöjjenek el hozzánk",
+    "visitTitle": "Hol talál meg minket?",
     "visitBody": "Krasznahorkaváralján találnak minket, a krasznahorkai vár tövében. Az időpontot kérjük, előre egyeztessék — mondják meg, hány éves a gyermekük, és tanácsot adunk, mi illik hozzá.",
     "orFollow": "Vagy kövessen minket",
     "servicesTitle": "Mit élhetnek át nálunk",
     "servicesSubtitle": "Programok gyerekes családoknak, iskolai csoportoknak és turistáknak.",
     "visitAddressLabel": "Cím",
-    "visitMapLink": "Megnyitás térképen",
+    "visitMapLink": "Megnyitás a Google Térképen",
     "visitMapTitle": "Térkép: OZ Tymián – kone pod hradom, Krasznahorkaváralja",
     "visitRouteLabel": "Hogyan jut el hozzánk",
-    "visitRouteBody": "Krasznahorkaváralja közvetlenül Krasznahorka vára alatt fekszik, Rozsnyó után a Kassa felé vezető úton. A pontos útleírást hamarosan kiegészítjük.",
+    "visitRouteBody": "Rozsnyó felől érkezve Krasznahorkaváraljára érve forduljon jobbra az első lehetőségnél.",
     "visitParkingLabel": "Hol lehet parkolni",
-    "visitParkingBody": "A pontos parkolóhelyet hamarosan kiegészítjük. Addig kérdezzen meg minket telefonon."
+    "visitParkingBody": "Közvetlenül a területünkön parkolhat."
   },
   "faq": {
-    "title": "Gyakori kérdések",
+    "title": "Gyakran ismételt kérdések",
     "lead": "Ezeket kérdezik tőlünk a szülők a leggyakrabban. Ha nem találja a választ, hívjon minket.",
     "items": {
       "age": {
@@ -106,8 +106,7 @@
     "copied": "Kimásolva",
     "recipientLabel": "Kedvezményezett",
     "noteLabel": "Közlemény",
-    "ibanPending": "A számlaszámot hamarosan kiegészítjük. Addig hívjon minket.",
-    "demoWarning": "Minta IBAN, csak fejlesztés közben látható. Indulás előtt a valódira cseréljük."
+    "ibanPending": "A számlaszámot hamarosan kiegészítjük. Addig hívjon minket."
   },
   "about": {
     "title": "Rólunk",

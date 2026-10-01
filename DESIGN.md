@@ -68,7 +68,7 @@ Restrained strategy: emerald carries structure and headings; cream is the restin
 
 - **Cream Ground** (`#fbf8f1`) — the page background.
 - **Field Card Cream** (`#f3eee1`) — a section's own ground when it needs to read as a distinct card (the cover entry, the Ekovan aside), one step deeper than the page so no shadow is needed to separate it.
-- **Binding Brown** (`#6b4a31`) — rule lines and hole-punch dots only; never a text color or a fill.
+- **Binding Brown** (`#6b4a31`) — rule lines and borders; never a text color or a fill. One exception: below `sm`, where the header castle mark stands alone without the site name, it is brown. From `sm` up, mark and name are both Ink Charcoal.
 - **Ink Charcoal** (`#262b26`) — body text; not pure black.
 - **Ink Charcoal, Soft** (`#4a534c`) — secondary/supporting text, tinted from the same hue as Ink Charcoal, never gray.
 
@@ -137,7 +137,11 @@ A dashed-border, rotated (-1°), indented card in Field Card Cream — the one s
 
 ### Navigation
 
-Pill-shaped links (inherited control language): active state is an Emerald-Soft fill with Emerald-Deep text; inactive is Charcoal-Soft text that gains the same fill on hover/focus. Header background is Cream Ground (matching the page, not the card ground it sits above). The header's bottom rule is a thin (1px, 25% opacity) full-width brown line — the same binding-rule color used on the spine below it, kept deliberately subtle rather than a bold divider.
+Pill-shaped links (inherited control language). One state grammar shared with the language switcher:
+
+- **Hover** (nav and languages alike): a lighter Emerald-Soft pill (60%) and Emerald-Deep text. In the nav, a faint horseshoe (40%) also appears in its slot, previewing the current-page look.
+- **Current page:** full Emerald-Soft pill, Emerald-Deep text, and the horseshoe (`HorseshoeMark`, 18px, rotated -15°) inside the pill, left of the label. Every nav link reserves the horseshoe's slot, so labels never shift between pages. In the mobile menu, the current row is Emerald-Deep text with the same horseshoe.
+- **Current language:** solid Emerald pill with cream text. Stronger than the current page on purpose: it is a setting the visitor chose, not a place. Header background is Cream Ground (matching the page, not the card ground it sits above). The header's bottom rule is a thin (1px, 25% opacity) full-width brown line — the same binding-rule color used on the spine below it, kept deliberately subtle rather than a bold divider.
 
 ## Do's and Don'ts
 

@@ -66,7 +66,7 @@ export function LanguageSwitcher({locale}: {locale: Locale}) {
               lang={code}
               disabled={isPending}
               onClick={() => select(code)}
-              className="rounded-full px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-charcoal-soft transition hover:bg-emerald-soft hover:text-emerald-deep disabled:opacity-50"
+              className="rounded-full px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-charcoal-soft transition hover:bg-emerald-soft/60 hover:text-emerald-deep disabled:opacity-50"
             >
               {code}
               <span className="sr-only"> – {t(code)}</span>

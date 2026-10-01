@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { TbMenu2, TbX } from "react-icons/tb";
 import { Link, usePathname } from "@/i18n/navigation";
 import type { AppPathname, Locale } from "@/i18n/routing";
+import { HorseshoeMark } from "./horseshoe-mark";
 import { LanguageSwitcher } from "./language-switcher";
 
 const navItems: Array<{ href: AppPathname; key: string }> = [
@@ -59,9 +60,25 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           className="flex items-center gap-2.5"
           onClick={() => setOpen(false)}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.svg" alt="" className="h-10 w-auto shrink-0" />
-          <span className="font-stencil text-xl font-semibold leading-tight text-charcoal">
+          {/*
+            The castle mark is drawn through a CSS mask so it takes theme
+            colors: brown while it stands alone on a phone, charcoal to
+            match the site name once that appears beside it.
+          */}
+          <span
+            aria-hidden="true"
+            className="block aspect-[1292/685] h-10 shrink-0 bg-brown sm:bg-charcoal"
+            style={{
+              WebkitMask: "url(/logo.svg) center / contain no-repeat",
+              mask: "url(/logo.svg) center / contain no-repeat",
+            }}
+          />
+          {/*
+            Below sm the castle mark stands alone: the name, the unpacked
+            language pills and the menu button don't fit one row on a phone.
+            It stays in the accessibility tree so the home link keeps a name.
+          */}
+          <span className="sr-only font-stencil text-xl font-semibold leading-tight text-charcoal sm:not-sr-only">
             {tMeta("siteName")}
           </span>
         </Link>
@@ -78,10 +95,21 @@ export function SiteHeader({ locale }: { locale: Locale }) {
                     aria-current={isActive ? "page" : undefined}
                     className={
                       isActive
-                        ? "rounded-full bg-emerald-soft px-3.5 py-2 text-sm font-medium text-emerald-deep"
-                        : "rounded-full px-3.5 py-2 text-sm font-medium text-charcoal-soft transition hover:bg-emerald-soft hover:text-emerald-deep"
+                        ? "group flex items-center gap-1.5 rounded-full bg-emerald-soft py-2 pl-2.5 pr-3.5 text-sm font-medium text-emerald-deep"
+                        : "group flex items-center gap-1.5 rounded-full py-2 pl-2.5 pr-3.5 text-sm font-medium text-charcoal-soft transition hover:bg-emerald-soft/60 hover:text-emerald-deep"
                     }
                   >
+                    {/*
+                      Every link carries the horseshoe's slot, so labels never
+                      shift between pages. Current page: the full horseshoe.
+                      Hover: a faint one, previewing the current-page look.
+                    */}
+                    <HorseshoeMark
+                      className={`h-[18px] w-[18px] shrink-0 -rotate-[15deg] transition-opacity ${
+                        isActive ? "opacity-100" : "opacity-0 group-hover:opacity-40"
+                      }`}
+                      holeClassName={isActive ? "fill-emerald-soft" : "fill-cream"}
+                    />
                     {t(item.key)}
                   </Link>
                 </li>
@@ -123,8 +151,15 @@ export function SiteHeader({ locale }: { locale: Locale }) {
                   href={item.href}
                   onClick={() => setOpen(false)}
                   aria-current={pathname === item.href ? "page" : undefined}
-                  className="block border-b border-brown/25 py-3 text-base text-charcoal last:border-none"
+                  className={`flex items-center gap-2 border-b border-brown/25 py-3 text-base last:border-none ${
+                    pathname === item.href
+                      ? "font-medium text-emerald-deep"
+                      : "pl-7 text-charcoal"
+                  }`}
                 >
+                  {pathname === item.href ? (
+                    <HorseshoeMark className="h-5 w-5 shrink-0 -rotate-[15deg]" />
+                  ) : null}
                   {t(item.key)}
                 </Link>
               </li>

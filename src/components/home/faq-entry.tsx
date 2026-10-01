@@ -1,6 +1,8 @@
 import { getTranslations } from "next-intl/server";
-import { TbPlus } from "react-icons/tb";
+import { TbBrandFacebook, TbBrandInstagram, TbPlus } from "react-icons/tb";
+import { site } from "@/content/site";
 import { Entry } from "./entry";
+import { PhoneCard } from "./phone-card";
 
 /** Order is the order a parent tends to ask in on the phone. */
 const FAQ_IDS = ["age", "parents", "clothes", "weather", "price", "groups"] as const;
@@ -12,6 +14,8 @@ const FAQ_IDS = ["age", "parents", "clothes", "weather", "price", "groups"] as c
  */
 export async function FaqEntry() {
   const t = await getTranslations("faq");
+  const tHome = await getTranslations("home");
+  const tActions = await getTranslations("actions");
 
   return (
     <Entry>
@@ -21,6 +25,34 @@ export async function FaqEntry() {
             {t("title")}
           </h2>
           <p className="mt-4 max-w-sm text-charcoal-soft">{t("lead")}</p>
+
+          <div className="mt-8 flex flex-wrap items-start gap-x-8 gap-y-6">
+            <PhoneCard label={tActions("call")} note={tHome("callNote")} />
+
+            <div className="flex flex-col items-start gap-2">
+              <div className="-ml-1 flex h-14 items-center gap-3">
+                <a
+                  href={site.social.facebook}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook"
+                  className="p-1 text-emerald transition hover:text-emerald-deep"
+                >
+                  <TbBrandFacebook className="h-7 w-7" aria-hidden="true" />
+                </a>
+                <a
+                  href={site.social.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                  className="p-1 text-emerald transition hover:text-emerald-deep"
+                >
+                  <TbBrandInstagram className="h-7 w-7" aria-hidden="true" />
+                </a>
+              </div>
+              <p className="text-sm text-charcoal-soft">{tHome("orFollow")}</p>
+            </div>
+          </div>
         </div>
 
         <div className="divide-y divide-brown/25 border-y-2 border-brown">

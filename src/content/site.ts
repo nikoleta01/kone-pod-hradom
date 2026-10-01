@@ -37,11 +37,11 @@ export const site = {
    * Donations go straight to the association's account through a PAY by
    * square QR code, so there is no payment gateway and no fee.
    *
-   * TODO: real IBAN from Timea. While it is null the QR code is not rendered
-   * in production; in `next dev` a demo IBAN stands in, visibly labelled.
+   * Confirmed: the association's account at Fio banka. Setting `iban` to null
+   * hides the QR code and shows a pending line instead.
    */
   donation: {
-    iban: null as string | null,
+    iban: 'SK3583300000002803450880' as string | null,
     beneficiary: 'OZ Tymián – kone pod hradom',
     /** Goes to the bank as-is, so it stays Slovak in every language. */
     paymentNote: 'Dar kone pod hradom',
