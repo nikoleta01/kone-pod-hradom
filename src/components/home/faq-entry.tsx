@@ -4,6 +4,9 @@ import { site } from "@/content/site";
 import { Entry } from "./entry";
 import { PhoneCard } from "./phone-card";
 
+/** Anchor the hero's "Kontakt" button scrolls to: the phone and social links live here. */
+export const CONTACT_ANCHOR = "kontakt";
+
 /** Order is the order a parent tends to ask in on the phone. */
 const FAQ_IDS = ["age", "parents", "clothes", "weather", "price", "groups"] as const;
 
@@ -18,7 +21,7 @@ export async function FaqEntry() {
   const tActions = await getTranslations("actions");
 
   return (
-    <Entry>
+    <Entry id={CONTACT_ANCHOR}>
       <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:gap-12">
         <div>
           <h2 className="font-stencil text-3xl text-charcoal md:text-4xl">

@@ -121,7 +121,7 @@ Two shapes, one rule each. Buttons and anything you tap to choose (the donation 
 
 ### Phone card
 
-The site's one conversion, styled as the log's own "who to call" line rather than a generic button. Solid emerald fill, cream text, a phone icon plus the number as a live `tel:` link, with one short supporting line under it. Appears exactly twice: the cover entry and the closing "come visit" entry, in the same shape both times.
+The site's one conversion, styled as the log's own "who to call" line rather than a generic button. Solid emerald fill, cream text, a phone icon plus the number as a live `tel:` link, with one short supporting line under it. Appears once, in the FAQ section next to the social links. The hero instead carries a same-shaped button that scrolls to "Čo u nás zažijete".
 
 ### Entry (`Entry`)
 

@@ -3,8 +3,7 @@ import { site, telHref } from "@/content/site";
 
 /**
  * The site's one conversion: a solid button carrying the number, with one
- * short line under it. It appears once in the cover entry and once again at
- * the close, always in the same shape.
+ * short line under it. Lives in the FAQ section, beside the social links.
  */
 export function PhoneCard({ label, note }: { label: string; note: string }) {
   const tel = telHref();

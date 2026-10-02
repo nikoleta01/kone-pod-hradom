@@ -5,7 +5,10 @@ import { featuredServiceIds, services } from "@/content/services";
 import { photoById } from "@/content/photos";
 import { Entry } from "./entry";
 
-/** "Programmes" — the ruled service checklist entry on the spine. */
+/** Anchor the hero's call to action scrolls to. */
+export const SERVICES_ANCHOR = "zazitky";
+
+/** "Programmes": the ruled service checklist. */
 export async function ServicesEntry() {
   const t = await getTranslations("home");
   const tActions = await getTranslations("actions");
@@ -21,7 +24,7 @@ export async function ServicesEntry() {
   const childrenPhoto = photoById("deti-v-prirode");
 
   return (
-    <Entry>
+    <Entry id={SERVICES_ANCHOR}>
       <h2 className="font-stencil text-3xl text-charcoal md:text-4xl">
         {t("servicesTitle")}
       </h2>

@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
+import { TbArrowDown } from "react-icons/tb";
 import { photoById } from "@/content/photos";
-import { PhoneCard } from "./phone-card";
+import { CONTACT_ANCHOR } from "./faq-entry";
+import { SERVICES_ANCHOR } from "./services-entry";
 
 /** Cover entry — the field card the whole log opens on. */
 export async function HeroSection() {
@@ -29,14 +30,20 @@ export async function HeroSection() {
             {t("heroSubtitle")}
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-6">
-            <PhoneCard label={tActions("call")} note={t("callNote")} />
-            <Link
-              href="/ponuka"
-              className="text-sm font-semibold text-emerald underline underline-offset-4 hover:text-emerald-deep"
+          <div className="mt-10 flex flex-wrap items-center gap-3">
+            <a
+              href={`#${SERVICES_ANCHOR}`}
+              className="inline-flex items-center gap-2.5 rounded-full border-2 border-emerald bg-emerald px-5 py-3 text-lg font-semibold text-cream transition hover:border-emerald-deep hover:bg-emerald-deep"
             >
-              {tActions("seeOffer")}
-            </Link>
+              {t("heroCta")}
+              <TbArrowDown className="h-5 w-5 shrink-0" aria-hidden="true" />
+            </a>
+            <a
+              href={`#${CONTACT_ANCHOR}`}
+              className="inline-flex items-center gap-2.5 rounded-full border-2 border-emerald bg-cream px-5 py-3 text-lg font-semibold text-emerald transition hover:bg-emerald-soft hover:text-emerald-deep"
+            >
+              {tActions("contactUs")}
+            </a>
           </div>
         </div>
 
