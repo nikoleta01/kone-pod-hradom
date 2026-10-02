@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { TbCar, TbExternalLink, TbMapPin, TbRoute } from "react-icons/tb";
 import { addressLine, mapEmbedSrc, mapHref } from "@/content/site";
 import { Entry } from "./entry";
+import { MapEmbed } from "./map-embed";
 
 /** One ruled cell of the "how to find us" card. */
 function VisitCell({
@@ -46,12 +47,10 @@ export async function VisitEntry() {
       </p>
 
       <div className="mt-8 isolate overflow-hidden rounded-xl border-2 border-brown bg-card">
-        <iframe
+        <MapEmbed
           src={mapEmbedSrc()}
           title={t("visitMapTitle")}
-          loading="lazy"
-          referrerPolicy="no-referrer"
-          className="block h-72 w-full rounded-t-[10px] border-b-2 border-brown md:h-96"
+          unlockLabel={t("visitMapUnlock")}
         />
         <div className="grid divide-y-2 divide-brown/25 md:grid-cols-3 md:divide-x-2 md:divide-y-0">
           <VisitCell

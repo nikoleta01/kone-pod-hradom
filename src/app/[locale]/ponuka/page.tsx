@@ -36,7 +36,7 @@ export default async function ServicesPage({params}: Props) {
           {services.map((service) => (
             <li
               key={service.id}
-              className="flex flex-col rounded-2xl border border-brown bg-card/25 p-7"
+              className="flex flex-col rounded-xl border border-brown bg-card/25 p-7"
             >
               <h2 className="font-serif text-2xl text-charcoal">
                 {t(`items.${service.id}.title`)}

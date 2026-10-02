@@ -100,7 +100,7 @@ export default async function ContactPage({params}: Props) {
             </dl>
           </div>
 
-          <aside className="rounded-2xl border border-brown bg-card/30 p-7">
+          <aside className="rounded-xl border border-brown bg-card/30 p-7">
             <h2 className="font-serif text-xl text-charcoal">{t('orgTitle')}</h2>
             <p className="mt-2 text-charcoal-soft">{t('orgName')}</p>
             <p className="mt-1 text-charcoal-soft">{addressLine()}</p>

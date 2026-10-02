@@ -34,7 +34,7 @@ export async function SupportSection() {
 
           {/* Hidden until the association confirms its 2 % registration. */}
           {site.taxShare.registered ? (
-            <div className="mt-10 rotate-[-1deg] rounded-2xl border-2 border-dashed border-cream/50 p-5 sm:p-6">
+            <div className="mt-10 rotate-[-1deg] rounded-xl border-2 border-dashed border-cream/50 p-5 sm:p-6">
               <h3 className="flex items-center gap-2 font-stencil text-xl text-cream">
                 <TbReceiptTax className="h-5 w-5 shrink-0" aria-hidden="true" />
                 {t("taxTitle")}

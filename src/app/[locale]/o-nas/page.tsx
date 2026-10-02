@@ -46,7 +46,7 @@ export default async function AboutPage({params}: Props) {
             {values.map((value) => (
               <li
                 key={value.title}
-                className="rounded-2xl border border-brown bg-cream p-6"
+                className="rounded-xl border border-brown bg-cream p-6"
               >
                 <h3 className="font-serif text-xl text-charcoal">{value.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-charcoal-soft">

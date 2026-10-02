@@ -38,7 +38,7 @@ export default async function EkovanPage({params}: Props) {
           {ekovanParts.map((part, index) => (
             <li
               key={part}
-              className="rounded-2xl border border-brown bg-card/25 p-6"
+              className="rounded-xl border border-brown bg-card/25 p-6"
             >
               <p
                 aria-hidden="true"

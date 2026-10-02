@@ -33,7 +33,7 @@ export default async function GalleryPage({params}: Props) {
             {photos.map((photo) => (
               <li
                 key={photo.id}
-                className="overflow-hidden rounded-2xl border border-brown bg-card/40"
+                className="overflow-hidden rounded-xl border border-brown bg-card/40"
               >
                 <Image
                   src={photo.src}

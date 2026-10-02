@@ -20,8 +20,8 @@ typography:
     fontWeight: 400
     lineHeight: 1.5
 rounded:
-  sm: "8px"
   md: "12px"
+  full: "9999px"
 components:
   phone-card:
     backgroundColor: "{colors.emerald}"
@@ -115,7 +115,7 @@ Flat by default. Depth is conveyed by the logbook's own material logic — the c
 
 ## Shapes
 
-Gently rounded corners (`rounded-xl`/`rounded-2xl`, ~12px), like a laminated card's trimmed edge — not sharp brochure rectangles, not pill-shaped app chrome (nav links are the one intentional exception: full pills, inherited from the incumbent implementation's control language). Binding marks — hole-punch dots on the spine, a dashed border on the Ekovan aside — are the recurring signature geometry, appearing at consistent positions rather than as one-off ornament.
+Two shapes, one rule each. Buttons and anything you tap to choose (the donation amount chips, and the custom amount field in that same row) are fully round (`rounded-full`), like the nav pills. Everything else, every card, photo, tag and container, uses one radius, `rounded-xl` (12px), like a laminated card's trimmed edge. Never mix in `rounded-lg` or `rounded-2xl`. An element inset inside a 2px border uses the matching inner radius (10px), which is the same corner, not a second radius — not sharp brochure rectangles, not pill-shaped app chrome (nav links are the one intentional exception: full pills, inherited from the incumbent implementation's control language). Binding marks — hole-punch dots on the spine, a dashed border on the Ekovan aside — are the recurring signature geometry, appearing at consistent positions rather than as one-off ornament.
 
 ## Components
 

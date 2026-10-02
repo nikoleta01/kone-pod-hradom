@@ -43,7 +43,7 @@ export async function ServicesEntry() {
                   {tServices(`items.${service.id}.title`)}
                 </h3>
                 {service.ageRange ? (
-                  <span className="rounded-full bg-emerald-soft px-2.5 py-0.5 text-xs font-medium text-emerald-deep">
+                  <span className="rounded-xl bg-emerald-soft px-2.5 py-0.5 text-xs font-medium text-emerald-deep">
                     {tServices("ageValue", {
                       min: service.ageRange.min,
                       max: service.ageRange.max,

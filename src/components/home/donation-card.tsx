@@ -78,7 +78,7 @@ export function DonationCard({
   }
 
   const chipClass =
-    "rounded-lg border-2 px-4 py-2 text-base font-semibold transition focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-emerald";
+    "rounded-full border-2 px-4 py-2 text-base font-semibold transition focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-emerald";
 
   return (
     <div className="self-start rounded-xl border-2 border-emerald-deep bg-cream p-5 text-charcoal sm:p-7">
@@ -119,10 +119,10 @@ export function DonationCard({
             {t("customLabel")}
           </label>
           <div
-            className={`flex items-center rounded-lg border-2 bg-cream pr-3 ${
+            className={`flex items-center rounded-full border-2 bg-cream pr-4 transition focus-within:border-emerald focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-emerald ${
               preset === null && custom
                 ? "border-emerald"
-                : "border-brown/40"
+                : "border-brown/40 hover:border-emerald"
             }`}
           >
             <input
@@ -136,7 +136,10 @@ export function DonationCard({
                 setPreset(null);
               }}
               placeholder="30"
-              className="w-20 bg-transparent px-3 py-2 text-base font-semibold outline-none"
+              className="w-20 bg-transparent py-2 pl-4 pr-1 text-base font-semibold"
+              // The rounded box around it draws the focus ring, so the
+              // global square :focus-visible outline is switched off here.
+              style={{ outline: "none" }}
             />
             <span className="font-semibold text-charcoal-soft">€</span>
           </div>
@@ -152,7 +155,7 @@ export function DonationCard({
                 aria-label={t("qrAlt", {
                   amount: amount ? `${amount} €` : t("anyAmount"),
                 })}
-                className="aspect-square w-full overflow-hidden rounded-lg border-2 border-brown/40 [&>svg]:h-full [&>svg]:w-full"
+                className="aspect-square w-full overflow-hidden rounded-xl border-2 border-brown/40 [&>svg]:h-full [&>svg]:w-full"
                 dangerouslySetInnerHTML={{ __html: qrSvg }}
               />
               <figcaption className="mt-2 text-xs leading-snug text-charcoal-soft">
