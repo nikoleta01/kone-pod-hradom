@@ -4,7 +4,7 @@ import { site } from "@/content/site";
 import { DonationCard } from "./donation-card";
 
 /**
- * "Support us" — the one full-bleed emerald band on the site. Colors invert
+ * "Support us": the one full-bleed emerald band on the site. Colors invert
  * here (cream ink on emerald), but the structure stays the same: the ruled
  * top edge, and a dashed border for what is not ready yet, the same mark the
  * Ekovan loose page uses.
@@ -32,24 +32,27 @@ export async function SupportSection() {
             {t("body")}
           </p>
 
-          <div className="mt-10 rotate-[-1deg] rounded-2xl border-2 border-dashed border-cream/50 p-5 sm:p-6">
-            <h3 className="flex items-center gap-2 font-stencil text-xl text-cream">
-              <TbReceiptTax className="h-5 w-5 shrink-0" aria-hidden="true" />
-              {t("taxTitle")}
-            </h3>
-            <p className="mt-2 text-sm leading-relaxed text-cream/90">
-              {t("taxBody")}
-            </p>
-            {site.taxShare.registered && site.taxShare.ico ? (
-              <p className="mt-3 text-sm font-semibold">
-                {t("taxIco")}: <span className="tabular-nums">{site.taxShare.ico}</span>
+          {/* Hidden until the association confirms its 2 % registration. */}
+          {site.taxShare.registered ? (
+            <div className="mt-10 rotate-[-1deg] rounded-2xl border-2 border-dashed border-cream/50 p-5 sm:p-6">
+              <h3 className="flex items-center gap-2 font-stencil text-xl text-cream">
+                <TbReceiptTax className="h-5 w-5 shrink-0" aria-hidden="true" />
+                {t("taxTitle")}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-cream/90">
+                {t("taxBody")}
               </p>
-            ) : (
-              <p className="mt-3 text-xs font-medium uppercase tracking-wide text-cream/70">
-                {t("taxPending")}
-              </p>
-            )}
-          </div>
+              {site.taxShare.ico ? (
+                <p className="mt-3 text-sm font-semibold">
+                  {t("taxIco")}: <span className="tabular-nums">{site.taxShare.ico}</span>
+                </p>
+              ) : (
+                <p className="mt-3 text-xs font-medium uppercase tracking-wide text-cream/70">
+                  {t("taxPending")}
+                </p>
+              )}
+            </div>
+          ) : null}
         </div>
 
         <DonationCard

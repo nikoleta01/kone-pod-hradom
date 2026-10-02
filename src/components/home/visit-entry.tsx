@@ -28,7 +28,7 @@ function VisitCell({
 }
 
 /**
- * "Come visit" — the map, address, the way there and where to park.
+ * "Come visit": the map, address, the way there and where to park.
  * Visitors arrive by car, often straight from the castle, so the address
  * also links out to the phone's own maps app for directions.
  */
@@ -58,7 +58,7 @@ export async function VisitEntry() {
             icon={<TbMapPin className={iconClass} aria-hidden="true" />}
             label={t("visitAddressLabel")}
           >
-            <p className="text-base text-charcoal">{addressLine()}</p>
+            <p>{addressLine()}</p>
             <a
               href={mapHref()}
               target="_blank"

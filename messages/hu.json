@@ -34,8 +34,8 @@
     "heroEyebrow": "Krasznahorkaváralja",
     "heroTitle": "Lovak a vár alatt",
     "heroPhotoAlt": "Két fekete ló áll a havas karámban, fölöttük a krasznahorkai vár.",
-    "thesis": "„A lovak — barátaink és tanítóink.”",
-    "heroSubtitle": "A Tymián polgári társulás vagyunk. Nálunk a gyerekek a lovakkal és az erdővel is találkoznak — nyugodtan, biztonságosan, a saját tempójukban.",
+    "thesis": "A Tymián polgári társulás vagyunk, lovaglást és pihentető sétákat kínálunk.",
+    "heroSubtitle": "Csatlakozzon hozzánk, és éljen át felejthetetlen pillanatokat ezeknek a csodálatos állatoknak a társaságában!",
     "workshopSchedule": "Kézműves foglalkozás: kedd 14:00 – 15:00",
     "outdoors": "A szabadban, friss levegőn",
     "callNote": "Az időpontot telefonon egyeztetjük.",
@@ -45,7 +45,7 @@
     "ekovanTitle": "Ökocentrumot építünk a lovaknál",
     "ekovanBody": "Az Ekovan projekt keretében olyan teret hozunk létre, amely összeköti a lovakkal való kapcsolatot, a környezeti nevelést és a természetben való pihenést.",
     "visitTitle": "Hol talál meg minket?",
-    "visitBody": "Krasznahorkaváralján találnak minket, a krasznahorkai vár tövében. Az időpontot kérjük, előre egyeztessék — mondják meg, hány éves a gyermekük, és tanácsot adunk, mi illik hozzá.",
+    "visitBody": "Krasznahorkaváralján találnak minket, a krasznahorkai vár tövében. Az időpontot kérjük, előre egyeztessék. Mondják meg, hány éves a gyermekük, és tanácsot adunk, mi illik hozzá.",
     "orFollow": "Vagy kövessen minket",
     "servicesTitle": "Mit élhetnek át nálunk",
     "servicesSubtitle": "Programok gyerekes családoknak, iskolai csoportoknak és turistáknak.",
@@ -124,7 +124,7 @@
   "services": {
     "title": "Kínálat",
     "lead": "Élmények lovakkal és erdővel egész évben",
-    "intro": "A programokat a csoport korához és tapasztalatához igazítjuk. Az időpontot előre egyeztetjük — hívjon minket, és tanácsot adunk, mi illik a gyermekéhez.",
+    "intro": "A programokat a csoport korához és tapasztalatához igazítjuk. Az időpontot előre egyeztetjük. Hívjon minket, és tanácsot adunk, mi illik a gyermekéhez.",
     "items": {
       "vozenie-deti": {
         "title": "Lovagoltatás",
@@ -217,7 +217,7 @@
   "contact": {
     "title": "Kapcsolat",
     "lead": "Keressenek minket",
-    "body": "A látogatás időpontját kérjük, előre egyeztessék. A leggyorsabb telefonon — mondják meg, hány éves a gyermekük és hányan jönnek, és tanácsot adunk, mi illik hozzájuk.",
+    "body": "A látogatás időpontját kérjük, előre egyeztessék. A leggyorsabb telefonon. Mondják meg, hány éves a gyermekük és hányan jönnek, és tanácsot adunk, mi illik hozzájuk.",
     "emailLabel": "E-mail",
     "emailPending": "Az e-mailt pótoljuk",
     "phoneLabel": "Telefon",

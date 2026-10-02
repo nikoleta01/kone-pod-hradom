@@ -34,8 +34,8 @@
     "heroEyebrow": "Krásnohorské Podhradie",
     "heroTitle": "Kone pod hradom",
     "heroPhotoAlt": "Dva vraníky stoja v zasneženom výbehu, nad nimi Krásnohorský hrad.",
-    "thesis": "„Kone — naši kamaráti a učitelia.“",
-    "heroSubtitle": "Sme občianske združenie Tymián. Deti sa u nás stretnú s koňmi aj s lesom — pokojne, bezpečne a vlastným tempom.",
+    "thesis": "Sme občianske združenie Tymián, ktoré ponúka jazdy na koňoch a relaxačné vychádzky.",
+    "heroSubtitle": "Pridajte sa k nám a zažite nezabudnuteľné chvíle v spoločnosti týchto nádherných zvierat!",
     "workshopSchedule": "Tvorivé dielne: utorok 14:00 – 15:00",
     "outdoors": "V prírode, na čerstvom vzduchu",
     "callNote": "Termín dohodneme telefonicky.",
@@ -45,7 +45,7 @@
     "ekovanTitle": "Budujeme Ekocentrum pri koňoch",
     "ekovanBody": "V rámci projektu Ekovan vytvárame priestor, ktorý spojí kontakt s koňmi, environmentálnu výchovu a oddych v prírode.",
     "visitTitle": "Ako nás nájdete?",
-    "visitBody": "Nájdete nás v Krásnohorskom Podhradí, na dohľad od Krásnohorského hradu. Termín návštevy si s nami dohodnite vopred — povedzte nám, koľko má vaše dieťa rokov, a poradíme, čo mu bude sedieť.",
+    "visitBody": "Nájdete nás v Krásnohorskom Podhradí, na dohľad od Krásnohorského hradu. Termín návštevy si s nami dohodnite vopred. Povedzte nám, koľko má vaše dieťa rokov, a poradíme, čo mu bude sedieť.",
     "orFollow": "Alebo nás sledujte",
     "servicesTitle": "Čo u nás zažijete",
     "servicesSubtitle": "Programy pre rodiny s deťmi, školské skupiny aj turistov.",
@@ -124,7 +124,7 @@
   "services": {
     "title": "Ponuka",
     "lead": "Zážitky s koňmi a lesom počas celého roka",
-    "intro": "Programy prispôsobujeme veku a skúsenostiam skupiny. Termín si dohodneme vopred — zavolajte nám a poradíme, čo bude vášmu dieťaťu sedieť.",
+    "intro": "Programy prispôsobujeme veku a skúsenostiam skupiny. Termín si dohodneme vopred. Zavolajte nám a poradíme, čo bude vášmu dieťaťu sedieť.",
     "items": {
       "vozenie-deti": {
         "title": "Vozenie sa na koni",
@@ -217,7 +217,7 @@
   "contact": {
     "title": "Kontakt",
     "lead": "Ozvite sa nám",
-    "body": "Termín návštevy si dohodnite vopred. Najrýchlejšie je zavolať — povedzte nám, koľko má vaše dieťa rokov a koľko vás príde, a poradíme, čo bude sedieť.",
+    "body": "Termín návštevy si dohodnite vopred. Najrýchlejšie je zavolať. Povedzte nám, koľko má vaše dieťa rokov a koľko vás príde, a poradíme, čo bude sedieť.",
     "emailLabel": "E-mail",
     "emailPending": "E-mail doplníme",
     "phoneLabel": "Telefón",

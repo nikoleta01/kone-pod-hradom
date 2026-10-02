@@ -34,8 +34,8 @@
     "heroEyebrow": "Krásnohorské Podhradie",
     "heroTitle": "Horses below the castle",
     "heroPhotoAlt": "Two black horses standing in a snowy paddock, with Krásna Hôrka Castle on the ridge above them.",
-    "thesis": "“Horses — our friends and our teachers.”",
-    "heroSubtitle": "We are the Tymián association. Children here meet the horses and the forest alike — calmly, safely, and at their own pace.",
+    "thesis": "We are the Tymián civic association, offering horse rides and relaxing walks.",
+    "heroSubtitle": "Join us and enjoy unforgettable moments in the company of these wonderful animals!",
     "workshopSchedule": "Creative workshop: Tuesdays 14:00 – 15:00",
     "outdoors": "Outdoors, in the fresh air",
     "callNote": "We arrange dates by phone.",
@@ -45,7 +45,7 @@
     "ekovanTitle": "We are building an eco-centre beside the horses",
     "ekovanBody": "Through the Ekovan project we are creating a space that joins contact with horses, environmental education and rest in nature.",
     "visitTitle": "How to find us",
-    "visitBody": "You will find us in Krásnohorské Podhradie, within sight of Krásna Hôrka Castle. Please arrange your visit in advance — tell us how old your child is and we will suggest what suits them.",
+    "visitBody": "You will find us in Krásnohorské Podhradie, within sight of Krásna Hôrka Castle. Please arrange your visit in advance. Tell us how old your child is and we will suggest what suits them.",
     "orFollow": "Or follow us",
     "servicesTitle": "What you can do here",
     "servicesSubtitle": "Programmes for families with children, school groups and travellers.",
@@ -124,7 +124,7 @@
   "services": {
     "title": "Experiences",
     "lead": "Time with horses and the forest, all year round",
-    "intro": "We adapt each programme to the age and experience of the group. Dates are arranged in advance — call us and we will suggest what will suit your child.",
+    "intro": "We adapt each programme to the age and experience of the group. Dates are arranged in advance. Call us and we will suggest what will suit your child.",
     "items": {
       "vozenie-deti": {
         "title": "Led rides for children",
@@ -217,7 +217,7 @@
   "contact": {
     "title": "Contact",
     "lead": "Get in touch",
-    "body": "Please arrange your visit in advance. Calling is fastest — tell us how old your child is and how many of you are coming, and we will suggest what suits.",
+    "body": "Please arrange your visit in advance. Calling is fastest. Tell us how old your child is and how many of you are coming, and we will suggest what suits.",
     "emailLabel": "E-mail",
     "emailPending": "E-mail to come",
     "phoneLabel": "Phone",

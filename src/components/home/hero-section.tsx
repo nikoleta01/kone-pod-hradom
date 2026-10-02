@@ -22,7 +22,7 @@ export async function HeroSection() {
           <h1 className="mt-3 max-w-xl font-stencil text-5xl leading-[1.05] text-charcoal md:text-6xl">
             {t("heroTitle")}
           </h1>
-          <p className="mt-5 max-w-md rotate-[-0.6deg] text-base leading-snug text-brown">
+          <p className="mt-5 max-w-md text-base leading-snug text-brown">
             {t("thesis")}
           </p>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-charcoal-soft md:text-xl">

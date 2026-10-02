@@ -8,7 +8,7 @@ import { PhoneCard } from "./phone-card";
 const FAQ_IDS = ["age", "parents", "clothes", "weather", "price", "groups"] as const;
 
 /**
- * "Questions" — a ruled page of questions. Native `<details>`, so it opens
+ * "Questions": a ruled page of questions. Native `<details>`, so it opens
  * without any JavaScript on weak signal and every answer stays in the HTML
  * for search engines.
  */
