@@ -24,7 +24,7 @@ function visibility(index: number): string {
 
 /**
  * A trail of horseshoes running the full width of the column. Used once on
- * the homepage, under "Meet the horses", so it stays a single flourish
+ * the homepage, under the first section (the offer cards), so it stays a single flourish
  * rather than a repeated rule. Decorative only.
  */
 export function HorseshoeDivider() {

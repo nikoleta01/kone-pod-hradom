@@ -12,5 +12,7 @@ export function Entry({ id, children }: { id?: string; children: ReactNode }) {
 
 /** The shared column that stacks successive `Entry` sections. */
 export function LogSpine({ children }: { children: ReactNode }) {
-  return <div className="mx-auto max-w-6xl px-4 sm:px-6">{children}</div>;
+  return (
+    <div className="mx-auto max-w-6xl px-4 pt-16 sm:px-6 md:pt-20">{children}</div>
+  );
 }

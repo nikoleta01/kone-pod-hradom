@@ -35,9 +35,9 @@ export default async function HomePage({ params }: Props) {
     <>
       <HeroSection />
       <LogSpine>
-        <IntroEntry />
-        <HorseshoeDivider />
         <ServicesEntry />
+        <HorseshoeDivider />
+        <IntroEntry />
         <VisitEntry />
         <FaqEntry />
       </LogSpine>
