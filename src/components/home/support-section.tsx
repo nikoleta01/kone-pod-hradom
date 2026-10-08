@@ -15,7 +15,7 @@ export async function SupportSection() {
   return (
     <section
       aria-labelledby="support-title"
-      className="border-t-2 border-emerald-deep bg-emerald text-cream"
+      className="border-t border-emerald-deep bg-emerald text-cream"
     >
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-[0.9fr_1.1fr] md:gap-14 md:py-20">
         <div>
@@ -34,7 +34,7 @@ export async function SupportSection() {
 
           {/* Hidden until the association confirms its 2 % registration. */}
           {site.taxShare.registered ? (
-            <div className="mt-10 rotate-[-1deg] rounded-xl border-2 border-dashed border-cream/50 p-5 sm:p-6">
+            <div className="mt-10 rotate-[-1deg] rounded-xl border border-dashed border-cream/50 p-5 sm:p-6">
               <h3 className="flex items-center gap-2 font-stencil text-xl text-cream">
                 <TbReceiptTax className="h-5 w-5 shrink-0" aria-hidden="true" />
                 {t("taxTitle")}

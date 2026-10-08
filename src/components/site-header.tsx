@@ -95,8 +95,8 @@ export function SiteHeader({ locale }: { locale: Locale }) {
                     aria-current={isActive ? "page" : undefined}
                     className={
                       isActive
-                        ? "group flex items-center gap-1.5 rounded-full bg-emerald-soft py-2 pl-2.5 pr-3.5 text-sm font-medium text-emerald-deep"
-                        : "group flex items-center gap-1.5 rounded-full py-2 pl-2.5 pr-3.5 text-sm font-medium text-charcoal-soft transition hover:bg-emerald-soft/60 hover:text-emerald-deep"
+                        ? "group flex items-center gap-1.5 rounded-full border border-emerald-deep bg-emerald-soft py-1.5 pl-2 pr-3 text-sm font-medium text-emerald-deep"
+                        : "group flex items-center gap-1.5 rounded-full border border-transparent py-1.5 pl-2 pr-3 text-sm font-medium text-charcoal-soft transition hover:bg-emerald-soft/60 hover:text-emerald-deep"
                     }
                   >
                     {/*

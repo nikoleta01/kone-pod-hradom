@@ -8,7 +8,7 @@ export async function EkovanSection() {
 
   return (
     <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-20">
-      <div className="rotate-[-1deg] rounded-xl border-2 border-dashed border-emerald/50 bg-card p-6 sm:ml-12 sm:p-8 md:ml-24">
+      <div className="rotate-[-1deg] rounded-xl border border-dashed border-emerald/50 bg-card p-6 sm:ml-12 sm:p-8 md:ml-24">
         <p className="font-stencil text-xs font-semibold uppercase tracking-wide text-emerald">
           {t("ekovanLabel")}
         </p>

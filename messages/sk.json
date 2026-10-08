@@ -25,7 +25,6 @@
     "call": "Zavolajte nám",
     "callShort": "Zavolať",
     "callPending": "Číslo doplníme",
-    "seeOffer": "Pozrieť ponuku",
     "contactUs": "Kontakt",
     "learnMore": "Zistiť viac",
     "backHome": "Späť na úvod"
@@ -139,6 +138,10 @@
       "workshopy": {
         "title": "Tvorivé dielne",
         "description": "Tvoríme z prírodných materiálov, ktoré nájdeme okolo nás. Tvoríme, objavujeme, zažívame prírodu."
+      },
+      "senzoricke-hry": {
+        "title": "Senzorické hry",
+        "description": "Hry, pri ktorých deti spoznávajú prírodu hmatom, čuchom aj sluchom."
       },
       "jazdenie": {
         "title": "Jazdenie na koňoch",

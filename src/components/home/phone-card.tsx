@@ -13,7 +13,7 @@ export function PhoneCard({ label, note }: { label: string; note: string }) {
     <div className="flex flex-col items-start gap-2">
       <a
         href={tel}
-        className="inline-flex items-center gap-2.5 rounded-full bg-emerald px-5 py-3.5 text-lg font-semibold text-cream transition hover:bg-emerald-deep"
+        className="inline-flex items-center gap-2.5 rounded-full border border-emerald px-5 py-3 text-lg font-semibold text-emerald transition hover:bg-emerald-soft hover:text-emerald-deep"
       >
         <TbPhone className="h-5 w-5 shrink-0" aria-hidden="true" />
         <span className="sr-only">{label}: </span>

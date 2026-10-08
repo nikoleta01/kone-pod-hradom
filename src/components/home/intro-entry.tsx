@@ -22,7 +22,7 @@ export async function IntroEntry() {
           </p>
         </div>
         {childHorsePhoto ? (
-          <div className="mt-8 overflow-hidden rounded-xl border-2 border-emerald md:self-start">
+          <div className="mt-8 overflow-hidden rounded-xl border border-emerald md:self-start">
             <Image
               src={childHorsePhoto.src}
               alt={tGallery("photos.child")}

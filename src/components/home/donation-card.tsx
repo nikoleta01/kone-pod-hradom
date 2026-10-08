@@ -78,10 +78,10 @@ export function DonationCard({
   }
 
   const chipClass =
-    "rounded-full border-2 px-4 py-2 text-base font-semibold transition focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-emerald";
+    "rounded-full border px-4 py-2 text-base font-semibold transition focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-emerald";
 
   return (
-    <div className="self-start rounded-xl border-2 border-emerald-deep bg-cream p-5 text-charcoal sm:p-7">
+    <div className="self-start rounded-xl border border-emerald-deep bg-cream p-5 text-charcoal sm:p-7">
       <fieldset>
         <legend className="text-sm font-semibold text-charcoal">
           {t("amountLabel")}
@@ -119,7 +119,7 @@ export function DonationCard({
             {t("customLabel")}
           </label>
           <div
-            className={`flex items-center rounded-full border-2 bg-cream pr-4 transition focus-within:border-emerald focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-emerald ${
+            className={`flex items-center rounded-full border bg-cream pr-4 transition focus-within:border-emerald focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-emerald ${
               preset === null && custom
                 ? "border-emerald"
                 : "border-brown/40 hover:border-emerald"
@@ -146,7 +146,7 @@ export function DonationCard({
         </div>
       </fieldset>
 
-      <div className="mt-6 border-t-2 border-brown/20 pt-6">
+      <div className="mt-6 border-t border-brown/20 pt-6">
         {iban && qrSvg ? (
           <div className="grid gap-6 sm:grid-cols-[auto_1fr] sm:items-start">
             <figure className="w-44 shrink-0">
@@ -155,7 +155,7 @@ export function DonationCard({
                 aria-label={t("qrAlt", {
                   amount: amount ? `${amount} €` : t("anyAmount"),
                 })}
-                className="aspect-square w-full overflow-hidden rounded-xl border-2 border-brown/40 [&>svg]:h-full [&>svg]:w-full"
+                className="aspect-square w-full overflow-hidden rounded-xl border border-brown/40 [&>svg]:h-full [&>svg]:w-full"
                 dangerouslySetInnerHTML={{ __html: qrSvg }}
               />
               <figcaption className="mt-2 text-xs leading-snug text-charcoal-soft">

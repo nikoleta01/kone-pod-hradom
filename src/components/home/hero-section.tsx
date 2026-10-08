@@ -33,14 +33,14 @@ export async function HeroSection() {
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <a
               href={`#${SERVICES_ANCHOR}`}
-              className="inline-flex items-center gap-2.5 rounded-full border-2 border-emerald bg-emerald px-5 py-3 text-lg font-semibold text-cream transition hover:border-emerald-deep hover:bg-emerald-deep"
+              className="inline-flex items-center gap-2.5 rounded-full border border-emerald-deep bg-emerald px-5 py-3 text-lg font-semibold text-cream transition hover:bg-emerald-deep"
             >
               {t("heroCta")}
               <TbArrowDown className="h-5 w-5 shrink-0" aria-hidden="true" />
             </a>
             <a
               href={`#${CONTACT_ANCHOR}`}
-              className="inline-flex items-center gap-2.5 rounded-full border-2 border-emerald bg-cream px-5 py-3 text-lg font-semibold text-emerald transition hover:bg-emerald-soft hover:text-emerald-deep"
+              className="inline-flex items-center gap-2.5 rounded-full border border-emerald bg-cream px-5 py-3 text-lg font-semibold text-emerald transition hover:bg-emerald-soft hover:text-emerald-deep"
             >
               {tActions("contactUs")}
             </a>

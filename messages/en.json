@@ -25,7 +25,6 @@
     "call": "Call us",
     "callShort": "Call",
     "callPending": "Number to come",
-    "seeOffer": "See what we offer",
     "contactUs": "Contact",
     "learnMore": "Find out more",
     "backHome": "Back to home"
@@ -139,6 +138,10 @@
       "workshopy": {
         "title": "Creative workshops",
         "description": "Making things from the natural materials we find around us. We make, we discover, we experience nature."
+      },
+      "senzoricke-hry": {
+        "title": "Sensory games",
+        "description": "Games where children get to know nature by touch, smell and sound."
       },
       "jazdenie": {
         "title": "Horse riding",

@@ -24,13 +24,12 @@
 
   --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
   /*
-   * `font-serif` is kept as the utility name so pages not yet rebuilt in the
-   * new direction keep working unchanged; the family behind it is now the
-   * stencil display face, not a literal serif. New work should reach for
-   * `font-stencil` (same font) so the name says what it actually is.
+   * The display face is Newsreader, a serif. `font-serif` and `font-stencil`
+   * both point at it: `font-stencil` is the name the components already use,
+   * kept from the earlier stencil face so the switch touched one line.
    */
-  --font-serif: var(--font-display), ui-sans-serif, system-ui, sans-serif;
-  --font-stencil: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-display), Georgia, "Times New Roman", serif;
+  --font-stencil: var(--font-display), Georgia, "Times New Roman", serif;
 }
 
 :root {

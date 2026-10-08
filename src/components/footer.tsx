@@ -26,7 +26,7 @@ export async function SiteFooter() {
 
   return (
     <footer>
-      <div className="border-t-2 border-emerald-deep bg-cream">
+      <div className="border-t border-emerald-deep bg-cream">
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:px-6 md:grid-cols-3 md:gap-10 md:py-12">
           <div>
             <p className="font-stencil text-lg text-charcoal">{site.name}</p>

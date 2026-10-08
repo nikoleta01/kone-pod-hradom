@@ -25,7 +25,6 @@
     "call": "Hívjon minket",
     "callShort": "Hívás",
     "callPending": "A számot pótoljuk",
-    "seeOffer": "Kínálat megtekintése",
     "contactUs": "Kapcsolat",
     "learnMore": "Tudjon meg többet",
     "backHome": "Vissza a kezdőlapra"
@@ -139,6 +138,10 @@
       "workshopy": {
         "title": "Kézműves foglalkozások",
         "description": "Természetes anyagokból alkotunk, amelyeket magunk körül találunk. Alkotunk, felfedezünk, átéljük a természetet."
+      },
+      "senzoricke-hry": {
+        "title": "Érzékszervi játékok",
+        "description": "Játékok, amelyekben a gyerekek tapintással, szaglással és hallással ismerik meg a természetet."
       },
       "jazdenie": {
         "title": "Lovaglás",

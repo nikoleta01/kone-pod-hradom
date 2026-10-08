@@ -12,11 +12,11 @@ colors:
   brown: "#6b4a31"
 typography:
   display:
-    fontFamily: "Big Shoulders Stencil, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Newsreader, Georgia, serif"
     fontWeight: 700
     lineHeight: 1.05
   body:
-    fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Source Sans 3, ui-sans-serif, system-ui, sans-serif"
     fontWeight: 400
     lineHeight: 1.5
 rounded:
@@ -24,8 +24,8 @@ rounded:
   full: "9999px"
 components:
   phone-card:
-    backgroundColor: "{colors.emerald}"
-    textColor: "{colors.cream}"
+    backgroundColor: "{colors.cream}"
+    textColor: "{colors.emerald}"
     rounded: "{rounded.md}"
     padding: "16px 20px"
   entry-dot:
@@ -80,10 +80,10 @@ Restrained strategy: emerald carries structure and headings; cream is the restin
 
 ## Typography
 
-**Display Font:** Big Shoulders Stencil (weights 600–800), with a system sans fallback.
-**Body Font:** Inter, with a system sans fallback.
+**Display Font:** Newsreader (variable weight, optical-size axis), with a Georgia / serif fallback. Chosen by the client in Oct 2026, replacing Big Shoulders Stencil. The `font-stencil` utility name is kept and now points at Newsreader.
+**Body Font:** Source Sans 3, with a system sans fallback. A humanist sans picked in Oct 2026 to sit with Newsreader, replacing Inter, which read too cool and technical next to the serif.
 
-**Character:** Field-notebook, not editorial: headers read as stamped/stencilled card lettering; body text is plain and legible, carrying no personality of its own so Slovak, Hungarian and English never fight the layout at different string lengths.
+**Character:** Warm and bookish: headers are a calm reading serif, set at its optical size; body text is plain and legible, carrying no personality of its own so Slovak, Hungarian and English never fight the layout at different string lengths.
 
 ### Hierarchy
 
@@ -95,7 +95,7 @@ Restrained strategy: emerald carries structure and headings; cream is the restin
 
 ### Named Rules
 
-**The Stencil-Is-For-Headers-Only Rule.** Big Shoulders Stencil never sets body copy or long-form text; it marks headings and the recurring entry structure, the way a stamp marks a card.
+**The Display-Is-For-Headers-Only Rule.** Newsreader never sets body copy or long-form text; it marks headings and the recurring entry structure, the way a stamp marks a card.
 
 ## Layout
 
@@ -104,6 +104,8 @@ The homepage is one continuous logbook: a cover entry (full-width card), then th
 Homepage order: cover, then the spine (meet the horses, programmes, come visit, questions), then the Ekovan loose page, then the Support band. The order follows a parent's decision (what is it, what can we do, how do we get there, what else do I need to know), and asks for money only after that.
 
 **The One Green Band Rule.** Exactly one section on the site sits on a full-width emerald ground: Support us. A second band would turn the separator into a pattern and stop marking anything. Other sections separate by rule lines, borders and the Field Card Cream ground. No scroll-triggered reveal, parallax, or sweep device: the product's constraint is weak rural signal and an anxious parent who needs the point fast, and the redesign named those staging devices and rejected them on that ground.
+
+**The One Line Weight Rule.** Every border and divider on the site is 1px: card borders, buttons, section rules, list dividers, the header rule. Softer separators change color or opacity (`brown/25`), never thickness.
 
 ## Elevation & Depth
 
@@ -115,13 +117,13 @@ Flat by default. Depth is conveyed by the logbook's own material logic — the c
 
 ## Shapes
 
-Two shapes, one rule each. Buttons and anything you tap to choose (the donation amount chips, and the custom amount field in that same row) are fully round (`rounded-full`), like the nav pills. Everything else, every card, photo, tag and container, uses one radius, `rounded-xl` (12px), like a laminated card's trimmed edge. Never mix in `rounded-lg` or `rounded-2xl`. An element inset inside a 2px border uses the matching inner radius (10px), which is the same corner, not a second radius — not sharp brochure rectangles, not pill-shaped app chrome (nav links are the one intentional exception: full pills, inherited from the incumbent implementation's control language). Binding marks — hole-punch dots on the spine, a dashed border on the Ekovan aside — are the recurring signature geometry, appearing at consistent positions rather than as one-off ornament.
+Two shapes, one rule each. Buttons and anything you tap to choose (the donation amount chips, and the custom amount field in that same row) are fully round (`rounded-full`), like the nav pills. Everything else, every card, photo, tag and container, uses one radius, `rounded-xl` (12px), like a laminated card's trimmed edge. Never mix in `rounded-lg` or `rounded-2xl`. An element inset inside a 1px border uses the matching inner radius (11px), which is the same corner, not a second radius — not sharp brochure rectangles, not pill-shaped app chrome (nav links are the one intentional exception: full pills, inherited from the incumbent implementation's control language). Binding marks — hole-punch dots on the spine, a dashed border on the Ekovan aside — are the recurring signature geometry, appearing at consistent positions rather than as one-off ornament.
 
 ## Components
 
 ### Phone card
 
-The site's one conversion, styled as the log's own "who to call" line rather than a generic button. Solid emerald fill, cream text, a phone icon plus the number as a live `tel:` link, with one short supporting line under it. Appears once, in the FAQ section next to the social links. The hero instead carries a same-shaped button that scrolls to "Čo u nás zažijete".
+The site's one conversion, styled as the log's own "who to call" line rather than a generic button. Outlined in green with no fill of its own (the page shows through), 1px Emerald border, Emerald number and phone icon. No pure white anywhere on the site as a live `tel:` link, with one short supporting line under it. Appears once, in the FAQ section next to the social links. The hero instead carries a same-shaped button that scrolls to "Čo u nás zažijete".
 
 ### Entry (`Entry`)
 
@@ -140,8 +142,8 @@ A dashed-border, rotated (-1°), indented card in Field Card Cream — the one s
 Pill-shaped links (inherited control language). One state grammar shared with the language switcher:
 
 - **Hover** (nav and languages alike): a lighter Emerald-Soft pill (60%) and Emerald-Deep text. In the nav, a faint horseshoe (40%) also appears in its slot, previewing the current-page look.
-- **Current page:** full Emerald-Soft pill, Emerald-Deep text, and the horseshoe (`HorseshoeMark`, 18px, rotated -15°) inside the pill, left of the label. Every nav link reserves the horseshoe's slot, so labels never shift between pages. In the mobile menu, the current row is Emerald-Deep text with the same horseshoe.
-- **Current language:** solid Emerald pill with cream text. Stronger than the current page on purpose: it is a setting the visitor chose, not a place. Header background is Cream Ground (matching the page, not the card ground it sits above). The header's bottom rule is a thin (1px, 25% opacity) full-width brown line — the same binding-rule color used on the spine below it, kept deliberately subtle rather than a bold divider.
+- **Current page:** full Emerald-Soft pill with a 1px Emerald-Deep border, Emerald-Deep text, and the horseshoe (`HorseshoeMark`, 18px, rotated -15°) inside the pill, left of the label. Every nav link reserves the horseshoe's slot, so labels never shift between pages. In the mobile menu, the current row is Emerald-Deep text with the same horseshoe.
+- **Current language:** solid Emerald pill with cream text and a 1px Emerald-Deep border, the same treatment as the hero's primary button. Stronger than the current page on purpose: it is a setting the visitor chose, not a place. Header background is Cream Ground (matching the page, not the card ground it sits above). The header's bottom rule is a 1px, 25% opacity full-width brown line — the same binding-rule color used on the spine below it, kept deliberately subtle rather than a bold divider.
 
 ## Do's and Don'ts
 

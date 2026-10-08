@@ -28,9 +28,8 @@ export type Service = {
   priceEur: number | null;
   /**
    * The photograph this category wears on its card, as an id from
-   * `src/content/photos.ts`. Null falls back to `fallbackPhotoId` so no card
-   * ever renders a hole; replace it with the category's own photo as they
-   * arrive from the association's gallery.
+   * `src/content/photos.ts`. Null falls back to `fallbackPhotoId` until the
+   * association sends a photo of that service.
    */
   photoId: string | null;
   /** Flip to true once the service can actually be reserved online. */
@@ -45,7 +44,7 @@ export const services: Service[] = [
     durationMinutes: null,
     capacity: null,
     priceEur: null,
-    photoId: null,
+    photoId: 'child',
     bookable: false
   },
   {
@@ -55,7 +54,7 @@ export const services: Service[] = [
     durationMinutes: 60,
     capacity: null,
     priceEur: null,
-    photoId: null,
+    photoId: 'deti-v-prirode',
     bookable: false
   },
   {
@@ -63,6 +62,16 @@ export const services: Service[] = [
     href: '/ponuka',
     ageRange: {min: 5, max: 10},
     durationMinutes: 60,
+    capacity: null,
+    priceEur: null,
+    photoId: null,
+    bookable: false
+  },
+  {
+    id: 'senzoricke-hry',
+    href: '/ponuka',
+    ageRange: null,
+    durationMinutes: null,
     capacity: null,
     priceEur: null,
     photoId: null,
@@ -100,18 +109,19 @@ export const services: Service[] = [
   }
 ];
 
-/**
- * Used until a category has a photograph of its own — a card with a real
- * picture beats a card with a marked hole in it.
- */
-export const fallbackPhotoId = 'deti-v-prirode';
+/** Stand-in on a service card until that service has a photo of its own. */
+export const fallbackPhotoId = 'zima-pod-hradom';
 
-/** The four the association leads with on its own poster, in its own order. */
+/**
+ * The cards on the homepage: the four the association leads with on its own
+ * poster, in its own order, plus sensory games.
+ */
 export const featuredServiceIds = [
   'vozenie-deti',
   'lesna-pedagogika',
   'workshopy',
-  'zoznamenie-s-konmi'
+  'zoznamenie-s-konmi',
+  'senzoricke-hry'
 ] as const;
 
 /** Parts of the Ekovan project, rendered on the Ekovan page. */

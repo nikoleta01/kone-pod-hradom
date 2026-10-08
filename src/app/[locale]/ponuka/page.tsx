@@ -92,7 +92,7 @@ export default async function ServicesPage({params}: Props) {
               {/* Swap this for a real booking button once `bookable` flips. */}
               <Link
                 href="/kontakt"
-                className="mt-6 inline-block self-start rounded-full border border-brown px-5 py-2.5 text-sm font-semibold text-charcoal transition hover:bg-card"
+                className="mt-6 inline-block self-start rounded-full border border-brown px-5 py-2 text-sm font-semibold text-charcoal transition hover:bg-card"
               >
                 {tActions('contactUs')}
               </Link>

@@ -36,7 +36,7 @@ export function MapEmbed({ src, title, unlockLabel }: Props) {
     <div
       ref={wrapperRef}
       onMouseLeave={() => setActive(false)}
-      className="group relative border-b-2 border-brown"
+      className="group relative border-b border-brown"
     >
       <iframe
         src={src}
@@ -44,7 +44,7 @@ export function MapEmbed({ src, title, unlockLabel }: Props) {
         loading="lazy"
         referrerPolicy="no-referrer"
         tabIndex={active ? 0 : -1}
-        className={`block h-72 w-full rounded-t-[10px] md:h-96 ${
+        className={`block h-72 w-full rounded-t-[11px] md:h-96 ${
           active ? "" : "pointer-events-none"
         }`}
       />
@@ -52,13 +52,13 @@ export function MapEmbed({ src, title, unlockLabel }: Props) {
         <button
           type="button"
           onClick={() => setActive(true)}
-          className="absolute inset-0 flex cursor-pointer items-end justify-center rounded-t-[10px] pb-4"
+          className="absolute inset-0 flex cursor-pointer items-end justify-center rounded-t-[11px] pb-4"
         >
           {/*
             Always visible on touch screens, where there is no hover to
             reveal it; on a mouse it appears only while over the map.
           */}
-          <span className="inline-flex items-center gap-2 rounded-full border-2 border-brown bg-cream px-4 py-2 text-sm font-semibold text-charcoal transition-opacity group-hover:opacity-100 group-focus-within:opacity-100 [@media(hover:hover)]:opacity-0">
+          <span className="inline-flex items-center gap-2 rounded-full border border-brown bg-cream px-4 py-2 text-sm font-semibold text-charcoal transition-opacity group-hover:opacity-100 group-focus-within:opacity-100 [@media(hover:hover)]:opacity-0">
             <TbHandClick className="h-4 w-4 shrink-0 text-emerald" aria-hidden="true" />
             {unlockLabel}
           </span>

@@ -46,7 +46,7 @@ export function LanguageSwitcher({locale}: {locale: Locale}) {
       {/* Reserves the switcher's permanent size in the header's layout. */}
       <span
         aria-hidden="true"
-        className="invisible block rounded-full px-2.5 py-1 text-xs font-semibold uppercase tracking-wide"
+        className="invisible block rounded-full border border-transparent px-2.5 py-1 text-xs font-semibold uppercase tracking-wide"
       >
         {locale}
       </span>
@@ -66,7 +66,7 @@ export function LanguageSwitcher({locale}: {locale: Locale}) {
               lang={code}
               disabled={isPending}
               onClick={() => select(code)}
-              className="rounded-full px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-charcoal-soft transition hover:bg-emerald-soft/60 hover:text-emerald-deep disabled:opacity-50"
+              className="rounded-full border border-transparent px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-charcoal-soft transition hover:bg-emerald-soft/60 hover:text-emerald-deep disabled:opacity-50"
             >
               {code}
               <span className="sr-only"> – {t(code)}</span>
@@ -79,7 +79,7 @@ export function LanguageSwitcher({locale}: {locale: Locale}) {
           lang={locale}
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
-          className="rounded-full bg-emerald px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-cream"
+          className="rounded-full border border-emerald-deep bg-emerald px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-cream"
         >
           {locale}
           <span className="sr-only"> – {t(locale)}</span>

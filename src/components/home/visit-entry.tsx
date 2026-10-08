@@ -42,17 +42,17 @@ export async function VisitEntry() {
       <h2 className="font-stencil text-3xl text-charcoal md:text-4xl">
         {t("visitTitle")}
       </h2>
-      <p className="mt-4 max-w-xl text-lg leading-relaxed text-charcoal-soft">
+      <p className="mt-4 text-lg leading-relaxed text-charcoal-soft">
         {t("visitBody")}
       </p>
 
-      <div className="mt-8 isolate overflow-hidden rounded-xl border-2 border-brown bg-card">
+      <div className="mt-8 isolate overflow-hidden rounded-xl border border-brown bg-card">
         <MapEmbed
           src={mapEmbedSrc()}
           title={t("visitMapTitle")}
           unlockLabel={t("visitMapUnlock")}
         />
-        <div className="grid divide-y-2 divide-brown/25 md:grid-cols-3 md:divide-x-2 md:divide-y-0">
+        <div className="grid divide-y divide-brown/25 md:grid-cols-3 md:divide-x md:divide-y-0">
           <VisitCell
             icon={<TbMapPin className={iconClass} aria-hidden="true" />}
             label={t("visitAddressLabel")}

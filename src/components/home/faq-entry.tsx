@@ -58,7 +58,7 @@ export async function FaqEntry() {
           </div>
         </div>
 
-        <div className="divide-y divide-brown/25 border-y-2 border-brown">
+        <div className="divide-y divide-brown/25 border-y border-brown">
           {FAQ_IDS.map((id) => (
             <details key={id} className="group">
               <summary className="flex cursor-pointer list-none items-start justify-between gap-4 py-4 text-left [&::-webkit-details-marker]:hidden">
