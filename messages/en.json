@@ -128,19 +128,23 @@
     "items": {
       "vozenie-deti": {
         "title": "Led rides for children",
-        "description": "Calm, safe rides in nature – a small child's first contact with a horse, always led on foot."
+        "description": "Calm, safe rides in nature – a small child's first contact with a horse, always led on foot.",
+        "short": "A first ride, always led."
       },
       "lesna-pedagogika": {
         "title": "Forest pedagogy",
-        "description": "Discovering the forest with every sense. Experiences that build a relationship with nature and self-confidence."
+        "description": "Discovering the forest with every sense. Experiences that build a relationship with nature and self-confidence.",
+        "short": "The forest with every sense."
       },
       "workshopy": {
         "title": "Creative workshops",
-        "description": "Making things from the natural materials we find around us. We make, we discover, we experience nature."
+        "description": "Making things from the natural materials we find around us. We make, we discover, we experience nature.",
+        "short": "Making things from nature."
       },
       "senzoricke-hry": {
         "title": "Sensory games",
-        "description": "Games where children get to know nature by touch, smell and sound."
+        "description": "Games where children get to know nature by touch, smell and sound.",
+        "short": "Nature by touch, smell, sound."
       },
       "jazdenie": {
         "title": "Horse riding",
@@ -148,7 +152,8 @@
       },
       "zoznamenie-s-konmi": {
         "title": "Getting to know the horses",
-        "description": "Meeting the horses and helping care for them on our grounds: grooming, feeding, getting them ready."
+        "description": "Meeting the horses and helping care for them on our grounds: grooming, feeding, getting them ready.",
+        "short": "Grooming, feeding, tacking up."
       },
       "ekocentrum-programy": {
         "title": "Eco-centre programmes",
@@ -215,7 +220,10 @@
     "photos": {
       "zima-pod-hradom": "Two black horses in a snowy paddock, with Krásna Hôrka Castle above them.",
       "deti-v-prirode": "Children on a blanket in the grass, one holding a beetle on their palm.",
-      "child": "A girl smiles as she rests against a chestnut horse's mane, under a clear blue sky."
+      "child": "A girl smiles as she rests against a chestnut horse's mane, under a clear blue sky.",
+      "vozenie-na-koni": "A girl in a pink helmet rides a chestnut horse while an instructor guides it on a lunge line.",
+      "senzoricke-hry": "A smiling girl on a wooden bench holds colourful sensory balls to her cheeks.",
+      "zoznamovanie-s-konmi": "A beaming girl in a pink helmet sits on a horse with her arms spread wide like wings."
     }
   },
   "contact": {

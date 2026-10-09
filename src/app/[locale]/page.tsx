@@ -8,7 +8,6 @@ import { IntroEntry } from "@/components/home/intro-entry";
 import { ServicesEntry } from "@/components/home/services-entry";
 import { VisitEntry } from "@/components/home/visit-entry";
 import { FaqEntry } from "@/components/home/faq-entry";
-import { HorseshoeDivider } from "@/components/home/horseshoe-divider";
 import { EkovanSection } from "@/components/home/ekovan-section";
 import { SupportSection } from "@/components/home/support-section";
 
@@ -36,7 +35,6 @@ export default async function HomePage({ params }: Props) {
       <HeroSection />
       <LogSpine>
         <ServicesEntry />
-        <HorseshoeDivider />
         <IntroEntry />
         <VisitEntry />
         <FaqEntry />

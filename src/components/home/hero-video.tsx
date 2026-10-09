@@ -46,6 +46,12 @@ export function HeroVideo() {
     const video = videoRef.current;
     if (!enabled || !video) return;
 
+    // React sets `muted` only as a property, never as the HTML attribute, and
+    // iOS Safari refuses to autoplay a video it does not see as muted.
+    video.muted = true;
+    video.defaultMuted = true;
+    video.setAttribute("muted", "");
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {

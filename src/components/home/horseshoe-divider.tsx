@@ -23,9 +23,10 @@ function visibility(index: number): string {
 }
 
 /**
- * A trail of horseshoes running the full width of the column. Used once on
- * the homepage, under the first section (the offer cards), so it stays a single flourish
- * rather than a repeated rule. Decorative only.
+ * A trail of horseshoes running the full width of the column. Meant to be
+ * used once, as a single flourish rather than a repeated rule. Decorative
+ * only. Currently not placed anywhere: it sat under the offer cards until
+ * the phone layout got horseshoe dots, and will be placed again later.
  */
 export function HorseshoeDivider() {
   return (

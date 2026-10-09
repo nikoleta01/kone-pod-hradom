@@ -128,19 +128,23 @@
     "items": {
       "vozenie-deti": {
         "title": "Vozenie sa na koni",
-        "description": "Pokojné a bezpečné vozenie v prírode – prvý kontakt s koňom pre najmenších, vždy vedené."
+        "description": "Pokojné a bezpečné vozenie v prírode – prvý kontakt s koňom pre najmenších, vždy vedené.",
+        "short": "Prvá jazda, vždy vedená."
       },
       "lesna-pedagogika": {
         "title": "Lesná pedagogika",
-        "description": "Objavujeme les všetkými zmyslami. Zážitky, ktoré rozvíjajú vzťah k prírode a sebadôveru."
+        "description": "Objavujeme les všetkými zmyslami. Zážitky, ktoré rozvíjajú vzťah k prírode a sebadôveru.",
+        "short": "Les všetkými zmyslami."
       },
       "workshopy": {
         "title": "Tvorivé dielne",
-        "description": "Tvoríme z prírodných materiálov, ktoré nájdeme okolo nás. Tvoríme, objavujeme, zažívame prírodu."
+        "description": "Tvoríme z prírodných materiálov, ktoré nájdeme okolo nás. Tvoríme, objavujeme, zažívame prírodu.",
+        "short": "Tvoríme z prírodnín."
       },
       "senzoricke-hry": {
         "title": "Senzorické hry",
-        "description": "Hry, pri ktorých deti spoznávajú prírodu hmatom, čuchom aj sluchom."
+        "description": "Hry, pri ktorých deti spoznávajú prírodu hmatom, čuchom aj sluchom.",
+        "short": "Príroda hmatom, čuchom, sluchom."
       },
       "jazdenie": {
         "title": "Jazdenie na koňoch",
@@ -148,7 +152,8 @@
       },
       "zoznamenie-s-konmi": {
         "title": "Zoznamovanie sa s koňmi",
-        "description": "Spoznávanie koní a starostlivosť o ne v našom areáli: česanie, kŕmenie, príprava."
+        "description": "Spoznávanie koní a starostlivosť o ne v našom areáli: česanie, kŕmenie, príprava.",
+        "short": "Česanie, kŕmenie, príprava."
       },
       "ekocentrum-programy": {
         "title": "Programy v Ekocentre",
@@ -215,7 +220,10 @@
     "photos": {
       "zima-pod-hradom": "Dva vraníky v zasneženom výbehu, nad nimi Krásnohorský hrad.",
       "deti-v-prirode": "Deti na deke v tráve, jedno z nich drží na dlani chrobáka.",
-      "child": "Dievčatko sa s úsmevom túli k hrive gaštanového koňa, nad nimi jasná modrá obloha."
+      "child": "Dievčatko sa s úsmevom túli k hrive gaštanového koňa, nad nimi jasná modrá obloha.",
+      "vozenie-na-koni": "Dievčatko v ružovej prilbe sa vezie na gaštanovom koni, ktorého vedie lektorka na lonži.",
+      "senzoricke-hry": "Usmiate dievčatko na drevenej lavici si k lícam priloží farebné senzorické loptičky.",
+      "zoznamovanie-s-konmi": "Rozžiarené dievčatko v ružovej prilbe sedí na koni a rozpaží ruky ako krídla."
     }
   },
   "contact": {

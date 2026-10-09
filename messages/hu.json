@@ -128,19 +128,23 @@
     "items": {
       "vozenie-deti": {
         "title": "Lovagoltatás",
-        "description": "Nyugodt és biztonságos lovagoltatás a természetben – az első találkozás a lóval a legkisebbeknek, mindig vezetve."
+        "description": "Nyugodt és biztonságos lovagoltatás a természetben – az első találkozás a lóval a legkisebbeknek, mindig vezetve.",
+        "short": "Első lovaglás, mindig vezetve."
       },
       "lesna-pedagogika": {
         "title": "Erdőpedagógia",
-        "description": "Minden érzékünkkel felfedezzük az erdőt. Élmények, amelyek fejlesztik a természethez fűződő viszonyt és az önbizalmat."
+        "description": "Minden érzékünkkel felfedezzük az erdőt. Élmények, amelyek fejlesztik a természethez fűződő viszonyt és az önbizalmat.",
+        "short": "Az erdő minden érzékkel."
       },
       "workshopy": {
         "title": "Kézműves foglalkozások",
-        "description": "Természetes anyagokból alkotunk, amelyeket magunk körül találunk. Alkotunk, felfedezünk, átéljük a természetet."
+        "description": "Természetes anyagokból alkotunk, amelyeket magunk körül találunk. Alkotunk, felfedezünk, átéljük a természetet.",
+        "short": "Alkotás természetes anyagokból."
       },
       "senzoricke-hry": {
         "title": "Érzékszervi játékok",
-        "description": "Játékok, amelyekben a gyerekek tapintással, szaglással és hallással ismerik meg a természetet."
+        "description": "Játékok, amelyekben a gyerekek tapintással, szaglással és hallással ismerik meg a természetet.",
+        "short": "Tapintás, szaglás, hallás."
       },
       "jazdenie": {
         "title": "Lovaglás",
@@ -148,7 +152,8 @@
       },
       "zoznamenie-s-konmi": {
         "title": "Ismerkedés a lovakkal",
-        "description": "A lovak megismerése és gondozása a területünkön: kefélés, etetés, felkészítés."
+        "description": "A lovak megismerése és gondozása a területünkön: kefélés, etetés, felkészítés.",
+        "short": "Kefélés, etetés, felkészítés."
       },
       "ekocentrum-programy": {
         "title": "Programok az Ökocentrumban",
@@ -215,7 +220,10 @@
     "photos": {
       "zima-pod-hradom": "Két fekete ló a havas karámban, fölöttük a krasznahorkai vár.",
       "deti-v-prirode": "Gyerekek a fűben egy takarón, egyikük egy bogarat tart a tenyerén.",
-      "child": "Egy kislány mosolyogva a pej ló sörényéhez bújik, fölöttük tiszta kék ég."
+      "child": "Egy kislány mosolyogva a pej ló sörényéhez bújik, fölöttük tiszta kék ég.",
+      "vozenie-na-koni": "Rózsaszín sisakos kislány lovagol egy pej lovon, amelyet az oktató futószáron vezet.",
+      "senzoricke-hry": "Mosolygó kislány egy fapadon, színes érzékszervi labdákat tart az arcához.",
+      "zoznamovanie-s-konmi": "Ragyogó kislány rózsaszín sisakban ül a lovon, és szárnyként tárja szét a karját."
     }
   },
   "contact": {

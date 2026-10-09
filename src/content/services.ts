@@ -44,7 +44,7 @@ export const services: Service[] = [
     durationMinutes: null,
     capacity: null,
     priceEur: null,
-    photoId: 'child',
+    photoId: 'vozenie-na-koni',
     bookable: false
   },
   {
@@ -74,7 +74,7 @@ export const services: Service[] = [
     durationMinutes: null,
     capacity: null,
     priceEur: null,
-    photoId: null,
+    photoId: 'senzoricke-hry',
     bookable: false
   },
   {
@@ -94,7 +94,7 @@ export const services: Service[] = [
     durationMinutes: null,
     capacity: null,
     priceEur: null,
-    photoId: null,
+    photoId: 'zoznamovanie-s-konmi',
     bookable: false
   },
   {

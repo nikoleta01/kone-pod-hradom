@@ -42,6 +42,11 @@ export default async function GalleryPage({params}: Props) {
                   height={photo.height}
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   className="aspect-[4/3] w-full object-cover"
+                  style={
+                    photo.position
+                      ? {objectPosition: photo.position}
+                      : undefined
+                  }
                 />
               </li>
             ))}

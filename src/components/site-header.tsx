@@ -142,7 +142,9 @@ export function SiteHeader({ locale }: { locale: Locale }) {
         <nav
           id="mobile-nav"
           aria-label={t("menu")}
-          className="border-t border-brown/30 bg-cream lg:hidden"
+          // Overlays the page from under the header instead of joining the
+          // flow, so opening the menu never pushes the content down.
+          className="absolute inset-x-0 top-full max-h-[calc(100dvh-100%)] overflow-y-auto border-y border-brown/30 bg-cream lg:hidden"
         >
           <ul className="mx-auto max-w-6xl px-4 py-2 sm:px-6">
             {navItems.map((item) => (
