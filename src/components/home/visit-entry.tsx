@@ -46,7 +46,7 @@ export async function VisitEntry() {
         {t("visitBody")}
       </p>
 
-      <div className="mt-8 isolate overflow-hidden rounded-xl border border-brown bg-card">
+      <div className="mt-6 isolate overflow-hidden rounded-xl border border-brown bg-card sm:mt-8">
         <MapEmbed
           src={mapEmbedSrc()}
           title={t("visitMapTitle")}

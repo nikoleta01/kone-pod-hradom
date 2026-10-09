@@ -12,7 +12,7 @@ export async function IntroEntry() {
 
   return (
     <Entry>
-      <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center md:gap-12">
+      <div className="grid gap-6 sm:gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-center md:gap-12">
         <div>
           <h2 className="font-stencil text-3xl text-charcoal md:text-4xl">
             {t("introTitle")}
@@ -22,7 +22,7 @@ export async function IntroEntry() {
           </p>
         </div>
         {childHorsePhoto ? (
-          <div className="mt-8 overflow-hidden rounded-xl border border-emerald md:self-start">
+          <div className="overflow-hidden rounded-xl border border-emerald md:mt-8 md:self-start">
             <Image
               src={childHorsePhoto.src}
               alt={tGallery("photos.child")}

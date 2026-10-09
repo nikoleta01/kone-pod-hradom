@@ -57,7 +57,7 @@ export async function ServicesEntry() {
       */}
       <ul
         id={ROW_ID}
-        className="-mx-4 mt-8 flex snap-x snap-mandatory scroll-px-4 gap-3 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-4 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-6 [&::-webkit-scrollbar]:hidden">
+        className="-mx-4 mt-6 flex snap-x snap-mandatory scroll-px-4 gap-3 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:mt-8 sm:grid sm:grid-cols-2 sm:gap-4 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-6 [&::-webkit-scrollbar]:hidden">
         {featured.map((service, index) => {
           const photo = photoById(service.photoId ?? fallbackPhotoId);
           const zoom =
@@ -115,10 +115,11 @@ export async function ServicesEntry() {
                   the page ground; from sm up it is a band over the photo's
                   bottom edge. Over the photo it is the hero's 75%, so the
                   image shows through; on the plain page ground 75% turns
-                  grey, so a phone gets 90%. The photo's zoom is the hover
+                  grey, so a phone gets solid emerald, the same green as the
+                  card's border, so the frame reads as one colour. The photo's zoom is the hover
                   feedback.
                 */}
-                <div className="flex flex-1 flex-col justify-center border-t border-emerald bg-emerald-deep/90 px-4 py-3 sm:bg-emerald-deep/75 text-center text-cream backdrop-blur-sm sm:absolute sm:inset-x-0 sm:bottom-0 sm:block sm:px-6 sm:py-5">
+                <div className="flex flex-1 flex-col justify-center border-t border-emerald bg-emerald px-4 py-3 sm:bg-emerald-deep/75 text-center text-cream backdrop-blur-sm sm:absolute sm:inset-x-0 sm:bottom-0 sm:block sm:px-6 sm:py-5">
                   <h3 className="font-stencil text-2xl leading-tight sm:text-3xl">
                     {tServices(`items.${service.id}.title`)}
                   </h3>
@@ -129,11 +130,6 @@ export async function ServicesEntry() {
                   <p className="mt-2 hidden text-sm leading-snug text-cream/90 sm:block">
                     {tServices(`items.${service.id}.description`)}
                   </p>
-                  {service.id === "workshopy" ? (
-                    <p className="mt-2 text-xs font-semibold text-cream">
-                      {t("workshopSchedule")}
-                    </p>
-                  ) : null}
                 </div>
               </Link>
             </li>

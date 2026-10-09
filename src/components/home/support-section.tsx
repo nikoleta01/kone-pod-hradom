@@ -17,7 +17,7 @@ export async function SupportSection() {
       aria-labelledby="support-title"
       className="border-t border-emerald-deep bg-emerald text-cream"
     >
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-[0.9fr_1.1fr] md:gap-14 md:py-20">
+      <div className="mx-auto grid max-w-6xl gap-6 px-4 py-10 sm:gap-10 sm:px-6 sm:py-16 md:grid-cols-[0.9fr_1.1fr] md:gap-14 md:py-20">
         <div>
           <p className="font-stencil text-sm font-semibold uppercase tracking-wide text-cream/80">
             {t("eyebrow")}

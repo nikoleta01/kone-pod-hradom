@@ -22,14 +22,14 @@ export async function FaqEntry() {
 
   return (
     <Entry id={CONTACT_ANCHOR}>
-      <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:gap-12">
+      <div className="grid gap-6 sm:gap-8 md:grid-cols-[0.8fr_1.2fr] md:gap-12">
         <div>
           <h2 className="font-stencil text-3xl text-charcoal md:text-4xl">
             {t("title")}
           </h2>
           <p className="mt-4 max-w-sm text-charcoal-soft">{t("lead")}</p>
 
-          <div className="mt-8 flex flex-wrap items-start gap-x-8 gap-y-6">
+          <div className="mt-6 flex flex-wrap items-start gap-x-8 gap-y-6 sm:mt-8">
             <PhoneCard label={tActions("call")} note={tHome("callNote")} />
 
             <div className="flex flex-col items-start gap-2">

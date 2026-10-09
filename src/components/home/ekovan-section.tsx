@@ -7,7 +7,7 @@ export async function EkovanSection() {
   const tActions = await getTranslations("actions");
 
   return (
-    <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-20">
+    <section className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-16 md:py-20">
       <div className="rotate-[-1deg] rounded-xl border border-dashed border-emerald/50 bg-card p-6 sm:ml-12 sm:p-8 md:ml-24">
         <p className="font-stencil text-xs font-semibold uppercase tracking-wide text-emerald">
           {t("ekovanLabel")}
