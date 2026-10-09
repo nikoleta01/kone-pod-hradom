@@ -42,5 +42,3 @@ export function photoById(id: string): Photo | undefined {
   return photos.find((photo) => photo.id === id);
 }
 
-/** The frame that opens the homepage. */
-export const heroPhotoId = 'zima-pod-hradom';

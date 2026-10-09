@@ -58,21 +58,3 @@ body {
     scroll-behavior: auto;
   }
 }
-
-/*
- * Lets a real photograph bleed into the card ground instead of sitting in a
- * hard-edged box — "going do stratena". Fades from its top on narrow
- * screens (where it stacks below the text) and from its left on wide ones
- * (where it sits beside the text), so the edge nearest the copy dissolves.
- */
-.hero-photo-fade {
-  -webkit-mask-image: linear-gradient(to bottom, transparent, black 18%);
-  mask-image: linear-gradient(to bottom, transparent, black 18%);
-}
-
-@media (min-width: 768px) {
-  .hero-photo-fade {
-    -webkit-mask-image: linear-gradient(to right, transparent, black 15%);
-    mask-image: linear-gradient(to right, transparent, black 15%);
-  }
-}
