@@ -26,9 +26,8 @@ export async function IntroEntry() {
             <Image
               src={childHorsePhoto.src}
               alt={tGallery("photos.child")}
-              width={childHorsePhoto.width}
-              height={childHorsePhoto.height}
               sizes="(min-width: 768px) 40vw, 90vw"
+              placeholder="blur"
               className="h-auto w-full object-cover"
             />
           </div>

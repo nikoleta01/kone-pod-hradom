@@ -1,3 +1,5 @@
+import heroPoster from './images/hero-poster.jpg';
+
 /**
  * The hero's background video, encoded from the association's own footage.
  *
@@ -16,11 +18,8 @@
  * connection only ever get the poster.
  */
 export const heroVideo = {
-  poster: {
-    src: '/videos/hero-poster.jpg',
-    width: 1920,
-    height: 1080
-  },
+  /** Imported, so it gets a content-hashed URL browsers cache for good. */
+  poster: heroPoster,
   /** Listed in the order the browser should try them. */
   sources: [
     {src: '/videos/hero-720.mp4', type: 'video/mp4', media: '(max-width: 767px)'},

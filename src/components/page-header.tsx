@@ -42,10 +42,9 @@ export function PageHeader({
             src={photo.src}
             alt=""
             fill
-            priority
+            preload
             sizes="100vw"
-            placeholder={photo.blurDataURL ? "blur" : "empty"}
-            blurDataURL={photo.blurDataURL}
+            placeholder="blur"
             className="-z-10 object-cover"
             style={{ objectPosition: photoPosition ?? photo.position ?? "50% 50%" }}
           />

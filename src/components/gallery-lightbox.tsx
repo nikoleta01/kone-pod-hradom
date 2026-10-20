@@ -88,11 +88,8 @@ export function GalleryLightbox({ photos }: { photos: Photo[] }) {
               <Image
                 src={photo.src}
                 alt={t(`photos.${photo.id}`)}
-                width={photo.width}
-                height={photo.height}
                 sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                placeholder={photo.blurDataURL ? "blur" : "empty"}
-                blurDataURL={photo.blurDataURL}
+                placeholder="blur"
                 className="aspect-[4/3] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                 style={
                   photo.position ? { objectPosition: photo.position } : undefined

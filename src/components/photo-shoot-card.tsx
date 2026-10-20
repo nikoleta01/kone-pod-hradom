@@ -106,8 +106,7 @@ export async function PhotoShootCard({ className = "" }: { className?: string })
                     alt=""
                     fill
                     sizes="192px"
-                    placeholder={photo.blurDataURL ? "blur" : "empty"}
-                    blurDataURL={photo.blurDataURL}
+                    placeholder="blur"
                     className="object-cover"
                     style={{ objectPosition: photo.position ?? "50% 30%" }}
                   />

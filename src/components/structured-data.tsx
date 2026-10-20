@@ -3,6 +3,7 @@ import {getPathname} from '@/i18n/navigation';
 import {routing, type Locale} from '@/i18n/routing';
 import {siteUrl} from '@/lib/metadata';
 import {site} from '@/content/site';
+import zimaPodHradom from '@/content/images/kone-pod-hradom-zima.jpg';
 
 /**
  * Machine-readable description of the association, emitted on every page.
@@ -33,7 +34,7 @@ export async function StructuredData({locale}: {locale: Locale}) {
       description: t('description'),
       url: homeUrl,
       logo: `${siteUrl}/logo.svg`,
-      image: `${siteUrl}/galeria/kone-pod-hradom-zima.jpg`,
+      image: `${siteUrl}${zimaPodHradom.src}`,
       telephone: site.phoneE164,
       address: {
         '@type': 'PostalAddress',

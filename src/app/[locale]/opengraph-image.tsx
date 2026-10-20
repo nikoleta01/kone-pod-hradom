@@ -36,7 +36,7 @@ export default async function OpenGraphImage({
   const t = await getTranslations({locale, namespace: 'meta'});
 
   const photo = await readFile(
-    join(process.cwd(), 'public', 'galeria', 'kone-pod-hradom-zima.jpg')
+    join(process.cwd(), 'src', 'content', 'images', 'kone-pod-hradom-zima.jpg')
   );
 
   return new ImageResponse(

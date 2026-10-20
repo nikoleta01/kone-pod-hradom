@@ -48,8 +48,7 @@ export function CardSlideshow({
         alt=""
         fill
         sizes={sizes}
-        placeholder={photo.blurDataURL ? "blur" : "empty"}
-        blurDataURL={photo.blurDataURL}
+        placeholder="blur"
         className={`object-cover object-bottom ${imageClassName}`}
         style={photo.position ? { objectPosition: photo.position } : undefined}
       />

@@ -120,10 +120,11 @@ export function HeroVideo() {
         </video>
       ) : null}
       <Image
-        src={heroVideo.poster.src}
+        src={heroVideo.poster}
         alt=""
         fill
-        priority
+        preload
+        placeholder="blur"
         sizes="100vw"
         className={`object-cover transition-opacity duration-700 motion-reduce:transition-none ${
           ready ? "opacity-0" : "opacity-100"

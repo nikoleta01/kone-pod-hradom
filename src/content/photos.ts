@@ -1,116 +1,52 @@
+import type {StaticImageData} from 'next/image';
+import child from './images/child.jpg';
+import detiVPrirode from './images/deti-v-prirode.jpg';
+import fotenieSKonmi from './images/fotenie-s-konmi.jpg';
+import zimaPodHradom from './images/kone-pod-hradom-zima.jpg';
+import senzorickeHry from './images/senzoricke-hry.jpg';
+import tvoriveDielne1 from './images/tvorive-dielne-1.jpg';
+import tvoriveDielne2 from './images/tvorive-dielne-2.jpg';
+import vozenieNaKoni from './images/vozenie-na-koni.jpg';
+import zoznamovanieSKonmi from './images/zoznamovanie-s-konmi.jpg';
+
 /**
- * Photographs from the association's own Instagram.
+ * The association's photographs.
  *
- * To add one: drop the file in `public/galeria/`, add a record here with its
- * real pixel dimensions, and add its caption to `gallery.photos.<id>` in every
- * `messages/*.json`. Nothing else needs to change — the gallery, the chart and
- * the per-service slots all read from this list.
+ * To add one: drop the file in `src/content/images/`, import it here, add a
+ * record, and add its caption to `gallery.photos.<id>` in every
+ * `messages/*.json`. Nothing else needs to change: the gallery, the cards
+ * and the page headers all read from this list.
  *
- * `next/image` needs true intrinsic dimensions to reserve space before the
- * file loads, which on weak rural signal is the difference between a stable
- * page and one that jumps under the reader's thumb.
+ * The files are imported rather than served from `public/`, so each one gets
+ * a URL with a hash of its contents. Browsers can then cache it for good
+ * instead of asking "has this changed?" on every visit, which on weak rural
+ * signal is a round trip per photo. The import also gives `next/image` the
+ * real dimensions (so the page never jumps while a photo loads) and a tiny
+ * blurred preview for `placeholder="blur"`, with nothing to keep by hand.
  */
 export type Photo = {
   id: string;
-  src: string;
-  width: number;
-  height: number;
+  src: StaticImageData;
   /**
    * CSS `object-position` for crops, when the subject is not where the crop
    * would keep it by default (cards keep the bottom, the gallery the center).
    * A portrait photo in a landscape slot needs this to keep the face.
    */
   position?: string;
-  /**
-   * A 16px preview of the photo, shown blurred while the real file loads,
-   * so a slow connection sees the photo's own colours instead of an empty
-   * slot. Regenerate when the photo changes:
-   * `sharp(file).resize(16, 16, {fit: 'inside'}).jpeg({quality: 50})`.
-   */
-  blurDataURL?: string;
 };
 
 export const photos: Photo[] = [
-  {
-    id: 'zima-pod-hradom',
-    src: '/galeria/kone-pod-hradom-zima.jpg',
-    width: 1440,
-    height: 1440,
-    blurDataURL:
-      'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAD/xAAiEAACAQIFBQAAAAAAAAAAAAABAgMAEgQFETFRFCEiYZH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIRAxEAPwB+ExBaIDTY6d+KQJEYXKSw5AoE0WZoqxxYCG9g3lcDsPlXR5sFtsYD060zTFyX/9k='
-  },
-  {
-    id: 'deti-v-prirode',
-    src: '/galeria/deti-v-prirode.jpg',
-    width: 1440,
-    height: 1440,
-    blurDataURL:
-      'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgME/8QAJRAAAgICAQALAAAAAAAAAAAAAQIDEQAEEiEiMUFCUWGBkbHB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAYEQEAAwEAAAAAAAAAAAAAAAABAAIRE//aAAwDAQACEQMRAD8AE8Txu6uvF1Ph/PnFrvrRBpp7LBaAC1RrtJ8rGR1Izsh2kkPAm67uk/eaN9IdXbbXlPIEdcIKI9PfB0HSUKNMZ//Z'
-  },
-  {
-    id: 'child',
-    src: '/galeria/child.jpg',
-    width: 1440,
-    height: 1440,
-    blurDataURL:
-      'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAJBAAAQMCBAcAAAAAAAAAAAAAAQIDEQAEEhMhMQUjUWFxgaH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAHBEAAQMFAAAAAAAAAAAAAAAAAQADBAIREyEx/9oADAMBAAIRAxEAPwCDhjzLJy1pAVMpKicIPT5SbyW7rntRCt4ECfFZ9sDKBJk66Uuxfps7O0aQ2HG1pxE7eux3po7hFW0slvI3YdX/2Q=='
-  },
-  {
-    id: 'vozenie-na-koni',
-    src: '/galeria/vozenie-na-koni.jpg',
-    width: 2400,
-    height: 1600,
-    blurDataURL:
-      'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAALABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAIG/8QAIRAAAQMDBAMAAAAAAAAAAAAAAQIDEQAFEgQTITEVQWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREv/aAAwDAQACEQMRAD8Az2muuqbZ2VEpZUco9AweaVbr1c9E5uMrK0pjJtXIUPtU2hOHQor6R5NtMDEskkR2ZolrEZiP/9k='
-  },
-  {
-    id: 'senzoricke-hry',
-    src: '/galeria/senzoricke-hry.jpg',
-    width: 1600,
-    height: 2400,
-    position: '50% 20%',
-    blurDataURL:
-      'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAF/8QAJBAAAgIBAQgDAAAAAAAAAAAAAQIEEQADBRITISIxQdEzUYH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABgRAAIDAAAAAAAAAAAAAAAAAAARAVFh/9oADAMBAAIRAxEAPwA3gEx9JtWNSMm+1GgQe3m/WE8aGzW0UMfssfeW0pkvX2bHjwvjVa4vE6mU+OeZo12RQp37Arq5n9ydVI7w/9k='
-  },
-  {
-    id: 'zoznamovanie-s-konmi',
-    src: '/galeria/zoznamovanie-s-konmi.jpg',
-    width: 1600,
-    height: 2400,
-    position: '50% 35%',
-    blurDataURL:
-      'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAUG/8QAIBABAAICAgEFAAAAAAAAAAAAAQIRAwQAEgUhIjFigv/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEx/9oADAMBAAIRAxEAPwBbLT1gcldOqsxEK5NfM+Kk3Eyo/Tmcy7e3AImSXUpq7v0+eEdmVvtxn54eryRAv//Z'
-  },
-  {
-    id: 'tvorive-dielne-1',
-    src: '/galeria/tvorive-dielne-1.jpg',
-    width: 827,
-    height: 1470,
-    position: '50% 45%',
-    blurDataURL:
-      'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAkDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAlEAACAAQDCQAAAAAAAAAAAAABAgADERMEBSESIjFRUlOSk+H/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABgRAQADAQAAAAAAAAAAAAAAAAEAESEx/9oADAMBAAIRAxEAPwAAUc3BLVkBrvDjzrCXcv7M32GJcBsSGLlisljqaV1i+7lXRO8PsCqyUF7P/9k='
-  },
-  {
-    id: 'tvorive-dielne-2',
-    src: '/galeria/tvorive-dielne-2.jpg',
-    width: 1200,
-    height: 1600,
-    position: '50% 50%',
-    blurDataURL:
-      'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAwT/xAAiEAACAgEEAQUAAAAAAAAAAAABAgMEEgARIUExBRMyQ9H/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAECEf/aAAwDAQACEQMRAD8AlhjmaNRgIlz+zyVA60kD1qatFZvCNsiVUEcL1+6OpakmpCf345pFcF0K478b+euRqW76hWsSI6wRfAA5ICd9HUiLD//Z'
-  },
-  {
-    id: 'fotenie-s-konmi',
-    src: '/galeria/fotenie-s-konmi.jpg',
-    width: 1366,
-    height: 2048,
-    position: '60% 25%',
-    blurDataURL:
-      'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAQAAsDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMFBv/EAB8QAAICAgIDAQAAAAAAAAAAAAECAwQAEQUhBhOBwf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGREAAwADAAAAAAAAAAAAAAAAAAECAxIx/9oADAMBAAIRAxEAPwCnyHP0uLg0ImNggERH9ODH5nxXrX3QzrIRshFDAfdjM9YlqSvPNYUGORUWLa9gDskfcQt2iEUChWOgBsr2clWW2uC6Sf/Z'
-  }
+  {id: 'zima-pod-hradom', src: zimaPodHradom},
+  {id: 'deti-v-prirode', src: detiVPrirode},
+  {id: 'child', src: child},
+  {id: 'vozenie-na-koni', src: vozenieNaKoni},
+  {id: 'senzoricke-hry', src: senzorickeHry, position: '50% 20%'},
+  {id: 'zoznamovanie-s-konmi', src: zoznamovanieSKonmi, position: '50% 35%'},
+  {id: 'tvorive-dielne-1', src: tvoriveDielne1, position: '50% 45%'},
+  {id: 'tvorive-dielne-2', src: tvoriveDielne2, position: '50% 50%'},
+  {id: 'fotenie-s-konmi', src: fotenieSKonmi, position: '60% 25%'}
 ];
 
 export function photoById(id: string): Photo | undefined {
   return photos.find((photo) => photo.id === id);
 }
-

@@ -98,8 +98,7 @@ export async function ServicesEntry() {
                       alt=""
                       fill
                       sizes={sizes}
-                      placeholder={photo.blurDataURL ? "blur" : "empty"}
-                      blurDataURL={photo.blurDataURL}
+                      placeholder="blur"
                       className={`object-cover object-bottom ${zoom}`}
                       style={
                         photo.position
