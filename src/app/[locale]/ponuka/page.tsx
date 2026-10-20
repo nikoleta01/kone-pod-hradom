@@ -25,9 +25,14 @@ export default async function ServicesPage({params}: Props) {
 
   return (
     <>
-      <PageHeader title={t('title')} lead={t('lead')} />
+      <PageHeader
+        title={t('title')}
+        lead={t('lead')}
+        photoId="vozenie-na-koni"
+        photoPosition="50% 55%"
+      />
 
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-20">
+      <section className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6 md:pb-20 md:pt-12">
         <p className="max-w-2xl text-lg leading-relaxed text-charcoal-soft">
           {t('intro')}
         </p>

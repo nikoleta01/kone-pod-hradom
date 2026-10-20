@@ -63,6 +63,11 @@ export const site = {
   funding: {
     programme: 'Terra Incognita',
     url: 'https://www.terraincognita.sk/'
+  },
+  /** Confirmed. The photographer who takes the horse photo shoots. */
+  photographer: {
+    name: 'Angelika Vozárová',
+    instagram: 'https://www.instagram.com/vozarova.angelika/'
   }
 } as const;
 

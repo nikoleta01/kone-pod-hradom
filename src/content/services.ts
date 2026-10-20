@@ -32,6 +32,11 @@ export type Service = {
    * association sends a photo of that service.
    */
   photoId: string | null;
+  /**
+   * More photos that take turns with `photoId` on the homepage card, fading
+   * from one to the next. Leave it out for a card with a single photo.
+   */
+  extraPhotoIds?: string[];
   /** Flip to true once the service can actually be reserved online. */
   bookable: boolean;
 };
@@ -64,7 +69,8 @@ export const services: Service[] = [
     durationMinutes: 60,
     capacity: null,
     priceEur: null,
-    photoId: null,
+    photoId: 'tvorive-dielne-1',
+    extraPhotoIds: ['tvorive-dielne-2'],
     bookable: false
   },
   {
@@ -135,3 +141,17 @@ export const ekovanParts = [
   'mini-kaviaren',
   'eko-infrastruktura'
 ] as const;
+
+/**
+ * Photo shoots with the horses, individual or family: new, and possibly
+ * seasonal. Set `active` to false to hide the offer everywhere it appears
+ * (today the card on the gallery page) without touching any component.
+ */
+export const photoShoots = {
+  active: true as boolean,
+  /**
+   * The association's own photos, laid out as prints on the card (desktop).
+   * The first is the lead print in the middle; the first three are used.
+   */
+  photoIds: ['fotenie-s-konmi', 'zoznamovanie-s-konmi', 'child']
+};

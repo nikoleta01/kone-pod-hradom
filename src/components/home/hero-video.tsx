@@ -27,7 +27,7 @@ function canPlayVideo(): boolean {
 /**
  * The hero's full-bleed background. The poster paints first and stays as the
  * fallback; the video is only mounted after the page has loaded and the
- * visitor's settings allow it, fades in once it plays, and pauses while
+ * visitor's settings allow it, is revealed once it plays, and pauses while
  * the hero is scrolled out of view. Decorative: the hero text carries the
  * meaning.
  */
@@ -92,14 +92,13 @@ export function HeroVideo() {
 
   return (
     <div aria-hidden="true" className="absolute inset-0">
-      <Image
-        src={heroVideo.poster.src}
-        alt=""
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover"
-      />
+      {/*
+        The video sits underneath at full opacity and the poster covers it,
+        fading out once the video really plays. Never the other way round:
+        Safari (Mac and iPhone) refuses to autoplay a video it considers
+        invisible, so a video waiting at opacity 0 for its first frame never
+        gets one.
+      */}
       {enabled ? (
         <video
           ref={videoRef}
@@ -107,12 +106,8 @@ export function HeroVideo() {
           loop
           playsInline
           preload="auto"
-          // Fade in only once it is really moving: a refused autoplay
-          // leaves the poster in place instead of a frozen first frame.
           onPlaying={() => setReady(true)}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
-            ready ? "opacity-100" : "opacity-0"
-          }`}
+          className="absolute inset-0 h-full w-full object-cover"
         >
           {heroVideo.sources.map((source) => (
             <source
@@ -124,6 +119,16 @@ export function HeroVideo() {
           ))}
         </video>
       ) : null}
+      <Image
+        src={heroVideo.poster.src}
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className={`object-cover transition-opacity duration-700 motion-reduce:transition-none ${
+          ready ? "opacity-0" : "opacity-100"
+        }`}
+      />
     </div>
   );
 }

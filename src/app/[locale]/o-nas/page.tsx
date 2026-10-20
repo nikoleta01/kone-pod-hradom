@@ -28,9 +28,14 @@ export default async function AboutPage({params}: Props) {
 
   return (
     <>
-      <PageHeader title={t('title')} lead={t('lead')} />
+      <PageHeader
+        title={t('title')}
+        lead={t('lead')}
+        photoId="child"
+        photoPosition="50% 40%"
+      />
 
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-20">
+      <section className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6 md:pb-20 md:pt-12">
         <div className="grid gap-6 md:grid-cols-2 md:gap-16">
           <p className="text-lg leading-relaxed text-charcoal-soft">{t('body1')}</p>
           <p className="text-lg leading-relaxed text-charcoal-soft">{t('body2')}</p>

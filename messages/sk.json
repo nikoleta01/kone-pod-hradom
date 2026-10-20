@@ -70,8 +70,8 @@
         "a": "Áno. Naše programy sú pre celé rodiny, rodičia sú s deťmi po celý čas a môžu sa zapojiť."
       },
       "clothes": {
-        "q": "Čo si obliecť a čo si priniesť?",
-        "a": "Pohodlné oblečenie, ktoré sa môže zašpiniť, a pevnú uzavretú obuv. Sme vonku, preto sa oblečte podľa počasia, v zime vo vrstvách."
+        "q": "Ako obliecť detičky?",
+        "a": "Pohodlné oblečenie, ktoré sa môže zašpiniť, a pevnú uzavretú obuv. Sme vonku, preto deti oblečte podľa počasia, v zime vo vrstvách. Prilby vám radi požičiame."
       },
       "weather": {
         "q": "Čo keď prší alebo je zima?",
@@ -127,7 +127,7 @@
     "intro": "Programy prispôsobujeme veku a skúsenostiam skupiny. Termín si dohodneme vopred. Zavolajte nám a poradíme, čo bude vášmu dieťaťu sedieť.",
     "items": {
       "vozenie-deti": {
-        "title": "Vozenie sa na koni",
+        "title": "Terapeutické jazdenie",
         "description": "Pokojné a bezpečné vozenie v prírode – prvý kontakt s koňom pre najmenších, vždy vedené.",
         "short": "Prvá jazda, vždy vedená."
       },
@@ -216,14 +216,21 @@
   "gallery": {
     "title": "Galéria",
     "lead": "Kone, deti a miesto pod hradom",
-    "empty": "Ďalšie fotografie pripravujeme. Zatiaľ nás nájdete na Facebooku a Instagrame.",
+    "dialogLabel": "Fotogaléria",
+    "close": "Zavrieť",
+    "previous": "Predchádzajúca fotografia",
+    "next": "Ďalšia fotografia",
+    "counter": "{current} / {total}",
     "photos": {
       "zima-pod-hradom": "Dva vraníky v zasneženom výbehu, nad nimi Krásnohorský hrad.",
       "deti-v-prirode": "Deti na deke v tráve, jedno z nich drží na dlani chrobáka.",
       "child": "Dievčatko sa s úsmevom túli k hrive gaštanového koňa, nad nimi jasná modrá obloha.",
       "vozenie-na-koni": "Dievčatko v ružovej prilbe sa vezie na gaštanovom koni, ktorého vedie lektorka na lonži.",
       "senzoricke-hry": "Usmiate dievčatko na drevenej lavici si k lícam priloží farebné senzorické loptičky.",
-      "zoznamovanie-s-konmi": "Rozžiarené dievčatko v ružovej prilbe sedí na koni a rozpaží ruky ako krídla."
+      "zoznamovanie-s-konmi": "Rozžiarené dievčatko v ružovej prilbe sedí na koni a rozpaží ruky ako krídla.",
+      "tvorive-dielne-1": "Tri deti zhora pri modrej nádobe s vodou, v ktorej plávajú papierové rybky.",
+      "tvorive-dielne-2": "Deti s rodičmi za stolom pod holým nebom tlačia farbou ovocie na papier.",
+      "fotenie-s-konmi": "Dievčatko v rifľovej bunde leží na chrbte pasúceho sa gaštanového koňa a usmieva sa."
     }
   },
   "contact": {
@@ -262,5 +269,14 @@
   "notFound": {
     "title": "Stránka sa nenašla",
     "body": "Táto stránka neexistuje alebo bola presunutá."
+  },
+  "photoShoots": {
+    "badge": "Novinka",
+    "title": "Fotenie s koňmi",
+    "body": "Odfotíme vás s našimi koňmi pod Krásnohorským hradom, jednotlivo alebo celú rodinu.",
+    "photographer": "Fotí {name}",
+    "dates": "Termíny: dohodou",
+    "price": "Cena: telefonicky",
+    "photoNote": "ilustračné fotky"
   }
 }

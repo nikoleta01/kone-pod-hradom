@@ -70,8 +70,8 @@
         "a": "Igen. Programjaink egész családoknak szólnak, a szülők végig a gyerekekkel vannak, és be is kapcsolódhatnak."
       },
       "clothes": {
-        "q": "Mit vegyünk fel és mit hozzunk?",
-        "a": "Kényelmes ruhát, amely bepiszkolódhat, és zárt, strapabíró cipőt. A szabadban vagyunk, ezért öltözzön az időjárásnak megfelelően, télen rétegesen."
+        "q": "Hogyan öltöztessük a gyerekeket?",
+        "a": "Kényelmes ruhát, amely bepiszkolódhat, és zárt, strapabíró cipőt. A szabadban vagyunk, ezért öltöztesse a gyerekeket az időjárásnak megfelelően, télen rétegesen. Lovas sisakot szívesen kölcsönadunk."
       },
       "weather": {
         "q": "Mi van, ha esik vagy hideg van?",
@@ -127,7 +127,7 @@
     "intro": "A programokat a csoport korához és tapasztalatához igazítjuk. Az időpontot előre egyeztetjük. Hívjon minket, és tanácsot adunk, mi illik a gyermekéhez.",
     "items": {
       "vozenie-deti": {
-        "title": "Lovagoltatás",
+        "title": "Terápiás lovaglás",
         "description": "Nyugodt és biztonságos lovagoltatás a természetben – az első találkozás a lóval a legkisebbeknek, mindig vezetve.",
         "short": "Első lovaglás, mindig vezetve."
       },
@@ -216,14 +216,21 @@
   "gallery": {
     "title": "Galéria",
     "lead": "Lovak, gyerekek és a hely a vár alatt",
-    "empty": "További fényképeket készítünk. Addig a Facebookon és az Instagramon találnak minket.",
+    "dialogLabel": "Fotógaléria",
+    "close": "Bezárás",
+    "previous": "Előző fotó",
+    "next": "Következő fotó",
+    "counter": "{current} / {total}",
     "photos": {
       "zima-pod-hradom": "Két fekete ló a havas karámban, fölöttük a krasznahorkai vár.",
       "deti-v-prirode": "Gyerekek a fűben egy takarón, egyikük egy bogarat tart a tenyerén.",
       "child": "Egy kislány mosolyogva a pej ló sörényéhez bújik, fölöttük tiszta kék ég.",
       "vozenie-na-koni": "Rózsaszín sisakos kislány lovagol egy pej lovon, amelyet az oktató futószáron vezet.",
       "senzoricke-hry": "Mosolygó kislány egy fapadon, színes érzékszervi labdákat tart az arcához.",
-      "zoznamovanie-s-konmi": "Ragyogó kislány rózsaszín sisakban ül a lovon, és szárnyként tárja szét a karját."
+      "zoznamovanie-s-konmi": "Ragyogó kislány rózsaszín sisakban ül a lovon, és szárnyként tárja szét a karját.",
+      "tvorive-dielne-1": "Három gyerek felülről egy kék vizes edény körül, amelyben papírhalak úsznak.",
+      "tvorive-dielne-2": "Gyerekek és szüleik a szabadtéri asztalnál festékkel gyümölcsmintákat nyomnak papírra.",
+      "fotenie-s-konmi": "Farmerdzsekis kislány mosolyogva fekszik egy legelésző pej ló hátán."
     }
   },
   "contact": {
@@ -262,5 +269,14 @@
   "notFound": {
     "title": "Az oldal nem található",
     "body": "Ez az oldal nem létezik, vagy át lett helyezve."
+  },
+  "photoShoots": {
+    "badge": "Újdonság",
+    "title": "Fotózás lovakkal",
+    "body": "Lefotózzuk Önöket a lovainkkal a krasznahorkai vár alatt, egyénileg vagy az egész családot.",
+    "photographer": "Fotós: {name}",
+    "dates": "Időpont: megegyezés szerint",
+    "price": "Ár: telefonon",
+    "photoNote": "illusztrációk"
   }
 }

@@ -70,8 +70,8 @@
         "a": "Yes. Our programmes are for whole families. Parents stay with their children the whole time and can join in."
       },
       "clothes": {
-        "q": "What should we wear and bring?",
-        "a": "Comfortable clothes that can get dirty, and sturdy closed shoes. We’re outdoors, so dress for the weather, in layers in winter."
+        "q": "How should we dress the little ones?",
+        "a": "Comfortable clothes that can get dirty, and sturdy closed shoes. We’re outdoors, so dress children for the weather, in layers in winter. We’re happy to lend riding helmets."
       },
       "weather": {
         "q": "What if it rains or it’s cold?",
@@ -127,7 +127,7 @@
     "intro": "We adapt each programme to the age and experience of the group. Dates are arranged in advance. Call us and we will suggest what will suit your child.",
     "items": {
       "vozenie-deti": {
-        "title": "Led rides for children",
+        "title": "Therapeutic riding",
         "description": "Calm, safe rides in nature – a small child's first contact with a horse, always led on foot.",
         "short": "A first ride, always led."
       },
@@ -216,14 +216,21 @@
   "gallery": {
     "title": "Gallery",
     "lead": "Horses, children and the place below the castle",
-    "empty": "More photographs are on the way. For now you will find us on Facebook and Instagram.",
+    "dialogLabel": "Photo gallery",
+    "close": "Close",
+    "previous": "Previous photo",
+    "next": "Next photo",
+    "counter": "{current} / {total}",
     "photos": {
       "zima-pod-hradom": "Two black horses in a snowy paddock, with Krásna Hôrka Castle above them.",
       "deti-v-prirode": "Children on a blanket in the grass, one holding a beetle on their palm.",
       "child": "A girl smiles as she rests against a chestnut horse's mane, under a clear blue sky.",
       "vozenie-na-koni": "A girl in a pink helmet rides a chestnut horse while an instructor guides it on a lunge line.",
       "senzoricke-hry": "A smiling girl on a wooden bench holds colourful sensory balls to her cheeks.",
-      "zoznamovanie-s-konmi": "A beaming girl in a pink helmet sits on a horse with her arms spread wide like wings."
+      "zoznamovanie-s-konmi": "A beaming girl in a pink helmet sits on a horse with her arms spread wide like wings.",
+      "tvorive-dielne-1": "Three children seen from above around a blue tub of water with paper fish floating in it.",
+      "tvorive-dielne-2": "Children and parents at an outdoor table, stamping fruit prints onto paper with paint.",
+      "fotenie-s-konmi": "A girl in a denim jacket lies smiling across the back of a grazing chestnut horse."
     }
   },
   "contact": {
@@ -262,5 +269,14 @@
   "notFound": {
     "title": "Page not found",
     "body": "This page does not exist or has been moved."
+  },
+  "photoShoots": {
+    "badge": "New",
+    "title": "Photo shoots with horses",
+    "body": "We photograph you with our horses below Krásna Hôrka Castle, on your own or with the whole family.",
+    "photographer": "Photographed by {name}",
+    "dates": "Dates: by arrangement",
+    "price": "Price: by phone",
+    "photoNote": "illustrative photos"
   }
 }

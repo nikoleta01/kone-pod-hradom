@@ -6,7 +6,8 @@ import {
   featuredServiceIds,
   services,
 } from "@/content/services";
-import { photoById } from "@/content/photos";
+import { photoById, type Photo } from "@/content/photos";
+import { CardSlideshow } from "./card-slideshow";
 import { Entry } from "./entry";
 import { SwipeDots } from "./swipe-dots";
 
@@ -60,9 +61,15 @@ export async function ServicesEntry() {
         className="-mx-4 mt-6 flex snap-x snap-mandatory scroll-px-4 gap-3 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:mt-8 sm:grid sm:grid-cols-2 sm:gap-4 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-6 [&::-webkit-scrollbar]:hidden">
         {featured.map((service, index) => {
           const photo = photoById(service.photoId ?? fallbackPhotoId);
+          const extraPhotos = (service.extraPhotoIds ?? [])
+            .map(photoById)
+            .filter((extra): extra is Photo => Boolean(extra));
           const zoom =
             "transition-transform duration-700 ease-out group-hover:scale-105 group-focus-visible:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100 motion-reduce:group-focus-visible:scale-100";
           const wide = index === 0 || index >= 3;
+          const sizes = wide
+            ? "(min-width: 1024px) 50vw, (min-width: 640px) 100vw, 82vw"
+            : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 82vw";
 
           return (
             <li
@@ -71,23 +78,26 @@ export async function ServicesEntry() {
             >
               <Link
                 href={service.href}
-                className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-emerald sm:block sm:h-72 sm:bg-emerald-deep lg:h-80"
+                className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-emerald"
               >
                 {/*
-                  On a phone the photo has its own 4:3 slot and nothing
-                  covers it. From sm up it fills the card under the band.
+                  The photo has its own slot at the top and nothing covers
+                  it: 4:3 on a phone, a fixed height from sm up so cards of
+                  different widths still line up.
                 */}
-                <div className="relative aspect-[4/3] shrink-0 overflow-hidden bg-emerald-deep sm:absolute sm:inset-0 sm:aspect-auto">
-                  {photo ? (
+                <div className="relative aspect-[4/3] shrink-0 overflow-hidden bg-emerald-deep sm:aspect-auto sm:h-52 lg:h-56">
+                  {photo && extraPhotos.length > 0 ? (
+                    <CardSlideshow
+                      photos={[photo, ...extraPhotos]}
+                      sizes={sizes}
+                      imageClassName={zoom}
+                    />
+                  ) : photo ? (
                     <Image
                       src={photo.src}
                       alt=""
                       fill
-                      sizes={
-                        wide
-                          ? "(min-width: 1024px) 50vw, (min-width: 640px) 100vw, 82vw"
-                          : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 82vw"
-                      }
+                      sizes={sizes}
                       placeholder={photo.blurDataURL ? "blur" : "empty"}
                       blurDataURL={photo.blurDataURL}
                       className={`object-cover object-bottom ${zoom}`}
@@ -110,16 +120,14 @@ export async function ServicesEntry() {
                 ) : null}
 
                 {/*
-                  Styled like the hero's green panel (see-through fill, blur
-                  and emerald rule). On a phone it sits under the photo on
-                  the page ground; from sm up it is a band over the photo's
-                  bottom edge. Over the photo it is the hero's 75%, so the
-                  image shows through; on the plain page ground 75% turns
-                  grey, so a phone gets solid emerald, the same green as the
-                  card's border, so the frame reads as one colour. The photo's zoom is the hover
-                  feedback.
+                  The green panel sits under the photo at every width. It is
+                  solid emerald, the same green as the card's border, so the
+                  frame reads as one colour: a see-through fill would only
+                  turn grey on the plain page ground. Cards in a row stretch
+                  to the tallest, so the text is centred in the panel. The
+                  photo's zoom is the hover feedback.
                 */}
-                <div className="flex flex-1 flex-col justify-center border-t border-emerald bg-emerald px-4 py-3 sm:bg-emerald-deep/75 text-center text-cream backdrop-blur-sm sm:absolute sm:inset-x-0 sm:bottom-0 sm:block sm:px-6 sm:py-5">
+                <div className="flex flex-1 flex-col justify-center border-t border-emerald bg-emerald px-4 py-3 text-center text-cream sm:px-6 sm:py-5">
                   <h3 className="font-stencil text-2xl leading-tight sm:text-3xl">
                     {tServices(`items.${service.id}.title`)}
                   </h3>
