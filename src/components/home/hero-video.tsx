@@ -27,7 +27,7 @@ function canPlayVideo(): boolean {
 /**
  * The hero's full-bleed background. The poster paints first and stays as the
  * fallback; the video is only mounted after the page has loaded and the
- * visitor's settings allow it, fades in once it can play, and pauses while
+ * visitor's settings allow it, fades in once it plays, and pauses while
  * the hero is scrolled out of view. Decorative: the hero text carries the
  * meaning.
  */
@@ -52,11 +52,30 @@ export function HeroVideo() {
     video.defaultMuted = true;
     video.setAttribute("muted", "");
 
+    let inView = false;
+
+    // iOS refuses autoplay in Low Power Mode, but still allows play() from
+    // a tap. So when autoplay is refused, the visitor's first tap, click or
+    // key press starts the loop instead of the poster staying for good.
+    const gestures = ["touchend", "click", "keydown"] as const;
+    function playOnGesture() {
+      removeGestureListeners();
+      if (inView) video?.play().catch(() => {});
+    }
+    function removeGestureListeners() {
+      for (const type of gestures) {
+        document.removeEventListener(type, playOnGesture);
+      }
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
+        inView = entry.isIntersecting;
         if (entry.isIntersecting) {
           video.play().catch(() => {
-            // Autoplay refused (e.g. Low Power Mode): the poster stays.
+            for (const type of gestures) {
+              document.addEventListener(type, playOnGesture, { passive: true });
+            }
           });
         } else {
           video.pause();
@@ -65,7 +84,10 @@ export function HeroVideo() {
       { threshold: 0.1 },
     );
     observer.observe(video);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      removeGestureListeners();
+    };
   }, [enabled]);
 
   return (
@@ -85,7 +107,9 @@ export function HeroVideo() {
           loop
           playsInline
           preload="auto"
-          onCanPlay={() => setReady(true)}
+          // Fade in only once it is really moving: a refused autoplay
+          // leaves the poster in place instead of a frozen first frame.
+          onPlaying={() => setReady(true)}
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
             ready ? "opacity-100" : "opacity-0"
           }`}
