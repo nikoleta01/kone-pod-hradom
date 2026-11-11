@@ -40,18 +40,12 @@ export default async function EkovanPage({params}: Props) {
         </h2>
 
         <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {ekovanParts.map((part, index) => (
+          {ekovanParts.map((part) => (
             <li
               key={part}
               className="rounded-xl border border-brown bg-card/25 p-6"
             >
-              <p
-                aria-hidden="true"
-                className="font-serif text-2xl text-brown"
-              >
-                {String(index + 1).padStart(2, '0')}
-              </p>
-              <h3 className="mt-2 font-serif text-xl text-charcoal">
+              <h3 className="font-serif text-xl text-charcoal">
                 {t(`parts.${part}.title`)}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-charcoal-soft">
