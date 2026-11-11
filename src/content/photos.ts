@@ -1,4 +1,6 @@
 import type {StaticImageData} from 'next/image';
+import carouselLeft from './images/carousel-left.jpg';
+import carouselRight from './images/carousel-right.jpg';
 import child from './images/child.jpg';
 import detiVPrirode from './images/deti-v-prirode.jpg';
 import fotenieSKonmi from './images/fotenie-s-konmi.jpg';
@@ -44,7 +46,9 @@ export const photos: Photo[] = [
   {id: 'zoznamovanie-s-konmi', src: zoznamovanieSKonmi, position: '50% 35%'},
   {id: 'tvorive-dielne-1', src: tvoriveDielne1, position: '50% 45%'},
   {id: 'tvorive-dielne-2', src: tvoriveDielne2, position: '50% 50%'},
-  {id: 'fotenie-s-konmi', src: fotenieSKonmi, position: '60% 25%'}
+  {id: 'fotenie-s-konmi', src: fotenieSKonmi, position: '60% 25%'},
+  {id: 'carousel-left', src: carouselLeft, position: '30% 60%'},
+  {id: 'carousel-right', src: carouselRight, position: '30% 50%'}
 ];
 
 export function photoById(id: string): Photo | undefined {

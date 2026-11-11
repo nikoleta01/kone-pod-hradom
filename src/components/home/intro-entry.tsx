@@ -8,7 +8,7 @@ export async function IntroEntry() {
   const t = await getTranslations("home");
   const tGallery = await getTranslations("gallery");
 
-  const childHorsePhoto = photoById("child");
+  const introPhoto = photoById("vozenie-na-koni");
 
   return (
     <Entry>
@@ -21,11 +21,11 @@ export async function IntroEntry() {
             {t("introBody")}
           </p>
         </div>
-        {childHorsePhoto ? (
+        {introPhoto ? (
           <div className="overflow-hidden rounded-xl border border-emerald md:mt-8 md:self-start">
             <Image
-              src={childHorsePhoto.src}
-              alt={tGallery("photos.child")}
+              src={introPhoto.src}
+              alt={tGallery(`photos.${introPhoto.id}`)}
               sizes="(min-width: 768px) 40vw, 90vw"
               placeholder="blur"
               className="h-auto w-full object-cover"

@@ -38,7 +38,7 @@
     "workshopSchedule": "Tvorivé dielne: utorok 14:00 – 15:00",
     "outdoors": "V prírode, na čerstvom vzduchu",
     "callNote": "Termín dohodneme telefonicky.",
-    "introTitle": "Miesto, kde sa deti stretnú s koňmi aj s lesom",
+    "introTitle": "Miesto, kde sa deti stretnú s koňmi v kruhu prírody",
     "introBody": "V našom areáli v Krásnohorskom Podhradí ponúkame autentický kontakt s koňmi a prírodou – od prvého pohladenia cez starostlivosť o zvieratá až po vozenie a tvorivé dielne v duchu lesnej pedagogiky. Veríme, že priamy kontakt so zvieraťom učí deti trpezlivosti, rešpektu a zodpovednosti lepšie než akákoľvek učebnica.",
     "ekovanLabel": "Projekt vo výstavbe",
     "ekovanTitle": "Budujeme Ekocentrum pri koňoch",
@@ -215,7 +215,7 @@
   },
   "gallery": {
     "title": "Galéria",
-    "lead": "Kone, deti a miesto pod hradom",
+    "lead": "Prierez ročnými obdobiami",
     "dialogLabel": "Fotogaléria",
     "close": "Zavrieť",
     "previous": "Predchádzajúca fotografia",
@@ -230,7 +230,9 @@
       "zoznamovanie-s-konmi": "Rozžiarené dievčatko v ružovej prilbe sedí na koni a rozpaží ruky ako krídla.",
       "tvorive-dielne-1": "Tri deti zhora pri modrej nádobe s vodou, v ktorej plávajú papierové rybky.",
       "tvorive-dielne-2": "Deti s rodičmi za stolom pod holým nebom tlačia farbou ovocie na papier.",
-      "fotenie-s-konmi": "Dievčatko v rifľovej bunde leží na chrbte pasúceho sa gaštanového koňa a usmieva sa."
+      "fotenie-s-konmi": "Dievčatko v rifľovej bunde leží na chrbte pasúceho sa gaštanového koňa a usmieva sa.",
+      "carousel-left": "Dieťa v bielej prilbe na tmavom koni pod drevenou žrďou ohrady, proti večernej oblohe.",
+      "carousel-right": "Jazdec v bielej prilbe cvála na tmavom koni po jazdiarni pri západe slnka."
     }
   },
   "contact": {
@@ -254,7 +256,7 @@
     "navTitle": "Stránky",
     "contactTitle": "Kontakt",
     "followTitle": "Sledujte nás",
-    "fundingTitle": "Projekt podporený z programu <tiLink>Terra Incognita</tiLink>",
+    "fundingTitle": "Projekt bol spolufinancovaný Košickým samosprávnym krajom z programu <tiLink>Terra Incognita</tiLink>.",
     "fundingNote": "Presné znenie textu publicity doplníme podľa Manuálu publicity.",
     "kskSupport": "Podporené sumou 35 000 € od Košického samosprávneho kraja",
     "rights": "© {year} OZ Tymián – kone pod hradom"
