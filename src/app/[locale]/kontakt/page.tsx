@@ -27,8 +27,8 @@ export default async function ContactPage({params}: Props) {
       <PageHeader
         title={t('title')}
         lead={t('lead')}
-        photoId="zima-pod-hradom"
-        photoPosition="50% 30%"
+        photoId="carousel-left"
+        photoPosition="50% 75%"
       />
 
       <section className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6 md:pb-20 md:pt-12">
