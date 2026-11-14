@@ -5,11 +5,16 @@ import { HeroVideo } from "./hero-video";
 import { SERVICES_ANCHOR } from "./services-entry";
 
 /**
- * The cover: the association's own footage as a full-bleed muted loop. The
- * footage stays untouched; only the text block sits on a semi-transparent
- * deep-green panel, the same device as the service cards' labels. On phones
- * the panel drops the eyebrow and the second sentence, keeping the title,
- * the one line saying who they are, and both buttons, so the video shows.
+ * The cover: the association's own footage as a muted loop. The footage
+ * stays untouched; the text sits on a semi-transparent deep-green panel, the
+ * same device as the service cards' labels.
+ *
+ * The text keeps out of the footage's way. From md up it is a band along the
+ * bottom of the frame, where the shots are mostly ground, so the horses and
+ * the sky stay clear; from lg up the band lays the title and the buttons side
+ * by side to keep it flat. On phones the video gets its own strip at the top
+ * and the text follows below it, covering none of it. There the panel sits
+ * on the section's own green, so it drops its border.
  */
 export async function HeroSection() {
   const t = await getTranslations("home");
@@ -17,24 +22,22 @@ export async function HeroSection() {
 
   return (
     <section className="relative isolate overflow-hidden border-b border-emerald bg-emerald-deep">
-      <HeroVideo />
+      <div className="relative h-72 sm:h-96 md:absolute md:inset-0 md:h-auto">
+        <HeroVideo />
+      </div>
 
-      <div className="relative mx-auto flex max-w-6xl items-end px-4 pb-6 pt-56 sm:px-6 sm:pb-10 md:min-h-[40rem] md:items-center md:py-20">
-        <div className="max-w-xl rounded-xl border border-emerald bg-emerald-deep/75 p-5 backdrop-blur-sm sm:p-8">
-          <p className="hidden font-stencil text-sm font-semibold uppercase tracking-wide text-cream/80 sm:block">
-            {t("heroEyebrow")}
-          </p>
-          <h1 className="font-stencil text-4xl leading-[1.05] text-cream sm:mt-3 sm:text-5xl md:text-6xl">
-            {t("heroTitle")}
-          </h1>
-          <p className="mt-3 max-w-md text-base leading-snug text-cream/90 sm:mt-5">
-            {t("thesis")}
-          </p>
-          <p className="mt-6 hidden text-lg leading-relaxed text-cream/90 sm:block md:text-xl">
-            {t("heroSubtitle")}
-          </p>
+      <div className="relative mx-auto max-w-6xl px-4 py-5 sm:px-6 sm:py-6 md:flex md:min-h-[40rem] md:items-end md:pb-8 md:pt-20">
+        <div className="rounded-xl bg-emerald-deep/75 md:border md:border-emerald p-5 backdrop-blur-sm sm:p-8 md:w-full md:px-8 md:py-6 lg:flex lg:items-center lg:justify-between lg:gap-8">
+          <div className="min-w-0">
+            <h1 className="font-stencil text-4xl leading-[1.05] text-cream sm:text-5xl">
+              {t("heroTitle")}
+            </h1>
+            <p className="mt-3 max-w-lg text-base leading-snug text-cream/90 md:text-lg">
+              {t("thesis")}
+            </p>
+          </div>
 
-          <div className="mt-5 flex flex-wrap items-center gap-3 sm:mt-10">
+          <div className="mt-5 flex flex-wrap items-center gap-3 lg:mt-0 lg:shrink-0 lg:flex-nowrap">
             <a
               href={`#${SERVICES_ANCHOR}`}
               className="inline-flex items-center gap-2.5 rounded-full border border-emerald-deep bg-emerald px-4 py-2.5 text-base font-semibold sm:px-5 sm:py-3 sm:text-lg text-cream transition hover:bg-emerald-deep"
